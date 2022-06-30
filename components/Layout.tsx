@@ -44,11 +44,11 @@ const Layout = ({ children, title, description = 'Líderes en productos y servic
         <meta property='og:type' content={type} />
         <meta property='og:title' content={title} />
         <meta property='og:image' content={image} />
-        <meta property='og:image:alt' content='Logo de Multiempaques del Norte.' />
+        <meta property='og:image:alt' content='Logo de Vynmsa China.' />
         <meta property='og:description' content={description} />
-        <meta property='og:site_name' content='Multiempaques del Norte' />
+        <meta property='og:site_name' content='Vynmsa China' />
         <meta property='og:locale' content='es_MX' />
-        <title>{`Multiempaques del Norte | ${title}`}</title>
+        <title>{`Vynmsa China | ${title}`}</title>
       </Head>
       <Nav />
       <div className='mainContent'>

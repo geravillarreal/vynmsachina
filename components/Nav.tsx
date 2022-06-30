@@ -24,15 +24,15 @@ const Nav = () => {
     },
     {
       title: '可用厂房',
-      path: '/'
+      path: '/available workshops'
     },
     {
       title: '博客',
-      path: '/'
+      path: '/blog'
     },
     {
       title: '联系我们',
-      path: '/'
+      path: '/contact-us'
     },
   ]
 
