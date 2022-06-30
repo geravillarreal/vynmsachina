@@ -1,0 +1,116 @@
+import Image from 'next/image'
+import React from 'react'
+import Companies from '../components/Companies'
+import Form from '../components/Form'
+import Layout from '../components/Layout'
+import styles from '../styles/RecruitingAgents.module.scss'
+
+const RecruitingAgents = () => {
+
+  const icons = [
+    {
+      text: '佣金结算体系完善',
+      image: '/recruiting-agents/1.png',
+    },
+    {
+      text: '返佣及时',
+      image: '/recruiting-agents/2.png',
+    },
+    {
+      text: '流程灵活高效，对代理友好',
+      image: '/recruiting-agents/3.png',
+    },
+    {
+      text: '遵循“双赢互利”战略，保证项目以最快速度推进',
+      image: '/recruiting-agents/4.png',
+    },
+    {
+      text: '中企在墨西哥工业地产市场的最佳合作伙伴',
+      image: '/recruiting-agents/5.png',
+    },
+  ]
+
+  return (
+    <Layout title='Recruiting agents'>
+
+      <div className={styles.header}>
+
+        <Image
+          layout='fill'
+          src='/recruiting-agents/header.jpeg'
+        />
+
+      </div>
+
+      <Form />
+
+      <div className={styles.section}>
+        <span>
+          VYNMSA (秉厦) 一路走来，所取得的成功与各招商代理的配合密不可分，多年前就已与全球知名地产服务及代理机构如世邦魏理仕、仲量联行 、萊坊、戴德梁行、高力国际等建立起了良好的合作关系，共同协助客户租用和投资墨西哥房地产。
+          凭借其丰富的行业经验和专业知识，秉厦将给予代理商 大力度的扶持，让代理商更好地完成各类高要求、个性 化工业地产项目。
+        </span>
+
+        <div className={styles.image}>
+          <Image
+            alt=''
+            objectFit='contain'
+            layout='fill'
+            src='/recruiting-agents/companies.gif'
+          />
+        </div>
+      </div>
+      <div className={styles.section}>
+        <h3>代理VYNMSA(秉厦)有哪些优势？</h3>
+        <span>
+          作为墨西哥顶尖的工业园区建设开发商，VYNMSA (秉厦)已成功完成400多个项目，在墨西哥北部和中部5个工业大州建有23个工业园区，总面积达250万平米，目前约有20个工业/货仓空间可立即入驻
+        </span>
+        <div className={styles.grid}>
+          {
+            icons.map(item => (
+              <div key={item.image} className={styles.item}>
+                <Image
+                  alt=''
+                  width={80}
+                  height={80}
+                  src={item.image}
+                />
+                <span>{item.text}</span>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+
+      <div className={styles.images}>
+        <div className={styles.image}>
+          <Image
+          objectFit='cover'
+            layout='fill'
+            src='/recruiting-agents/img-1.jpeg'
+            alt=''
+          />
+        </div>
+        <div className={styles.image}>
+          <Image
+          objectFit='cover'
+            layout='fill'
+            src='/recruiting-agents/img-2.jpeg'
+            alt=''
+          />
+        </div>
+        <div className={styles.image}>
+          <Image
+          objectFit='cover'
+            layout='fill'
+            src='/recruiting-agents/img-3.jpeg'
+            alt=''
+          />
+        </div>
+      </div>
+
+      <Companies />
+    </Layout>
+  )
+}
+
+export default RecruitingAgents

@@ -1,6 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Companies from '../components/Companies'
+import Form from '../components/Form'
 import Layout from '../components/Layout'
 import styles from '../styles/Home.module.scss'
 
@@ -70,33 +72,7 @@ const Home: NextPage = () => {
         </div>
 
       </div>
-      <div className={styles.form}>
-        <h2>联系我们</h2>
-
-        <div className={styles.fields}>
-          <div className={styles.group}>
-            <input type="text" />
-          </div>
-          <div className={styles.group}>
-            <input type="text" />
-          </div>
-          <div className={styles.group}>
-            <input type="text" />
-          </div>
-          <div className={styles.group}>
-            <select name="" id=""></select>
-          </div>
-          <div className={styles.group}>
-            <textarea name="" id="" ></textarea>
-          </div>
-
-          <div className={styles.actions}>
-            <button>现在聊天</button>
-            <button>联系我们</button>
-          </div>
-        </div>
-
-      </div>
+      <Form />
       <div className={styles.sliderWrapper}>
 
         <div className={styles.slider}>
@@ -126,24 +102,7 @@ const Home: NextPage = () => {
 
       </div>
 
-      <div className={styles.companies}>
-        <div className={styles.companiesHeader}>
-          <h2>满意的客户</h2>
-        </div>
-        <div className={styles.countries}>
-          <div className={styles.image}>
-            <Image
-            objectFit='contain'
-              alt=''
-              src='/home/countries.png'
-              layout='fill'
-            />
-          </div>
-          <span>向国内外顶级客户成功交付超过400个重大项目</span>
-        </div>
-        <div className={styles.companiesSlider}>
-        </div>
-      </div>
+      <Companies />
     </Layout>
   )
 }
