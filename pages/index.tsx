@@ -70,7 +70,6 @@ const Home: NextPage = () => {
         </div>
 
       </div>
-
       <div className={styles.form}>
         <h2>联系我们</h2>
 
@@ -97,6 +96,53 @@ const Home: NextPage = () => {
           </div>
         </div>
 
+      </div>
+      <div className={styles.sliderWrapper}>
+
+        <div className={styles.slider}>
+
+        </div>
+
+        <div className={styles.content}>
+          <h2>关于我们</h2>
+          <span>总部位于新莱昂州蒙特雷的VYNMSA (秉厦) 工业建筑开发有限责任公司成立于1994年, 27年以来为全球顶尖客户交付了400多个项目, 在墨西哥建有23多个工业园区, 引领着墨西哥工业房地产行业的发展。</span>
+        </div>
+
+      </div>
+
+      <div className={styles.videoWrapper}>
+
+        <Image
+          objectFit='cover'
+          src='/home/video-bg.jpeg'
+          layout='fill'
+        />
+
+        <div className={styles.content}>
+          <span>VYNMSA始终视工业房地产市场最高标准为目标, 为客户建设超出其预期和需求的3A工业设施</span>
+
+          <video src=""></video>
+        </div>
+
+      </div>
+
+      <div className={styles.companies}>
+        <div className={styles.companiesHeader}>
+          <h2>满意的客户</h2>
+        </div>
+        <div className={styles.countries}>
+          <div className={styles.image}>
+            <Image
+            objectFit='contain'
+              alt=''
+              src='/home/countries.png'
+              layout='fill'
+            />
+          </div>
+          <span>向国内外顶级客户成功交付超过400个重大项目</span>
+        </div>
+        <div className={styles.companiesSlider}>
+        </div>
       </div>
     </Layout>
   )
