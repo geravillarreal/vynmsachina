@@ -66,6 +66,7 @@ const AboutUs = () => {
       <div className={styles.background}>
 
         <Image
+          alt=''
           objectFit='cover'
           layout='fill'
           src='/about-us/bg6.jpeg' />

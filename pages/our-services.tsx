@@ -1,0 +1,178 @@
+import Image from 'next/image'
+import React from 'react'
+import Layout from '../components/Layout'
+import styles from '../styles/OurServices.module.scss'
+
+const AboutUs = () => {
+
+
+  const icons = [
+    {
+      image: '/our-services/icons/icon-1.png',
+      text: '运输'
+    },
+    {
+      image: '/our-services/icons/icon-1.png',
+      text: '运输'
+    },
+    {
+      image: '/our-services/icons/icon-1.png',
+      text: '运输'
+    },
+    {
+      image: '/our-services/icons/icon-1.png',
+      text: '运输'
+    },
+    {
+      image: '/our-services/icons/icon-1.png',
+      text: '运输'
+    },
+    {
+      image: '/our-services/icons/icon-1.png',
+      text: '运输'
+    },
+    {
+      image: '/our-services/icons/icon-1.png',
+      text: '运输'
+    },
+    {
+      image: '/our-services/icons/icon-1.png',
+      text: '运输'
+    },
+    {
+      image: '/our-services/icons/icon-1.png',
+      text: '运输'
+    },
+    {
+      image: '/our-services/icons/icon-1.png',
+      text: '运输'
+    },
+    {
+      image: '/our-services/icons/icon-1.png',
+      text: '运输'
+    },
+    {
+      image: '/our-services/icons/icon-1.png',
+      text: '运输'
+    },
+  ]
+
+  return (
+    <Layout title='About us'>
+      <div className={styles.header}>
+        <Image
+          alt=''
+          objectFit='cover'
+          layout='fill'
+          src='/our-services/header.jpeg'
+        />
+
+      </div>
+      <div className={styles.intro}>
+        <span>
+          作为墨西哥工业房地产专业的建筑开发商，VYNMSA(秉厦)承载着30年的丰富经验，并始终初心如一，不断进取，根据每一位客户的需求提供最优质的的个性化服务。
+        </span>
+        <div className={styles.slider}>
+          <div className={styles.slide}>
+            <Image
+              alt=''
+              objectFit='cover'
+              layout='fill'
+              src='/about-us/intro/slide-1.jpeg' />
+          </div>
+
+        </div>
+      </div>
+
+      <div className={styles.section}>
+        <h2>现有厂房</h2>
+        <span>多个5000平米以上的国际AAA级高标准厂房，可平面改造或扩建，欢迎企业立即进驻。</span>
+
+        <div className="green-border-top-left">
+          <Image
+            alt=''
+            objectFit='cover'
+            layout='fill'
+            src='/about-us/section.jpeg' />
+        </div>
+      </div>
+      <div className={styles.section}>
+        <h2>厂房订制</h2>
+        <span>
+          秉厦作为一流的工业地产开发商和建造商，可视客户具体需求优质、准时、按预算建造和交付厂房。
+        </span>
+
+        <div className="green-border-top-left">
+          <Image
+            alt=''
+            objectFit='cover'
+            layout='fill'
+            src='/about-us/section.jpeg' />
+        </div>
+      </div>
+
+
+
+      <div className={styles.background}>
+        <Image
+          objectFit='cover'
+          layout='fill'
+          src='/our-services/bg.png' />
+        <div className={styles.content}>
+          <h3>标准厂房租售</h3>
+          <span>联系VYNMSA，我们将超出您的期望！
+          </span>
+          <button>联系我们</button>
+        </div>
+      </div>
+      <div className={styles.icons}>
+        <span>此外，我们还可进一步为跨国企业工业项目落地墨西哥提供支持</span>
+        <div className={styles.grid}>
+          {
+            icons.map(icon => (
+              <div className={styles.icon} key={icon.text}>
+                <div className={styles.image}>
+                  <Image
+                    objectFit='cover'
+                    layout='fill'
+                    src={icon.image} />
+                </div>
+                <span>{icon.text}</span>
+              </div>
+            ))
+          }
+        </div>
+
+        <div className="green-border-bottom-left">
+          <Image
+            alt=''
+            objectFit='cover'
+            layout='fill'
+            src='/about-us/section.jpeg' />
+        </div>
+      </div>
+
+      <div className={styles.section}>
+        <h2>在墨西哥拥有工业厂房的优势</h2>
+        <span>
+          更快更好地进入本土和北美、南美的庞大市场。众多跨国企业不仅青睐于墨西哥战略性的地理位置，还因其贸易开放程度高、人口红利、劳动力优质、制造实力强大、产业齐全、生产率高、税费负担小、基础设施完备、财政框架稳定而在此投资经。
+        </span>
+
+        <div className="green-border-top-left">
+          <Image
+            alt=''
+            objectFit='cover'
+            layout='fill'
+            src='/about-us/section.jpeg' />
+        </div>
+      </div>
+
+      <div className={styles.cta}>
+        <h3>联系VYNMSA, 我们将超出您的期望!</h3>
+        <button className='btn btn-green'>联系我们</button>
+      </div>
+    </Layout>
+  )
+}
+
+export default AboutUs
