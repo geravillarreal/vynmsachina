@@ -1,0 +1,19 @@
+.header {
+  height: 50vh;
+  position: relative;
+}
+
+.quote {
+  padding: 80px 20px;
+
+  .top {
+    margin-bottom: 50px;
+    span {
+      display: block;
+      text-align: center;
+    }
+  }
+  .bottom {
+    margin-bottom: 50px;
+  }
+}
