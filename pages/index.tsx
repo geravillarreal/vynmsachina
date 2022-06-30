@@ -97,7 +97,7 @@ const Home: NextPage = () => {
         <div className={styles.content}>
           <span>VYNMSA始终视工业房地产市场最高标准为目标, 为客户建设超出其预期和需求的3A工业设施</span>
 
-          <video src=""></video>
+          <video src="/home/video1.mp4"></video>
         </div>
 
       </div>
