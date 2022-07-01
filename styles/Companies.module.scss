@@ -8,10 +8,16 @@
   }
 
   .countries {
+    margin-bottom: 20px;
     .image {
       height: 60px;
       position: relative;
       margin-bottom: 20px;
+    }
+  }
+  .companiesSlider {
+    .image {
+      aspect-ratio: 1;
     }
   }
 }
