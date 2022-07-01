@@ -53,6 +53,10 @@ const Home: NextPage = () => {
           src='/home/home-header.jpeg'
         />
 
+        <div className={styles.wave1}>
+
+        </div>
+
       </div>
       <div className={styles.services}>
 
@@ -73,6 +77,9 @@ const Home: NextPage = () => {
 
         </div>
 
+      </div>
+      <div className={styles.wave2}>
+        
       </div>
       <Form />
       <div className={styles.sliderWrapper}>
@@ -99,7 +106,7 @@ const Home: NextPage = () => {
         <div className={styles.content}>
           <span>VYNMSA始终视工业房地产市场最高标准为目标, 为客户建设超出其预期和需求的3A工业设施</span>
           <div className={styles.video}>
-          <video autoPlay loop playsInline muted src="/home/video1.mp4"></video>
+            <video autoPlay loop playsInline muted src="/home/video1.mp4"></video>
           </div>
         </div>
       </div>

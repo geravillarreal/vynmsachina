@@ -2,6 +2,17 @@
   height: 60vh;
   position: relative;
 
+  .wave1 {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-image: url("/home/wave1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: -45px;
+  }
+
   .content {
     position: absolute;
     background-color: rgba(22, 58, 31, 0.7);
@@ -39,6 +50,16 @@
       }
     }
   }
+}
+
+.wave2 {
+  height: 150px;
+  width: 100%;
+  background-image: url("/home/wave2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: -100px;
+  margin-top: -50px;
 }
 
 .sliderWrapper {
