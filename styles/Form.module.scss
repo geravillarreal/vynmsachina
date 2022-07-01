@@ -2,7 +2,6 @@
   padding: 80px 20px;
   h2 {
     text-align: center;
-    margin-bottom: 50px;
   }
   .fields {
     .group {
@@ -14,11 +13,11 @@
       select {
         height: 42px;
         font-size: 16px;
-        border: 1px solid green;
+        border: 1px solid #007d64;
       }
       textarea {
         font-size: 16px;
-        border: 1px solid green;
+        border: 1px solid #007d64;
         resize: none;
         height: 200px;
       }

@@ -56,9 +56,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    h3 {
+      margin-bottom: 30px;
+    }
     span {
       display: block;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
   }
 }

@@ -53,18 +53,11 @@
     border: 20px solid gray;
     margin-bottom: 50px;
   }
-
-  .content {
-    h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-  }
 }
 
 .videoWrapper {
   position: relative;
-  padding: 50px 20px;
+  padding: 100px 20px;
 
   .content {
     position: relative;
@@ -76,9 +69,33 @@
       margin-bottom: 50px;
     }
 
-    video {
-      height: 300px;
+    .video {
       width: 100%;
+      position: relative;
+      video {
+        width: 100%;
+        z-index: 99;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        background-color: #007d64;
+        width: 100px;
+        height: 100px;
+        left: -10px;
+        top: -10px;
+        z-index: -1;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: #007d64;
+        width: 100px;
+        height: 100px;
+        right: -10px;
+        bottom: -10px;
+        z-index: -1;
+      }
     }
   }
 }

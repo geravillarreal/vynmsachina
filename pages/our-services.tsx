@@ -3,8 +3,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 import styles from '../styles/OurServices.module.scss'
 
-const AboutUs = () => {
-
+const OurServices = () => {
 
   const icons = [
     {
@@ -58,7 +57,7 @@ const AboutUs = () => {
   ]
 
   return (
-    <Layout title='About us'>
+    <Layout title='Our Services'>
       <div className={styles.header}>
         <Image
           alt=''
@@ -78,26 +77,30 @@ const AboutUs = () => {
               alt=''
               objectFit='cover'
               layout='fill'
-              src='/about-us/intro/slide-1.jpeg' />
+              src='/our-services/1.jpeg' />
           </div>
 
         </div>
       </div>
 
       <div className={styles.section}>
-        <h2>现有厂房</h2>
+        <div className="underlined">
+          <h2>现有厂房</h2>
+        </div>
         <span>多个5000平米以上的国际AAA级高标准厂房，可平面改造或扩建，欢迎企业立即进驻。</span>
 
-        <div className="green-border-top-left">
+        <div className="green-border-bottom-left">
           <Image
             alt=''
             objectFit='cover'
             layout='fill'
-            src='/about-us/section.jpeg' />
+            src='/our-services/4.jpeg' />
         </div>
       </div>
       <div className={styles.section}>
-        <h2>厂房订制</h2>
+        <div className="underlined">
+          <h2>厂房订制</h2>
+        </div>
         <span>
           秉厦作为一流的工业地产开发商和建造商，可视客户具体需求优质、准时、按预算建造和交付厂房。
         </span>
@@ -107,22 +110,22 @@ const AboutUs = () => {
             alt=''
             objectFit='cover'
             layout='fill'
-            src='/about-us/section.jpeg' />
+            src='/our-services/5.jpeg' />
         </div>
       </div>
 
-
-
       <div className={styles.background}>
         <Image
+          alt=''
           objectFit='cover'
           layout='fill'
           src='/our-services/bg.png' />
         <div className={styles.content}>
           <h3>标准厂房租售</h3>
-          <span>联系VYNMSA，我们将超出您的期望！
+          <span>
+            无论客户在墨投资计划长短，我们都能根据其具体需求提供最适合的厂房出租或销售选择，相较其他工业园更具优势。
           </span>
-          <button>联系我们</button>
+          <button className='btn'>厂房清单查询</button>
         </div>
       </div>
       <div className={styles.icons}>
@@ -133,6 +136,7 @@ const AboutUs = () => {
               <div className={styles.icon} key={icon.text}>
                 <div className={styles.image}>
                   <Image
+                    alt=''
                     objectFit='cover'
                     layout='fill'
                     src={icon.image} />
@@ -148,7 +152,7 @@ const AboutUs = () => {
             alt=''
             objectFit='cover'
             layout='fill'
-            src='/about-us/section.jpeg' />
+            src='/our-services/8.jpeg' />
         </div>
       </div>
 
@@ -163,7 +167,7 @@ const AboutUs = () => {
             alt=''
             objectFit='cover'
             layout='fill'
-            src='/about-us/section.jpeg' />
+            src='/our-services/9.jpeg' />
         </div>
       </div>
 
@@ -175,4 +179,4 @@ const AboutUs = () => {
   )
 }
 
-export default AboutUs
+export default OurServices

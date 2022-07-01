@@ -43,17 +43,20 @@ const Nav = () => {
     <nav className={styles.navWrapper}>
       <div className={styles.nav}>
 
-        <div className={styles.logo}>
+        <Link
+          href='/'
+          className={styles.logo}>
+          <a>
+            <Image
+              src='/logo-vynmsa.png'
+              width={100}
+              height={60}
+              objectFit='contain'
+              alt=''
+            />
+          </a>
 
-          <Image
-            src='/logo-vynmsa.png'
-            width={100}
-            height={60}
-            objectFit='contain'
-            alt=''
-          />
-
-        </div>
+        </Link>
 
         <div className={styles.links}>
 

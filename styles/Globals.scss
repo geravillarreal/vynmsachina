@@ -21,6 +21,26 @@ a {
   padding-top: 85px;
 }
 
+.underlined {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  h2 {
+    width: fit-content;
+    position: relative;
+    &::after {
+      content: "";
+      background-color: #007d64;
+      width: 80%;
+      height: 3px;
+      position: absolute;
+      left: 50%;
+      bottom: -10px;
+      transform: translate(-50%, 0);
+    }
+  }
+}
+
 .green-border-top-left {
   position: relative;
   height: 240px;
