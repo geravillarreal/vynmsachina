@@ -59,7 +59,7 @@ const Home: NextPage = () => {
           src='/home/home-header.jpeg'
         />
 
-        <div className={styles.wave1}>
+        <div className='wave1'>
 
         </div>
 

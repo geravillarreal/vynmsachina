@@ -14,6 +14,8 @@ const AboutUs = () => {
           src='/about-us/header.png'
         />
 
+        <div className="wave1"></div>
+
       </div>
       <div className={styles.intro}>
         <div className="underlined">

@@ -38,7 +38,7 @@ const RecruitingAgents = () => {
           layout='fill'
           src='/recruiting-agents/header.jpeg'
         />
-        <div className={styles.wave1}></div>
+        <div className='wave1'></div>
       </div>
       <Form />
 

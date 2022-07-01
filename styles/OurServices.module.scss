@@ -1,17 +1,6 @@
 .header {
   height: 50vh;
   position: relative;
-
-  .wave1 {
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    background-image: url("/home/wave1.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    bottom: -45px;
-  }
 }
 
 .intro {

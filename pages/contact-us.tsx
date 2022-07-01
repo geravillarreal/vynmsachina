@@ -13,10 +13,9 @@ const ContactUs = () => {
           layout='fill'
           alt=''
           src='/contact-us/contact-header.jpeg' />
+        <div className="wave1"></div>
       </div>
-
       <Form />
-
       <div style={{
         padding: 20
       }}>

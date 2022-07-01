@@ -25,7 +25,7 @@ const Nav = () => {
     },
     {
       title: '可用厂房',
-      path: '/available workshops'
+      path: '/available-workshops'
     },
     {
       title: '博客',

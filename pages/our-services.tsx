@@ -11,48 +11,48 @@ const OurServices = () => {
       text: '运输'
     },
     {
-      image: '/our-services/icons/icon-1.png',
-      text: '运输'
+      image: '/our-services/icons/icon-2.png',
+      text: '自动化 '
     },
     {
-      image: '/our-services/icons/icon-1.png',
-      text: '运输'
+      image: '/our-services/icons/icon-3.png',
+      text: '会计'
     },
     {
-      image: '/our-services/icons/icon-1.png',
-      text: '运输'
+      image: '/our-services/icons/icon-4.png',
+      text: '员工住宿'
     },
     {
-      image: '/our-services/icons/icon-1.png',
-      text: '运输'
+      image: '/our-services/icons/icon-5.png',
+      text: '招聘'
     },
     {
-      image: '/our-services/icons/icon-1.png',
-      text: '运输'
+      image: '/our-services/icons/icon-6.png',
+      text: '安保服务'
     },
     {
-      image: '/our-services/icons/icon-1.png',
-      text: '运输'
+      image: '/our-services/icons/icon-7.png',
+      text: '进出口'
     },
     {
-      image: '/our-services/icons/icon-1.png',
-      text: '运输'
+      image: '/our-services/icons/icon-8.png',
+      text: '货运服务 '
     },
     {
-      image: '/our-services/icons/icon-1.png',
-      text: '运输'
+      image: '/our-services/icons/icon-9.png',
+      text: '法律咨询 '
     },
     {
-      image: '/our-services/icons/icon-1.png',
-      text: '运输'
+      image: '/our-services/icons/icon-10.png',
+      text: '项目管理'
     },
     {
-      image: '/our-services/icons/icon-1.png',
-      text: '运输'
+      image: '/our-services/icons/icon-11.png',
+      text: '人力资源'
     },
     {
-      image: '/our-services/icons/icon-1.png',
-      text: '运输'
+      image: '/our-services/icons/icon-12.png',
+      text: '企业管理'
     },
   ]
 
@@ -66,7 +66,7 @@ const OurServices = () => {
           src='/our-services/header.jpeg'
         />
 
-        <div className={styles.wave1}>
+        <div className='wave1'>
 
         </div>
 
