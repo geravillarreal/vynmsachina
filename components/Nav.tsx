@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import React, { useState } from 'react'
 import styles from '../styles/Nav.module.scss'
 
@@ -36,8 +37,9 @@ const Nav = () => {
     },
   ]
 
-
   const [visible, setVisible] = useState(false)
+
+  const { asPath } = useRouter()
 
   return (
     <nav className={styles.navWrapper}>
@@ -86,7 +88,11 @@ const Nav = () => {
                   }}
                   href={link.path}
                   key={link.title}>
-                  <a href="">{link.title}</a>
+                  <a
+                    style={{
+                      color: asPath === link.path ? '#007d64' : undefined
+                    }}
+                  >{link.title}</a>
                 </Link>
               ))
             }

@@ -5,6 +5,12 @@ import Companies from '../components/Companies'
 import Form from '../components/Form'
 import Layout from '../components/Layout'
 import styles from '../styles/Home.module.scss'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
 
 const Home: NextPage = () => {
 
@@ -79,12 +85,58 @@ const Home: NextPage = () => {
 
       </div>
       <div className={styles.wave2}>
-        
+
       </div>
       <Form />
       <div className={styles.sliderWrapper}>
 
         <div className={styles.slider}>
+
+          <Swiper
+            loop
+            autoplay={{
+              disableOnInteraction: false
+            }}
+            spaceBetween={50}
+            slidesPerView={1}
+            modules={[Autoplay]}
+          /*           modules={[Pagination]}
+                    pagination */
+          >
+            <SwiperSlide>
+              <div className={styles.image}>
+                <Image
+                  objectFit='cover'
+                  alt=''
+                  layout='fill'
+                  src='/home/slider/slide-1.jpeg'
+
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.image}>
+                <Image
+                  objectFit='cover'
+                  alt=''
+                  layout='fill'
+                  src='/home/slider/slide-2.jpeg'
+
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.image}>
+                <Image
+                  objectFit='cover'
+                  alt=''
+                  layout='fill'
+                  src='/home/slider/slide-3.jpeg'
+
+                />
+              </div>
+            </SwiperSlide>
+          </Swiper>
 
         </div>
 

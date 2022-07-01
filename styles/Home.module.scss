@@ -73,6 +73,15 @@
     border-radius: 300px;
     border: 20px solid gray;
     margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    .image {
+      position: relative;
+      height: 300px;
+      width: 300px;
+    }
   }
 }
 

@@ -32,16 +32,14 @@ const RecruitingAgents = () => {
 
   return (
     <Layout title='Recruiting agents'>
-
       <div className={styles.header}>
-
         <Image
+          alt=''
           layout='fill'
           src='/recruiting-agents/header.jpeg'
         />
-
+        <div className={styles.wave1}></div>
       </div>
-
       <Form />
 
       <div className={styles.section}>
@@ -80,11 +78,10 @@ const RecruitingAgents = () => {
           }
         </div>
       </div>
-
       <div className={styles.images}>
         <div className={styles.image}>
           <Image
-          objectFit='cover'
+            objectFit='cover'
             layout='fill'
             src='/recruiting-agents/img-1.jpeg'
             alt=''
@@ -92,7 +89,7 @@ const RecruitingAgents = () => {
         </div>
         <div className={styles.image}>
           <Image
-          objectFit='cover'
+            objectFit='cover'
             layout='fill'
             src='/recruiting-agents/img-2.jpeg'
             alt=''
@@ -100,7 +97,7 @@ const RecruitingAgents = () => {
         </div>
         <div className={styles.image}>
           <Image
-          objectFit='cover'
+            objectFit='cover'
             layout='fill'
             src='/recruiting-agents/img-3.jpeg'
             alt=''

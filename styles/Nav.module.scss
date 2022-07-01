@@ -31,6 +31,8 @@
   flex-direction: column;
   padding: 0px 30px 30px 30px;
   a {
-    margin-bottom: 20px;
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
   }
 }

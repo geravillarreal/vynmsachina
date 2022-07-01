@@ -66,6 +66,10 @@ const OurServices = () => {
           src='/our-services/header.jpeg'
         />
 
+        <div className={styles.wave1}>
+
+        </div>
+
       </div>
       <div className={styles.intro}>
         <span>
