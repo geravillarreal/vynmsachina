@@ -21,3 +21,16 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .companies {
+    max-width: 70%;
+    margin: auto;
+
+    .countries,
+    .companiesSlider {
+      width: 70%;
+      margin: 20px auto;
+    }
+  }
+}

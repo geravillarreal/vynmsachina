@@ -64,3 +64,35 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .footerWrapper {
+    .footer {
+      width: 70%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        "links social"
+        "links qr"
+        "bottom bottom";
+
+      .qr {
+        grid-area: qr;
+      }
+      .links {
+        grid-area: links;
+      }
+      .social {
+        grid-area: social;
+        justify-content: center;
+        margin-bottom: 0;
+        height: 100%;
+      }
+      .bottom {
+        grid-area: bottom;
+        text-align: center;
+      }
+    }
+  }
+}
