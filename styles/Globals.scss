@@ -2,8 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-    Helvetica Neue, sans-serif;
+  font-family: "Microsoft Yahei", sans-serif;
 }
 
 html {
@@ -134,5 +133,14 @@ a {
   .wave1 {
     height: 180px;
     background-image: url("/home/wave1.png");
+  }
+}
+
+
+@media(min-width: 1024px){
+  .underlined{
+    h2{
+      font-size: 45px;
+    }
   }
 }

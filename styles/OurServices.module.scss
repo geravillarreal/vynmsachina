@@ -137,3 +137,11 @@
     }
   }
 }
+
+@media (min-width: 1024px) {
+  .intro {
+    .slider {
+      height: 500px;
+    }
+  }
+}

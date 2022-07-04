@@ -21,6 +21,10 @@
   }
 }
 
+.links {
+  display: none;
+}
+
 .menuMobile {
   position: absolute;
   background-color: white;
@@ -34,5 +38,29 @@
     &:not(:last-child) {
       margin-bottom: 25px;
     }
+  }
+}
+
+@media (min-width: 1024px) {
+  .navWrapper {
+    .nav {
+      height: 100%;
+      max-width: 1200px;
+      margin: auto;
+    }
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    a {
+      &:not(:last-child) {
+        margin-right: 60px;
+      }
+    }
+  }
+  .menuMobile,
+  .menu {
+    display: none;
   }
 }

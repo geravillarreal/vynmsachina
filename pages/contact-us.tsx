@@ -8,7 +8,7 @@ const ContactUs = () => {
   return (
     <Layout title='Contact us'>
 
-      <div className={styles.header}>
+      <div className='header'>
         <Image
           layout='fill'
           alt=''

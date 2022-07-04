@@ -11,7 +11,7 @@ export default function Index({ allPosts: { edges } }: any) {
   return (
     <Layout title='Blog' >
 
-      <div className={styles.header}>
+      <div className='header'>
         <Image
           layout='fill'
           objectFit='cover'

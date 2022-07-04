@@ -32,7 +32,7 @@ const RecruitingAgents = () => {
 
   return (
     <Layout title='Recruiting agents'>
-      <div className={styles.header}>
+      <div className='header'>
         <Image
           alt=''
           layout='fill'

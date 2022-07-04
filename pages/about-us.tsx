@@ -53,7 +53,7 @@ const AboutUs = () => {
 
   return (
     <Layout title='About us'>
-      <div className={styles.header}>
+      <div className='header'>
         <Image
           alt=''
           objectFit='cover'
