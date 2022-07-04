@@ -103,3 +103,25 @@
     color: #007d64;
   }
 }
+
+@media (min-width: 768px) {
+  .intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .slider {
+      width: 50%;
+      flex-shrink: 0;
+    }
+
+    .content {
+      background-color: #f0f0f0;
+      padding: 30px;
+      width: 35%;
+      position: relative;
+      left: 30px;
+      z-index: 1;
+    }
+  }
+}

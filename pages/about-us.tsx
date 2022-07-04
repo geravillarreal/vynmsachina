@@ -4,6 +4,53 @@ import Layout from '../components/Layout'
 import styles from '../styles/AboutUs.module.scss'
 
 const AboutUs = () => {
+
+  const grid1 = [
+    {
+      icon: '/about-us/icon1.1.png',
+      title: '目标',
+      text: '我们始终视服务至上和超出客户预期为目标，您的项目将始终按预算、时间、按要求交付给您'
+    },
+    {
+      icon: '/about-us/icon1.2.png',
+      title: '愿景',
+      text: '成为国内外企业在墨西哥投资经商时物色工业园区的第一选择'
+    },
+  ]
+
+  const grid2 = [
+    {
+      icon: '/about-us/icon2.1.png',
+      title: '诚实',
+      text: '对客户、供应商、员工始终保持诚实'
+    },
+    {
+      icon: '/about-us/icon2.2.png',
+      title: '尊重',
+      text: '绝不因他人的社会地位、经济条件或职务而对其歧视或区别对待'
+    },
+    {
+      icon: '/about-us/icon2.3.png',
+      title: '正直',
+      text: '尊重事实，坚守正确的价值观'
+    },
+    {
+      icon: '/about-us/icon2.4.png',
+      title: '勤勉',
+      text: '全心全意奋力达成为客户提出的承诺'
+    },
+    {
+      icon: '/about-us/icon2.5.png',
+      title: '环保',
+      text: '鼓励员工和客户为保护环境出一份力，共同为我们的家园负责，留下绿色环保的印记'
+    },
+    {
+      icon: '/about-us/icon2.6.png',
+      title: '道德',
+      text: '公司编有员工道德准则指南，要求所有员工将商业道德视为工作基准'
+    },
+  ]
+
   return (
     <Layout title='About us'>
       <div className={styles.header}>
@@ -18,10 +65,14 @@ const AboutUs = () => {
 
       </div>
       <div className={styles.intro}>
-        <div className="underlined">
-          <h2>历史</h2>
+
+        <div className={styles.content}>
+          <div className="underlined">
+            <h2>历史</h2>
+          </div>
+          <span>集团成立于1994年, 作为顶尖工业地产开发集团之一, 秉厦23个工业园区分布于墨西哥东北部和中部最具优势的5个州, 为制造、出口、物流、本地贸易企业和希望在墨境内寻找厂房或仓储空间的境外投资者提供最佳位置。</span>
+
         </div>
-        <span>集团成立于1994年, 作为顶尖工业地产开发集团之一, 秉厦23个工业园区分布于墨西哥东北部和中部最具优势的5个州, 为制造、出口、物流、本地贸易企业和希望在墨境内寻找厂房或仓储空间的境外投资者提供最佳位置。</span>
         <div className={styles.slider}>
 
           <div className={styles.slide}>
@@ -32,6 +83,47 @@ const AboutUs = () => {
               src='/about-us/intro/slide-1.jpeg' />
           </div>
 
+        </div>
+      </div>
+
+      <div className={styles.values}>
+        <Image
+          layout='fill'
+          objectFit='cover'
+          src='/about-us/bg-green.png'
+          alt=''
+        />
+        <div className={styles.grid1}>
+          {
+            grid1.map(item => (
+              <div className={styles.item} key={item.title}>
+                <Image
+                  width={40}
+                  height={40}
+                  alt=''
+                  src={item.icon}
+                />
+                <h3>{item.title}</h3>
+                <span>{item.text}</span>
+              </div>
+            ))
+          }
+        </div>
+        <div className={styles.grid2}>
+          {
+            grid2.map(item => (
+              <div className={styles.item} key={item.title}>
+                <Image
+                  width={40}
+                  height={40}
+                  alt=''
+                  src={item.icon}
+                />
+                <h3>{item.title}</h3>
+                <span>{item.text}</span>
+              </div>
+            ))
+          }
         </div>
       </div>
 

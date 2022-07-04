@@ -6,6 +6,10 @@ body {
     Helvetica Neue, sans-serif;
 }
 
+html {
+  font-size: 16px;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -126,9 +130,8 @@ a {
   color: white;
 }
 
-
-@media(min-width: 768px){
-  .wave1{
+@media (min-width: 768px) {
+  .wave1 {
     height: 180px;
     background-image: url("/home/wave1.png");
   }

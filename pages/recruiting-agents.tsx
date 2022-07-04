@@ -42,21 +42,25 @@ const RecruitingAgents = () => {
       </div>
       <Form />
 
-      <div className={styles.section}>
-        <span>
-          VYNMSA (秉厦) 一路走来，所取得的成功与各招商代理的配合密不可分，多年前就已与全球知名地产服务及代理机构如世邦魏理仕、仲量联行 、萊坊、戴德梁行、高力国际等建立起了良好的合作关系，共同协助客户租用和投资墨西哥房地产。
-          凭借其丰富的行业经验和专业知识，秉厦将给予代理商 大力度的扶持，让代理商更好地完成各类高要求、个性 化工业地产项目。
-        </span>
+      <div className={styles.sectionWrapper}>
+        <div className={styles.section}>
+          <span>
+            VYNMSA (秉厦) 一路走来，所取得的成功与各招商代理的配合密不可分，多年前就已与全球知名地产服务及代理机构如世邦魏理仕、仲量联行 、萊坊、戴德梁行、高力国际等建立起了良好的合作关系，共同协助客户租用和投资墨西哥房地产。
+            凭借其丰富的行业经验和专业知识，秉厦将给予代理商 大力度的扶持，让代理商更好地完成各类高要求、个性 化工业地产项目。
+          </span>
 
-        <div className={styles.image}>
-          <Image
-            alt=''
-            objectFit='contain'
-            layout='fill'
-            src='/recruiting-agents/companies.gif'
-          />
+          <div className={styles.image}>
+            <Image
+              alt=''
+              objectFit='contain'
+              layout='fill'
+              src='/recruiting-agents/companies.gif'
+            />
+          </div>
         </div>
       </div>
+
+
       <div className={styles.section}>
         <h3>代理VYNMSA(秉厦)有哪些优势？</h3>
         <span>

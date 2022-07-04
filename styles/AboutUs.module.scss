@@ -31,6 +31,30 @@
   }
 }
 
+.values {
+  position: relative;
+  padding: 100px 50px;
+  .grid1,
+  .grid2 {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 70px;
+    row-gap: 30px;
+  }
+
+  .grid1 {
+    margin-bottom: 100px;
+  }
+
+  .item {
+    color: white;
+    h3 {
+      margin: 10px 0;
+    }
+  }
+}
+
 .section,
 .outro {
   padding: 50px 20px;
@@ -57,6 +81,40 @@
     span {
       display: block;
       margin-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .intro {
+    display: flex;
+    justify-content: center;
+    padding-top: 160px;
+    align-items: center;
+    .slider {
+      width: 50%;
+      flex-shrink: 0;
+    }
+    .content {
+      background-color: #f0f0f0;
+      width: 35%;
+      padding: 30px;
+      margin-top: -100px;
+      left: 50px;
+      position: relative;
+      z-index: 99;
+    }
+  }
+
+  .values {
+    .grid1 {
+      width: 40%;
+      margin: 0 auto 100px auto;
+    }
+    .grid2 {
+      width: 80%;
+      grid-template-columns: repeat(3, 1fr);
+      margin: auto;
     }
   }
 }

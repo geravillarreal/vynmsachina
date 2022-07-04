@@ -72,9 +72,11 @@ const OurServices = () => {
 
       </div>
       <div className={styles.intro}>
-        <span>
-          作为墨西哥工业房地产专业的建筑开发商，VYNMSA(秉厦)承载着30年的丰富经验，并始终初心如一，不断进取，根据每一位客户的需求提供最优质的的个性化服务。
-        </span>
+        <div className={styles.content}>
+          <span>
+            作为墨西哥工业房地产专业的建筑开发商，VYNMSA(秉厦)承载着30年的丰富经验，并始终初心如一，不断进取，根据每一位客户的需求提供最优质的的个性化服务。
+          </span>
+        </div>
         <div className={styles.slider}>
           <div className={styles.slide}>
             <Image
