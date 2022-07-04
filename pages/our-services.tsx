@@ -88,12 +88,13 @@ const OurServices = () => {
 
         </div>
       </div>
-
-      <div className={styles.section}>
-        <div className="underlined">
-          <h2>现有厂房</h2>
+      <div className={`${styles.section} ${styles.section1}`}>
+        <div className={styles.content}>
+          <div className="underlined">
+            <h2>现有厂房</h2>
+          </div>
+          <span>多个5000平米以上的国际AAA级高标准厂房，可平面改造或扩建，欢迎企业立即进驻。</span>
         </div>
-        <span>多个5000平米以上的国际AAA级高标准厂房，可平面改造或扩建，欢迎企业立即进驻。</span>
 
         <div className="green-border-bottom-left">
           <Image
@@ -119,7 +120,6 @@ const OurServices = () => {
             src='/our-services/5.jpeg' />
         </div>
       </div>
-
       <div className={styles.background}>
         <Image
           alt=''
