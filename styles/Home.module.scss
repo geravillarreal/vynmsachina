@@ -195,29 +195,29 @@
 
   .sliderWrapper {
     .slider {
-      width: 50%;
-      height: 100%;
-      aspect-ratio: 1 / 1;
-      border-radius: 50%;
-      border: 40px solid gray;
+      width: 400px;
+      height: 400px;
+
+      border-radius: 400px;
+      border: 35px solid gray;
       margin-left: 50px;
       .image {
-        width: 100%;
-        padding-top: 100%;
+        width: 400px;
+        height: 400px;
       }
     }
   }
 
-  .videoWrapper{
-    .content{
-      .video{
-        &::before{
+  .videoWrapper {
+    .content {
+      .video {
+        &::before {
           width: 300px;
           height: 300px;
           left: -30px;
           top: -30px;
         }
-        &::after{
+        &::after {
           width: 300px;
           height: 300px;
           bottom: -30px;

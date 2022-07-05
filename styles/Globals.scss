@@ -24,6 +24,11 @@ a {
   padding-top: 85px;
 }
 
+.header {
+  height: 50vh;
+  position: relative;
+}
+
 .wave1 {
   position: absolute;
   width: 100%;
@@ -136,11 +141,20 @@ a {
   }
 }
 
-
-@media(min-width: 1024px){
-  .underlined{
-    h2{
+@media (min-width: 1024px) {
+  .header {
+    height: 80vh;
+  }
+  .underlined {
+    h2 {
       font-size: 45px;
     }
+  }
+
+  .green-border-top-left,
+  .green-border-top-right,
+  .green-border-bottom-left,
+  .green-border-bottom-right {
+    height: 400px;
   }
 }

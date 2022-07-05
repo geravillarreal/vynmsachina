@@ -44,7 +44,7 @@ const Home: NextPage = () => {
 
   return (
     <Layout title=''>
-      <div className='header'>
+      <div className={styles.header}>
 
         <div className={styles.content}>
           <h1>墨西哥工业房地产</h1>

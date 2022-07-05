@@ -10,6 +10,7 @@ const ContactUs = () => {
 
       <div className='header'>
         <Image
+          objectFit='cover'
           layout='fill'
           alt=''
           src='/contact-us/contact-header.jpeg' />
