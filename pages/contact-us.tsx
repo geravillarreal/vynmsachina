@@ -16,18 +16,22 @@ const ContactUs = () => {
           src='/contact-us/contact-header.jpeg' />
         <div className="wave1"></div>
       </div>
-      <Form />
-      <div style={{
-        padding: 20
-      }}>
-        <div
+      <div className={styles.section1}>
+        <Form />
+        <div 
+        className={styles.image}
+        style={{
+          padding: 20
+        }}>
+          <div
 
-          className="green-border-bottom-right">
-          <Image
-            alt=''
-            objectFit='cover'
-            layout='fill'
-            src='/contact-us/image-1.jpeg' />
+            className="green-border-bottom-right">
+            <Image
+              alt=''
+              objectFit='cover'
+              layout='fill'
+              src='/contact-us/image-1.jpeg' />
+          </div>
         </div>
       </div>
 

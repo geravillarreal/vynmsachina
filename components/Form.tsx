@@ -8,20 +8,24 @@ const Form = () => {
       </div>
 
       <div className={styles.fields}>
-        <div className={styles.group}>
-          <input placeholder='请输入您的姓名' type="text" />
+        <div className={styles.col1}>
+          <div className={styles.group}>
+            <input placeholder='请输入您的姓名' type="text" />
+          </div>
+          <div className={styles.group}>
+            <input placeholder='请输入您的电话' type="text" />
+          </div>
+          <div className={styles.group}>
+            <input placeholder='请输入您的电话' type="text" />
+          </div>
+          <div className={styles.group}>
+            <select name="" id=""></select>
+          </div>
         </div>
-        <div className={styles.group}>
-          <input placeholder='请输入您的电话' type="text" />
-        </div>
-        <div className={styles.group}>
-          <input placeholder='请输入您的电话' type="text" />
-        </div>
-        <div className={styles.group}>
-          <select name="" id=""></select>
-        </div>
-        <div className={styles.group}>
-          <textarea placeholder='我们可以怎样帮助您?' name="" id="" ></textarea>
+        <div className={styles.col2}>
+          <div className={styles.group}>
+            <textarea placeholder='我们可以怎样帮助您?' name="" id="" ></textarea>
+          </div>
         </div>
 
         <div className={styles.actions}>

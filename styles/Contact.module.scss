@@ -12,3 +12,25 @@
     margin-bottom: 50px;
   }
 }
+
+@media (min-width: 1024px) {
+  .section1 {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 20px;
+
+    .image {
+      width: 70%;
+      flex-shrink: 0;
+      //margin-right: 50px;
+    }
+  }
+
+  .quote {
+    padding: 150px 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+}
