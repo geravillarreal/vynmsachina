@@ -52,12 +52,11 @@ export async function getStaticProps({ preview = false }) {
 
   let posts: any[] = []
 
-  try {
+  /* try {
     posts = await getAllPostsForHome(preview)
   } catch (error) {
-    
     console.log(error);
-  }
+  } */
 
   return {
     props: { allPosts: posts, preview },
