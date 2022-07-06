@@ -32,12 +32,12 @@ export default function Index({ allPosts: { edges } }: any) {
                 />
               </div>
               <div className={styles.info}>
-              <h4>{post.node.title}</h4>
-              <span
-              className={styles.excerpt}
-                dangerouslySetInnerHTML={{ __html: post.node.excerpt }}
-              ></span>
-              <span>{post.node.date}</span>
+                <h4>{post.node.title}</h4>
+                <span
+                  className={styles.excerpt}
+                  dangerouslySetInnerHTML={{ __html: post.node.excerpt }}
+                ></span>
+                <span>{post.node.date}</span>
               </div>
 
             </div>
@@ -49,10 +49,18 @@ export default function Index({ allPosts: { edges } }: any) {
 }
 
 export async function getStaticProps({ preview = false }) {
-  const allPosts = await getAllPostsForHome(preview)
+
+  let posts: any[] = []
+
+  try {
+    posts = await getAllPostsForHome(preview)
+  } catch (error) {
+    
+    console.log(error);
+  }
 
   return {
-    props: { allPosts, preview },
+    props: { allPosts: posts, preview },
     revalidate: 10,
   }
 }
