@@ -61,22 +61,22 @@ const Nav = () => {
         </Link>
 
         <div className={styles.links}>
-        {
-              links.map(link => (
-                <Link
-                  onClick={() => {
-                    setVisible(false)
+          {
+            links.map(link => (
+              <Link
+                /* onClick={() => {
+                  setVisible(false)
+                }} */
+                href={link.path}
+                key={link.title}>
+                <a
+                  style={{
+                    color: asPath === link.path ? '#007d64' : undefined
                   }}
-                  href={link.path}
-                  key={link.title}>
-                  <a
-                    style={{
-                      color: asPath === link.path ? '#007d64' : undefined
-                    }}
-                  >{link.title}</a>
-                </Link>
-              ))
-            }
+                >{link.title}</a>
+              </Link>
+            ))
+          }
         </div>
 
         <div
@@ -98,9 +98,9 @@ const Nav = () => {
             {
               links.map(link => (
                 <Link
-                  onClick={() => {
+                  /* onClick={() => {
                     setVisible(false)
-                  }}
+                  }} */
                   href={link.path}
                   key={link.title}>
                   <a

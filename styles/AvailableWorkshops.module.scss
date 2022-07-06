@@ -57,3 +57,40 @@
     }
   }
 }
+
+@media (min-width: 1024px) {
+  .content {
+    max-width: 1000px;
+    margin: auto;
+    h2 {
+      text-align: left;
+    }
+    .tabs {
+      justify-content: flex-start;
+      .tab{
+        margin-right: 100px;
+      }
+    }
+
+    .cities {
+      display: flex;
+
+      .city {
+        margin-right: 50px;
+        .green {
+          padding: 10px 30px;
+          width: fit-content;
+          background-color: white;
+          color: black;
+          &.greenActive {
+            background-color: #007d64;
+            color: white;
+          }
+        }
+        .locations {
+          display: none;
+        }
+      }
+    }
+  }
+}

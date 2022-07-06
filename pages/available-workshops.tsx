@@ -11,6 +11,8 @@ const AvailableWorkshops = () => {
 
   console.log(currentCity);
 
+  console.log(locations['蒙特雷大都市区'].cities.find(city => city.name === currentCity));
+
   return (
     <Layout title=''>
 
@@ -51,7 +53,9 @@ const AvailableWorkshops = () => {
                     onClick={() => {
                       setCurrentCity(city.name)
                     }}
-                    className={styles.green}>
+                    className={
+                      city.name === currentCity ? `${styles.green} ${styles.greenActive}` : styles.green
+                    }>
                     <span>{city.name}</span>
                   </div>
                   {
@@ -73,7 +77,9 @@ const AvailableWorkshops = () => {
                     onClick={() => {
                       setCurrentCity(city.name)
                     }}
-                    className={styles.green}>
+                    className={
+                      city.name === currentCity ? `${styles.green} ${styles.greenActive}` : styles.green
+                    }>
                     <span>{city.name}</span>
                   </div>
                   {
@@ -87,6 +93,19 @@ const AvailableWorkshops = () => {
                     </div>
                   }
                 </div>
+              ))
+          }
+        </div>
+
+        <div className="locations">
+          {
+            current === '巴希奥地区' ?
+              locations['巴希奥地区'].cities.find(city => city.name === currentCity)?.locations.map(loc => (
+                <span key={loc.name}></span>
+              ))
+              :
+              locations['蒙特雷大都市区'].cities.find(city => city.name === currentCity)?.locations.map(loc => (
+                <span key={loc.name}></span>
               ))
           }
         </div>

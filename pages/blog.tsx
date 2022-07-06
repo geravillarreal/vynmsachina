@@ -31,11 +31,14 @@ export default function Index({ allPosts: { edges } }: any) {
                   alt=''
                 />
               </div>
+              <div className={styles.info}>
               <h4>{post.node.title}</h4>
               <span
+              className={styles.excerpt}
                 dangerouslySetInnerHTML={{ __html: post.node.excerpt }}
               ></span>
               <span>{post.node.date}</span>
+              </div>
 
             </div>
           ))
