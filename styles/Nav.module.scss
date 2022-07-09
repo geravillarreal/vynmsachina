@@ -1,7 +1,7 @@
 .navWrapper {
   width: 100%;
-  padding: 10px;
-  height: 85px;
+  padding: 20px;
+  //height: 85px;
   position: fixed;
   width: 100%;
   z-index: 999;
@@ -11,6 +11,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .logo {
+      width: 150px;
+      position: relative;
+      height: 60px;
+    }
 
     .menu {
       svg {
@@ -43,19 +49,47 @@
 
 @media (min-width: 1024px) {
   .navWrapper {
+    height: 85px;
+    padding: 0;
     .nav {
       height: 100%;
+
       max-width: 1200px;
       margin: auto;
+
+      .logo {
+        width: 200px;
+      }
     }
   }
 
   .links {
     display: flex;
     align-items: center;
+
+    height: 100%;
     a {
+      display: flex;
+      align-items: center;
+
+      height: 100%;
+      position: relative;
+      padding: 0 10px;
+
+      &.active {
+        &::after {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          content: "";
+          width: 100%;
+          height: 6px;
+          background-color: #007d64;
+        }
+      }
+
       &:not(:last-child) {
-        margin-right: 60px;
+        margin-right: 40px;
       }
     }
   }

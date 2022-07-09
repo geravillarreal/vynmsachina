@@ -47,12 +47,13 @@ const Nav = () => {
 
         <Link
           href='/'
-          className={styles.logo}>
-          <a>
+        >
+          <a
+            className={styles.logo}
+          >
             <Image
               src='/logo-vynmsa.png'
-              width={100}
-              height={60}
+              layout='fill'
               objectFit='contain'
               alt=''
             />
@@ -64,15 +65,18 @@ const Nav = () => {
           {
             links.map(link => (
               <Link
-                /* onClick={() => {
-                  setVisible(false)
-                }} */
+                /*  */
                 href={link.path}
                 key={link.title}>
                 <a
+                  onClick={() => {
+                    setVisible(false)
+                  }}
                   style={{
                     color: asPath === link.path ? '#007d64' : undefined
                   }}
+
+                  className={asPath===link.path ? styles.active : undefined}
                 >{link.title}</a>
               </Link>
             ))

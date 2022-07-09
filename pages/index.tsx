@@ -10,6 +10,7 @@ import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import Link from 'next/link'
 
 
 const Home: NextPage = () => {
@@ -49,7 +50,9 @@ const Home: NextPage = () => {
         <div className={styles.content}>
           <h1>墨西哥工业房地产</h1>
           <h2>租赁 · 销售 · 定制</h2>
-          <span>联系我们</span>
+          <Link href='/contact-us'>
+            <a>联系我们</a>
+          </Link>
         </div>
 
         <Image
@@ -87,7 +90,18 @@ const Home: NextPage = () => {
       <div className={styles.wave2}>
 
       </div>
-      <Form />
+      <div className="form-container">
+
+        <div className="map">
+          <Image
+            objectFit='cover'
+            src='/home/map.png'
+            layout='fill'
+            alt=''
+          />
+        </div>
+        <Form />
+      </div>
       <div className={styles.sliderWrapper}>
 
         <div className={styles.slider}>
