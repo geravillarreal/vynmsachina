@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Header from '../components/Header'
 import Layout from '../components/Layout'
 import { locations } from '../lib/locations'
 import styles from '../styles/AvailableWorkshops.module.scss'
@@ -9,16 +10,13 @@ const AvailableWorkshops = () => {
 
   const [currentCity, setCurrentCity] = useState('瓜纳华托')
 
-  console.log(currentCity);
-
-  console.log(locations['蒙特雷大都市区'].cities.find(city => city.name === currentCity));
-
   return (
     <Layout title=''>
 
-      <div className='header'>
-        <div className="wave1"></div>
-      </div>
+      <Header
+        mobileImage='/available-workshops/header.jpeg'
+        webImage='/available-workshops/header.jpeg'
+      />
 
       <div className={styles.content}>
         <h2>秉厦工业园所在位置</h2>

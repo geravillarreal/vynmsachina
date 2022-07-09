@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import Form from '../components/Form'
+import Header from '../components/Header'
 import Layout from '../components/Layout'
 import styles from '../styles/Contact.module.scss'
 
@@ -8,21 +9,17 @@ const ContactUs = () => {
   return (
     <Layout title='Contact us'>
 
-      <div className='header'>
-        <Image
-          objectFit='cover'
-          layout='fill'
-          alt=''
-          src='/contact-us/contact-header.jpeg' />
-        <div className="wave1"></div>
-      </div>
+<Header
+        mobileImage='/available-workshops/header.jpeg'
+        webImage='/available-workshops/header.jpeg'
+      />
       <div className={styles.section1}>
         <Form />
-        <div 
-        className={styles.image}
-        style={{
-          padding: 20
-        }}>
+        <div
+          className={styles.image}
+          style={{
+            padding: 20
+          }}>
           <div
 
             className="green-border-bottom-right">

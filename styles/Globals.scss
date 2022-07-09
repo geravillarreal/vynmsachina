@@ -176,6 +176,13 @@ a {
   color: white;
 }
 
+/* .about-us-slider {
+  overflow: visible !;
+  .swiper-scrollbar {
+    bottom: -10px !important;
+  }
+} */
+
 @media (min-width: 768px) {
   .wave1 {
     height: 180px;
@@ -185,7 +192,7 @@ a {
 
 @media (min-width: 1024px) {
   .header {
-    height: 80vh;
+    height: 60vh;
 
     .imageMobile {
       display: none;
@@ -206,5 +213,12 @@ a {
   .green-border-bottom-left,
   .green-border-bottom-right {
     height: 400px;
+  }
+
+  .broker-friendly {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("/home/lines.png");
   }
 }

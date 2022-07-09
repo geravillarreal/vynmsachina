@@ -1,9 +1,12 @@
 import Image from 'next/image'
 import React from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react';
 import Header from '../components/Header'
 import Layout from '../components/Layout'
-
+import 'swiper/css';
 import styles from '../styles/AboutUs.module.scss'
+import { Scrollbar } from 'swiper';
+import 'swiper/css/scrollbar';
 
 const AboutUs = () => {
 
@@ -69,15 +72,31 @@ const AboutUs = () => {
 
         </div>
         <div className={styles.slider}>
-
-          <div className={styles.slide}>
-            <Image
-              alt=''
-              objectFit='cover'
-              layout='fill'
-              src='/about-us/intro/slide-1.jpeg' />
-          </div>
-
+          <Swiper
+            scrollbar
+            modules={[Scrollbar]}
+            slidesPerView='auto'
+            className='about-us-slider'
+          >
+            <SwiperSlide>
+              <div className={styles.slide}>
+                <Image
+                  alt=''
+                  objectFit='cover'
+                  layout='fill'
+                  src='/about-us/intro/slide-1.jpeg' />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.slide}>
+                <Image
+                  alt=''
+                  objectFit='cover'
+                  layout='fill'
+                  src='/about-us/intro/slide-2.jpeg' />
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
 

@@ -118,8 +118,6 @@ const Home: NextPage = () => {
             spaceBetween={50}
             slidesPerView={1}
             modules={[Autoplay]}
-          /*           modules={[Pagination]}
-                    pagination */
           >
             <SwiperSlide>
               <div className={styles.image}>

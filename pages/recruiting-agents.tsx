@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import Companies from '../components/Companies'
 import Form from '../components/Form'
+import Header from '../components/Header'
 import Layout from '../components/Layout'
 import styles from '../styles/RecruitingAgents.module.scss'
 
@@ -32,16 +33,14 @@ const RecruitingAgents = () => {
 
   return (
     <Layout title='Recruiting agents'>
-      <div className='header'>
-        <Image
-          objectFit='cover'
-          alt=''
-          layout='fill'
-          src='/recruiting-agents/header.jpeg'
-        />
-        <div className='wave1'></div>
+      <Header
+        mobileImage='/recruiting-agents/header-mobile.jpeg'
+        webImage='/recruiting-agents/header-web.jpeg'
+      />
+
+      <div className="broker-friendly">
+        <Form />
       </div>
-      <Form />
 
       <div className={styles.sectionWrapper}>
         <div className={styles.section}>
