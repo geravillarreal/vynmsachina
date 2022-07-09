@@ -77,10 +77,14 @@ const Home: NextPage = () => {
 
           {
             services.map(service => (
-              <div key={service.name} className={styles.item}>
-                <Image width={80} height={80} alt='' objectFit='contain' src={service.image} />
-                <span>{service.name}</span>
-              </div>
+              <Link key={service.name} href='/'>
+                <a className={styles.item}>
+                  <div className={styles.image}>
+                    <Image width={80} height={80} alt='' objectFit='contain' src={service.image} />
+                  </div>
+                  <span>{service.name}</span>
+                </a>
+              </Link>
             ))
           }
 

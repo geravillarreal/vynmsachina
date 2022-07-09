@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import Header from '../components/Header'
 import Layout from '../components/Layout'
 import styles from '../styles/OurServices.module.scss'
 
@@ -58,19 +59,12 @@ const OurServices = () => {
 
   return (
     <Layout title='Our Services'>
-      <div className='header'>
-        <Image
-          alt=''
-          objectFit='cover'
-          layout='fill'
-          src='/our-services/header.jpeg'
-        />
+      <Header
+        mobileImage='/our-services/header-mobile.jpeg'
+        webImage='/our-services/header-web.jpeg'
+      />
 
-        <div className='wave1'>
 
-        </div>
-
-      </div>
       <div className={styles.intro}>
         <div className={styles.content}>
           <span>

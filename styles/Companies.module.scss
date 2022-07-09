@@ -1,15 +1,17 @@
+.companiesWrapper {
+  padding: 50px 0px;
+}
+
 .companies {
-  padding: 50px 20px;
-
   text-align: center;
-
-  .companiesHeader {
-    margin-bottom: 20px;
-  }
-
+  padding: 20px;
   .countries {
     margin-bottom: 20px;
-    .image {
+    .imageGreen {
+      display: none;
+    }
+    .image,
+    .imageGreen {
       height: 60px;
       position: relative;
       margin-bottom: 20px;
@@ -22,7 +24,38 @@
   }
 }
 
+.companiesHeader {
+  margin-bottom: 0px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  &::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 6px;
+    background-color: #007d64;
+  }
+  h2 {
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px 60px;
+    position: relative;
+    z-index: 2;
+  }
+}
+
 @media (min-width: 768px) {
+  .companiesHeader {
+    margin-bottom: 70px;
+    h2 {
+      font-size: 40px;
+    }
+  }
   .companies {
     max-width: 70%;
     margin: auto;
@@ -31,6 +64,16 @@
     .companiesSlider {
       width: 70%;
       margin: 20px auto;
+    }
+    .countries {
+      .image {
+        display: none;
+      }
+      .imageGreen {
+        height: 80px;
+        display: block;
+        width: 100%;
+      }
     }
   }
 }

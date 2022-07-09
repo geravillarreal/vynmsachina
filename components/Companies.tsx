@@ -27,49 +27,59 @@ const Companies = () => {
   ]
 
   return (
-    <div className={styles.companies}>
+    <div className={styles.companiesWrapper}>
       <div className={styles.companiesHeader}>
         <h2>满意的客户</h2>
       </div>
-      <div className={styles.countries}>
-        <div className={styles.image}>
-          <Image
-            objectFit='contain'
-            alt=''
-            src='/home/countries.png'
-            layout='fill'
-          />
+      <div className={styles.companies}>
+        <div className={styles.countries}>
+          <div className={styles.image}>
+            <Image
+              objectFit='contain'
+              alt=''
+              src='/home/countries.png'
+              layout='fill'
+            />
+          </div>
+          <div className={styles.imageGreen}>
+            <Image
+              objectFit='cover'
+              alt=''
+              src='/home/countries-green.png'
+              layout='fill'
+            />
+          </div>
+          <span>向国内外顶级客户成功交付超过400个重大项目</span>
         </div>
-        <span>向国内外顶级客户成功交付超过400个重大项目</span>
-      </div>
-      <div className={styles.companiesSlider}>
-        <Swiper
-          loop
-          autoplay={{
-            disableOnInteraction: false
-          }}
-          spaceBetween={50}
-          slidesPerView={3}
-          modules={[Autoplay]}
-        /*           modules={[Pagination]}
-                  pagination */
-        >
-          {
-            images.map(image => (
-              <SwiperSlide key={image}>
-                <div className={styles.image}>
-                  <Image
-                    objectFit='contain'
-                    alt=''
-                    layout='fill'
-                    src={image}
+        <div className={styles.companiesSlider}>
+          <Swiper
+            loop
+            autoplay={{
+              disableOnInteraction: false
+            }}
+            spaceBetween={50}
+            slidesPerView={3}
+            modules={[Autoplay]}
+          /*           modules={[Pagination]}
+                    pagination */
+          >
+            {
+              images.map(image => (
+                <SwiperSlide key={image}>
+                  <div className={styles.image}>
+                    <Image
+                      objectFit='contain'
+                      alt=''
+                      layout='fill'
+                      src={image}
 
-                  />
-                </div>
-              </SwiperSlide>
-            ))
-          }
-        </Swiper>
+                    />
+                  </div>
+                </SwiperSlide>
+              ))
+            }
+          </Swiper>
+        </div>
       </div>
     </div>
   )

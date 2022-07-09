@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import Header from '../components/Header'
 import Layout from '../components/Layout'
 
 import styles from '../styles/AboutUs.module.scss'
@@ -54,17 +55,10 @@ const AboutUs = () => {
 
   return (
     <Layout title='About us'>
-      <div className='header'>
-        <Image
-          alt=''
-          objectFit='cover'
-          layout='fill'
-          src='/about-us/header.png'
-        />
-
-        <div className="wave1"></div>
-
-      </div>
+      <Header
+        webImage='/about-us/header-web.jpeg'
+        mobileImage='/about-us/header-mobile.png'
+      />
       <div className={styles.intro}>
 
         <div className={styles.content}>

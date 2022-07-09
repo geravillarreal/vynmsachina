@@ -39,6 +39,16 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
+      .image {
+        transition: all 0.3s;
+      }
+      &:hover {
+        color: #007d64;
+        .image {
+          transform: scale(1.1);
+        }
+      }
+
       span {
         margin-top: 20px;
       }
