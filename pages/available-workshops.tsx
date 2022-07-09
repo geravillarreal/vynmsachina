@@ -1,14 +1,19 @@
+import Image from 'next/image'
 import React, { useState } from 'react'
 import Header from '../components/Header'
 import Layout from '../components/Layout'
-import { locations } from '../lib/locations'
+import { cities, locations, regions } from '../lib/data'
 import styles from '../styles/AvailableWorkshops.module.scss'
 
 const AvailableWorkshops = () => {
 
-  const [current, setCurrent] = useState('巴希奥地区')
+  const [currentRegion, setCurrentRegion] = useState(regions[0])
 
-  const [currentCity, setCurrentCity] = useState('瓜纳华托')
+  const [currentCity, setCurrentCity] = useState(cities[0])
+
+  const [currentLocation, setCurrentLocation] = useState(locations[0])
+
+  console.log(currentLocation);
 
   return (
     <Layout title=''>
@@ -22,90 +27,90 @@ const AvailableWorkshops = () => {
         <h2>秉厦工业园所在位置</h2>
 
         <div className={styles.tabs}>
-          <div
-            onClick={() => {
-              setCurrent('巴希奥地区')
-              setCurrentCity('瓜纳华托')
-            }}
-            className={current === '巴希奥地区' ? `${styles.tab} ${styles.active}` : styles.tab}>
-            <span>{locations.巴希奥地区.name}</span>
-          </div>
-          <div
-            onClick={() => {
-              setCurrent('蒙特雷大都市区')
-              setCurrentCity('新莱昂州')
-            }}
-            className={current === '蒙特雷大都市区' ? `${styles.tab} ${styles.active}` : styles.tab}>
-            <span>{locations.蒙特雷大都市区.name}</span>
-          </div>
+
+          {
+            regions.map(region => (
+              <div
+                key={region.id}
+                onClick={() => {
+                  setCurrentRegion(region)
+                  setCurrentCity(cities.find(city => city.regionId === region.id) as any)
+                }}
+                className={currentRegion.id === region.id ? `${styles.tab} ${styles.active}` : styles.tab}>
+                <span>{region.name}</span>
+              </div>
+            ))
+          }
         </div>
 
         <div className={styles.cities}>
           {
-            current === '巴希奥地区' ?
-
-              locations['巴希奥地区'].cities.map(city => (
-                <div key={city.name} className={styles.city}>
-
-                  <div
-                    onClick={() => {
-                      setCurrentCity(city.name)
-                    }}
-                    className={
-                      city.name === currentCity ? `${styles.green} ${styles.greenActive}` : styles.green
-                    }>
-                    <span>{city.name}</span>
-                  </div>
-                  {
-                    city.name === currentCity &&
-                    <div className={styles.locations}>
-                      {
-                        city.locations.map(location => (
-                          <span key={location.name}>{location.name}</span>
-                        ))
-                      }
-                    </div>
-                  }
+            cities.filter(city => city.regionId === currentRegion.id).map(city => (
+              <div key={city.name} className={styles.city}>
+                <div
+                  onClick={() => {
+                    setCurrentCity(city)
+                  }}
+                  className={
+                    city.id === currentCity.id ? `${styles.green} ${styles.greenActive}` : styles.green
+                  }>
+                  <span>{city.name}</span>
                 </div>
-              ))
-              :
-              locations['蒙特雷大都市区'].cities.map(city => (
-                <div key={city.name} className={styles.city}>
-                  <div
-                    onClick={() => {
-                      setCurrentCity(city.name)
-                    }}
-                    className={
-                      city.name === currentCity ? `${styles.green} ${styles.greenActive}` : styles.green
-                    }>
-                    <span>{city.name}</span>
+                {
+                  currentCity.id === city.id &&
+                  <div className={styles.locations}>
+                    {
+                      locations.filter(loc => loc.cityId === currentCity.id).map(location => (
+                        <span
+                          onClick={() => {
+                            setCurrentLocation(location)
+                          }}
+                          key={location.name}>{location.name}</span>
+                      ))
+                    }
                   </div>
-                  {
-                    city.name === currentCity &&
-                    <div className={styles.locations}>
-                      {
-                        city.locations.map(location => (
-                          <span key={location.name}>{location.name}</span>
-                        ))
-                      }
-                    </div>
-                  }
-                </div>
-              ))
+                }
+              </div>
+            ))
           }
         </div>
+      </div>
 
-        <div className="locations">
-          {
-            current === '巴希奥地区' ?
-              locations['巴希奥地区'].cities.find(city => city.name === currentCity)?.locations.map(loc => (
-                <span key={loc.name}></span>
+      <div className={styles.currentLocation}>
+        <div className={styles.map}>
+          <div className={styles.mapTitle}>
+            <span>{currentLocation.mapTitle}</span>
+          </div>
+          <Image
+            src={currentLocation.mapImage || '/available-workshops/header.jpeg'}
+            alt=''
+            layout='fill'
+            objectFit='contain'
+          />
+        </div>
+        <div className={styles.locationContent}>
+          <div className={styles.description}>
+            {
+              currentLocation.description
+            }
+          </div>
+          <div className={styles.title}>
+            <h3>{currentLocation.title}</h3>
+          </div>
+          <div className={styles.items}>
+            {
+              currentLocation.items?.map(item => (
+                <div key={item.title}>
+                  <h4>{item.title}</h4>
+                  {
+                    item.list.map(li => (
+                      <span key={li}>{li}</span>
+                    ))
+                  }
+                </div>
               ))
-              :
-              locations['蒙特雷大都市区'].cities.find(city => city.name === currentCity)?.locations.map(loc => (
-                <span key={loc.name}></span>
-              ))
-          }
+            }
+          </div>
         </div>
       </div>
     </Layout>

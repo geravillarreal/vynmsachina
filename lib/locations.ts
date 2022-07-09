@@ -6,27 +6,61 @@ export const locations = {
         name: "瓜纳华托",
         locations: [
           {
-            name: "莱昂-VII"
+            id: "1-1-1",
+            name: "莱昂-VII",
+            mapTitle: "VYNMSA莱昂工业园 SPEC VII – VYNMSA León Industrial Park (León, Gto)",
+            mapImage: "",
+            description: "距离瓜纳华托国际机场车程30分钟，与汽车制造业走廊距离仅10分钟车程，目前可用于定制建造厂房用地达26公顷，可租售厂房数量充足，园区内企业多来自物流、食品、农产品以及汽车行业",
+            sliderImages: [],
+            title: "VYNMSA莱昂工业园 SPEC VII",
+            items: [
+              {
+                title: "主要优势:",
+                list: [
+                  "紧邻汽车生产带",
+                  "接近主要高速干道",
+                  "距离市区较近",
+                  "地处莱昂传统工业区"
+                ]
+              },
+              {
+                title: "工业园总体优势：",
+                list: [
+                  "所有工业园地处劳动力充足市场",
+                  "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+                  "米宽水泥工业园道路",
+                  "全年全天候闭路电视安全监控",
+                  "紧邻墨国内重要国道",
+                ]
+              },
+            ]
           },
           {
+            id: "1-1-2",
             name: "莱昂-IV"
           },
           {
+            id: "1-1-3",
             name: "希尔劳"
           },
           {
+            id: "1-1-4",
             name: "瓜纳华托-II"
           },
           {
+            id: "1-1-5",
             name: "瓜纳华托-IV"
           },
           {
+            id: "1-1-6",
             name: "塞拉亚"
           },
           {
+            id: "1-1-7",
             name: "阿帕塞奥"
           },
           {
+            id: "1-1-8",
             name: "圣米格尔德阿连德"
           },
         ]
@@ -35,12 +69,15 @@ export const locations = {
         name: "克雷塔罗",
         locations: [
           {
+            id: "1-2-1",
             name: "艾尔马尔克斯"
           },
           {
+            id: "1-2-2",
             name: "克雷塔罗-C"
           },
           {
+            id: "1-2-3",
             name: "克雷塔罗-IX"
           },
         ]
@@ -49,6 +86,7 @@ export const locations = {
         name: "圣路易斯波多西",
         locations: [
           {
+            id: "1-3-1",
             name: "圣路易斯波多西"
           },
         ]
@@ -62,54 +100,71 @@ export const locations = {
         name: "新莱昂州",
         locations: [
           {
+            id: "2-1-1",
             name: "新莱昂州"
           },
           {
+            id: "2-1-2",
             name: "西内嘉德弗洛雷斯"
           },
           {
+            id: "2-1-3",
             name: "贝斯凯利亚"
           },
           {
+            id: "2-1-4",
             name: "阿波达卡-OMA-VII"
           },
           {
+            id: "2-1-5",
             name: "阿波达卡-OMA-VIII"
           },
           {
+            id: "2-1-6",
             name: "阿波达卡-OMA-IX"
           },
           {
+            id: "2-1-7",
             name: "阿波达卡-机场"
           },
           {
+            id: "2-1-8",
             name: "阿波达卡-拉西亚"
           },
           {
+            id: "2-1-9",
             name: "圣尼克拉斯德洛斯加尔萨"
           },
           {
+            id: "2-1-10",
             name: "瓜达卢佩"
           },
           {
+            id: "2-1-11",
             name: "蒙特莫雷洛斯"
           },
           {
+            id: "2-1-12",
             name: "埃斯科贝多-IV"
           },
           {
+            id: "2-1-13",
             name: "埃斯科贝多-V"
           },
           {
+            id: "2-1-14",
             name: "埃斯科贝多-VI"
           },
           {
+            id: "2-1-15",
             name: "艾尔卡门"
           },
           {
+            id: "2-1-16",
             name: "圣塔卡琳娜-VI"
           },
           {
+            id: "2-1-17",
             name: "圣塔卡琳娜-VII"
           },
         ]
@@ -118,12 +173,15 @@ export const locations = {
         name: "科阿韦拉州",
         locations: [
           {
+            id: "2-2-1",
             name: "拉莫斯阿里斯佩-F",
           },
           {
+            id: "2-2-2",
             name: "拉莫斯阿里斯佩-K",
           },
           {
+            id: "2-2-3",
             name: "拉莫斯阿里斯佩-VII",
           },
         ]
@@ -132,3 +190,5 @@ export const locations = {
 
   }
 }
+
+
