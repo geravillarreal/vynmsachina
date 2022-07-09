@@ -1,12 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react';
 import Header from '../components/Header'
 import Layout from '../components/Layout'
-import 'swiper/css';
 import styles from '../styles/AboutUs.module.scss'
-import { Scrollbar } from 'swiper';
-import 'swiper/css/scrollbar';
+import Slider from '../components/Slider';
+
+
 
 const AboutUs = () => {
 
@@ -71,33 +70,12 @@ const AboutUs = () => {
           <span>集团成立于1994年, 作为顶尖工业地产开发集团之一, 秉厦23个工业园区分布于墨西哥东北部和中部最具优势的5个州, 为制造、出口、物流、本地贸易企业和希望在墨境内寻找厂房或仓储空间的境外投资者提供最佳位置。</span>
 
         </div>
-        <div className={styles.slider}>
-          <Swiper
-            scrollbar
-            modules={[Scrollbar]}
-            slidesPerView='auto'
-            className='about-us-slider'
-          >
-            <SwiperSlide>
-              <div className={styles.slide}>
-                <Image
-                  alt=''
-                  objectFit='cover'
-                  layout='fill'
-                  src='/about-us/intro/slide-1.jpeg' />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={styles.slide}>
-                <Image
-                  alt=''
-                  objectFit='cover'
-                  layout='fill'
-                  src='/about-us/intro/slide-2.jpeg' />
-              </div>
-            </SwiperSlide>
-          </Swiper>
-        </div>
+        <Slider
+          images={[
+            '/about-us/intro/slide-1.jpeg',
+            '/about-us/intro/slide-2.jpeg',
+          ]}
+        />
       </div>
 
       <div className={styles.values}>
@@ -165,7 +143,7 @@ const AboutUs = () => {
       <div className={styles.outro}>
         <div className={styles.content}>
           <div className="underlined">
-            <h2>我们的客户</h2>
+            <h2>秉厦在中国</h2>
           </div>
           <span>
             从2017年开始，VYNMSA(秉厦)已多次造访北京、上海、广州、深圳、珠海、武汉、重庆等地，并与中国产业海外发展协会、广东对外经济合作企业协会、中国贸促会广州市委员会、中国贸促会珠海市委员会暨珠海国际商会、湖北省发改委外经处、重庆对外投资和经济合作企业协会、重庆市商务委员会外经处、墨西哥总商会亚太商会等建立了良好的合作关系，为提升秉厦在中国市场影响力奠定基础。
@@ -174,15 +152,13 @@ const AboutUs = () => {
           </span>
         </div>
 
-        <div className={styles.image}>
-          <div className="green-border-top-right">
-            <Image
-              alt=''
-              objectFit='cover'
-              layout='fill'
-              src='/about-us/section.jpeg' />
-          </div>
-        </div>
+        <Slider
+          images={[
+            '/about-us/slide-3.jpeg',
+            '/about-us/slide-4.jpeg',
+            '/about-us/slide-5.jpeg',
+          ]}
+        />
       </div>
 
       <div className={styles.background}>

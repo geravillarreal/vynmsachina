@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import Header from '../components/Header'
 import Layout from '../components/Layout'
+import Slider from '../components/Slider'
 import styles from '../styles/OurServices.module.scss'
 
 const OurServices = () => {
@@ -71,16 +72,14 @@ const OurServices = () => {
             作为墨西哥工业房地产专业的建筑开发商，VYNMSA(秉厦)承载着30年的丰富经验，并始终初心如一，不断进取，根据每一位客户的需求提供最优质的的个性化服务。
           </span>
         </div>
-        <div className={styles.slider}>
-          <div className={styles.slide}>
-            <Image
-              alt=''
-              objectFit='cover'
-              layout='fill'
-              src='/our-services/1.jpeg' />
-          </div>
+        <Slider
+          images={[
+            '/our-services/1.jpeg',
+            '/our-services/2.jpeg',
+            '/our-services/3.jpeg'
+          ]}
 
-        </div>
+        />
       </div>
       <div className={`${styles.section} ${styles.section1}`}>
         <div className={styles.content}>

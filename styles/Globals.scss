@@ -176,12 +176,11 @@ a {
   color: white;
 }
 
-/* .about-us-slider {
-  overflow: visible !;
-  .swiper-scrollbar {
-    bottom: -10px !important;
+.about-us-slider {
+  .swiper-scrollbar-drag {
+    background-color: #007d64;
   }
-} */
+}
 
 @media (min-width: 768px) {
   .wave1 {
