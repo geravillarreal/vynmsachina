@@ -2,11 +2,15 @@
   padding: 80px 20px;
 
   .top {
-    margin-bottom: 50px;
     span {
       display: block;
       text-align: center;
     }
+  }
+  .quotation2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 50px;
   }
   .bottom {
     margin-bottom: 50px;

@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import Header from '../components/Header'
 import Layout from '../components/Layout'
+import Slider from '../components/Slider'
 import { cities, locations, regions } from '../lib/data'
 import styles from '../styles/AvailableWorkshops.module.scss'
 
@@ -93,6 +94,17 @@ const AvailableWorkshops = () => {
             {
               currentLocation.description
             }
+          </div>
+          <div className={styles.slider}>
+            <Slider
+              style={{
+                width: '100%'
+              }}
+              images={[
+                '/about-us/intro/slide-1.jpeg',
+                '/about-us/intro/slide-2.jpeg',
+              ]}
+            />
           </div>
           <div className={styles.title}>
             <h3>{currentLocation.title}</h3>

@@ -33,9 +33,15 @@ const ContactUs = () => {
       </div>
 
       <div className={styles.quote}>
+        <div className={styles.quotation1}>
+          <Image alt='' src='/contact-us/quotation-1.png' width={50} height={50} objectFit='contain' />
+        </div>
         <div className={styles.top}>
           <span>您可以与我们联系并获得VYNMSA公司的详细信息，您将了解为什么我们是您在墨西哥业务运营的最佳选择。</span>
           <span>联系我们，我们将超越您的期望!</span>
+        </div>
+        <div className={styles.quotation2}>
+          <Image alt='' src='/contact-us/quotation-2.png' width={50} height={50} objectFit='contain' />
         </div>
         <div className={styles.bottom}>
           <span>30年作为顶尖的工业地产开发集团，秉厦23个工业园区分布于墨西哥东北部和中部最具优势的 5个州，为制造、出口、物流、本地贸易企业和希望在墨境内寻找厂房或仓储空间的境外投资者提供最佳位置。</span>

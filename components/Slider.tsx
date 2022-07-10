@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import React, { FC } from 'react'
+import React, { CSSProperties, FC } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import styles from '../styles/Slider.module.scss'
 import 'swiper/css/scrollbar';
@@ -8,12 +8,15 @@ import { Scrollbar } from 'swiper';
 
 interface Props {
   images: string[]
+  style?: CSSProperties
 }
 
 
-const Slider: FC<Props> = ({ images }) => {
+const Slider: FC<Props> = ({ images, style }) => {
   return (
-    <div className={styles.slider}>
+    <div
+      style={style}
+      className={styles.slider}>
       <Swiper
         scrollbar
         modules={[Scrollbar]}
