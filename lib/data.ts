@@ -408,7 +408,7 @@ export const locations = [
   {
     id: "2-1-1",
     cityId: "4",
-    name: "新莱昂州",
+    name: "西内嘉德弗洛雷斯",
     mapTitle: "蒙特雷科技工业园 SPEC VI - Monterrey Technology Park, Cienega Flores",
     mapImage: "/recruiting-agents/data/2-1-1.jpeg",
     description: "建于1999年，位于新莱昂州西内嘉德弗洛雷斯，亚洲及国际客户众多，目前可租售及定制建造厂房用地达300公顷，可下载园区介绍手册进一步了解详情。",
@@ -439,7 +439,7 @@ export const locations = [
   {
     id: "2-1-2",
     cityId: "4",
-    name: "西内嘉德弗洛雷斯",
+    name: "贝斯凯利亚",
     mapTitle: "机场科技工业园 SPEC III - Airport Technology Park, Pesquería",
     mapImage: "/recruiting-agents/data/2-1-2.jpeg",
     description: "新莱昂州佩斯加内亚（Pesqueria）首个工业园，也是该州最近落成的工业园项目，目前入驻了较多的亚洲企业，总面积达100公顷，其中可用于租售及定制建造厂房用地近40公顷，可下载园区介绍手册进一步了解详情。",
@@ -470,7 +470,7 @@ export const locations = [
   {
     id: "2-1-3",
     cityId: "4",
-    name: "贝斯凯利亚",
+    name: "阿波达卡-OMA-VII",
     mapTitle: "OMA VYNMSA机场工业园 SPEC VII - OMA VYNMSA AERO Industrial Park, Apodaca",
     mapImage: "/recruiting-agents/data/2-1-3.jpeg",
     description: "建于2014年，因位于机场核心范围内，是蒙特雷市内联邦安全系数最高的工业园区。目前已有9个国际企业入驻，可租售及定制建造厂房项目用地达42公顷，可下载园区介绍手册进一步了解详情。",
@@ -501,7 +501,7 @@ export const locations = [
   {
     id: "2-1-4",
     cityId: "4",
-    name: "阿波达卡-OMA-VII",
+    name: "阿波达卡-OMA-VIII",
     mapTitle: "OMA VYNMSA机场工业园 SPEC VIII - OMA VYNMSA AERO Industrial Park, Apodaca",
     mapImage: "/recruiting-agents/data/2-1-4.jpeg",
     description: "建于2014年，因位于机场核心范围内，是蒙特雷市内联邦安全系数最高的工业园区。目前已有9个国际企业入驻，可租售及定制建造厂房项目用地达42公顷，可下载园区介绍手册进一步了解详情。",
@@ -532,7 +532,7 @@ export const locations = [
   {
     id: "2-1-5",
     cityId: "4",
-    name: "阿波达卡-OMA-VIII",
+    name: "阿波达卡-OMA-IX",
     mapTitle: "OMA VYNMSA机场工业园 SPEC IX - OMA VYNMSA AERO Industrial Park, Apodaca",
     mapImage: "/recruiting-agents/data/2-1-5.jpeg",
     description: "建于2014年，因位于机场核心范围内，是蒙特雷市内联邦安全系数最高的工业园区。目前已有9个国际企业入驻，可租售及定制建造厂房项目用地达42公顷，可下载园区介绍手册进一步了解详情。",
@@ -563,7 +563,7 @@ export const locations = [
   {
     id: "2-1-6",
     cityId: "4",
-    name: "阿波达卡-OMA-IX",
+    name: "阿波达卡-机场",
     mapTitle: "VYNMSA机场阿波达卡工业园 SPEC VI - VYNMSA Aeropuerto Apodaca Industrial Park",
     mapImage: "/recruiting-agents/data/2-1-6.jpeg",
     description: "位于阿波达卡工业集群区，已有六家亚洲企业进驻，目前可租售及定制建造厂房项目用地为26公顷，可下载园区介绍手册进一步了解详情。",
@@ -596,7 +596,7 @@ export const locations = [
   {
     id: "2-1-7",
     cityId: "4",
-    name: "阿波达卡-机场",
+    name: "阿波达卡-拉西亚",
     mapTitle: "拉西亚阿波达卡工业园 SPEC I - La Silla Apodaca Industrial Park",
     mapImage: "/recruiting-agents/data/2-1-7.jpeg",
     description: "位于阿波达卡工业集群区，地理位置优越，受众多国际企业青睐，目前可售可租可建厂房项目用地充足，可下载园区介绍手册进一步了解详情。",
@@ -630,7 +630,7 @@ export const locations = [
   {
     id: "2-1-8",
     cityId: "4",
-    name: "阿波达卡-拉西亚",
+    name: "圣尼克拉斯德洛斯加尔萨",
     mapTitle: "VYNMSA米格尔阿莱曼工业园 - VYNMSA MIGUEL ALEMAN Industrial Park fase I",
     mapImage: "/recruiting-agents/data/2-1-8.jpeg",
     description: "在圣尼古拉斯工业区内，目前可可租售及定制建造厂房用地共10公顷，交通便利，可下载园区介绍手册进一步了解详情。",
@@ -661,7 +661,7 @@ export const locations = [
   {
     id: "2-1-9",
     cityId: "4",
-    name: "圣尼克拉斯德洛斯加尔萨",
+    name: "瓜达卢佩",
     mapTitle: "艾奎杜克多工业园 SPEC V - Acueducto Industrial Park, Guadalupe",
     mapImage: "/recruiting-agents/data/2-1-9.jpeg",
     description: "地处瓜达卢佩核心地带，汇集了日本众多厂商，可租售及定制建造厂房用地达30公顷，可下载园区介绍手册进一步了解详情。",
@@ -692,42 +692,226 @@ export const locations = [
   {
     id: "2-1-10",
     cityId: "4",
-    name: "瓜达卢佩"
+    name: "蒙特莫雷洛斯",
+    mapTitle: "VYNMSA 蒙特莫雷洛斯工业园 - VYNMSA MONTEMORELOS Industrial Park",
+    mapImage: "/recruiting-agents/data/2-1-10.jpeg",
+    description: "是蒙特莫雷洛斯地区唯一一个工业园，日立化成已入驻，目前可租售及定制建造厂房项目用地共29公顷，可下载园区介绍手册进一步了解详情。",
+    sliderImages: [],
+    title: "VYNMSA 蒙特莫雷洛斯工业园",
+    items: [
+      {
+        title: "主要优势：",
+        list: [
+          "劳动力非常集中",
+          "全年全天候闭路电视安全监控",
+          "公共交通发达",
+          "高速公路环绕",
+        ]
+      },
+      {
+        title: "工业园总体优势：",
+        list: [
+          "所有工业园地处劳动力充足市场",
+          "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+          "米宽水泥工业园道路",
+          "全年全天候闭路电视安全监控",
+          "紧邻墨国内重要国道，北部园区临近美国边境公路",
+        ]
+      },
+    ]
   },
   {
     id: "2-1-11",
     cityId: "4",
-    name: "蒙特莫雷洛斯"
+    name: "埃斯科贝多-IV",
+    mapTitle: "VYNMSA 埃斯科贝多工业园II SPEC IV - VYNMSA Escobedo Park II",
+    mapImage: "/recruiting-agents/data/2-1-11.jpeg",
+    description: "位于新莱昂州埃斯科贝多的东北部里布拉门多（Libramiento）高速公路带上，紧邻多式联运站，距离蒙特雷国际机场20分钟以内车程。工业园由I期和II期组成，总占地面积达100公顷，有足够的租售及定制建设用地，园区内已入驻中、德、韩、美等大型企业，可下载园区介绍手册进一步了解详情。",
+    sliderImages: [],
+    title: "VYNMSA 埃斯科贝多工业园II SPEC IV",
+    items: [
+      {
+        title: "主要优势：",
+        list: [
+          "紧邻通往美国的高速公路",
+          "公共交通 (5 条线路)",
+          "附近公路环绕，节省物流成本",
+          "劳动力非常集中",
+          "全年全天候闭路电视安全监控",
+        ]
+      },
+      {
+        title: "工业园总体优势：",
+        list: [
+          "所有工业园地处劳动力充足市场",
+          "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+          "米宽水泥工业园道路",
+          "全年全天候闭路电视安全监控",
+          "紧邻墨国内重要国道，北部园区临近美国边境公路",
+        ]
+      },
+    ]
   },
   {
     id: "2-1-12",
     cityId: "4",
-    name: "埃斯科贝多-IV"
+    name: "埃斯科贝多-V",
+    mapTitle: "VYNMSA 埃斯科贝多工业园II SPEC V - VYNMSA Escobedo Park II",
+    mapImage: "/recruiting-agents/data/2-1-12.jpeg",
+    description: "位于新莱昂州埃斯科贝多的东北部里布拉门多（Libramiento）高速公路带上，紧邻多式联运站，距离蒙特雷国际机场20分钟以内车程。工业园由I期和II期组成，总占地面积达100公顷，有足够的租售及定制建设用地，园区内已入驻中、德、韩、美等大型企业，可下载园区介绍手册进一步了解详情。",
+    sliderImages: [],
+    title: "VYNMSA 埃斯科贝多工业园II SPEC IV",
+    items: [
+      {
+        title: "主要优势：",
+        list: [
+          "紧邻通往美国的高速公路",
+          "公共交通 (5 条线路)",
+          "附近公路环绕，节省物流成本",
+          "劳动力非常集中",
+          "全年全天候闭路电视安全监控",
+        ]
+      },
+      {
+        title: "工业园总体优势：",
+        list: [
+          "所有工业园地处劳动力充足市场",
+          "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+          "米宽水泥工业园道路",
+          "全年全天候闭路电视安全监控",
+          "紧邻墨国内重要国道，北部园区临近美国边境公路",
+        ]
+      },
+    ]
   },
   {
     id: "2-1-13",
     cityId: "4",
-    name: "埃斯科贝多-V"
+    name: "埃斯科贝多-VI",
+    mapTitle: "VYNMSA 埃斯科贝多工业园II SPEC VI - VYNMSA Escobedo Park II",
+    mapImage: "/recruiting-agents/data/2-1-12.jpeg",
+    description: "位于新莱昂州埃斯科贝多的东北部里布拉门多（Libramiento）高速公路带上，紧邻多式联运站，距离蒙特雷国际机场20分钟以内车程。工业园由I期和II期组成，总占地面积达100公顷，有足够的租售及定制建设用地，园区内已入驻中、德、韩、美等大型企业，可下载园区介绍手册进一步了解详情。",
+    sliderImages: [],
+    title: "VYNMSA 埃斯科贝多工业园II SPEC VI",
+    items: [
+      {
+        title: "主要优势：",
+        list: [
+          "紧邻通往美国的高速公路",
+          "公共交通 (5 条线路)",
+          "附近公路环绕，节省物流成本",
+          "劳动力非常集中",
+          "全年全天候闭路电视安全监控",
+        ]
+      },
+      {
+        title: "工业园总体优势：",
+        list: [
+          "所有工业园地处劳动力充足市场",
+          "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+          "米宽水泥工业园道路",
+          "全年全天候闭路电视安全监控",
+          "紧邻墨国内重要国道，北部园区临近美国边境公路",
+        ]
+      },
+    ]
   },
   {
     id: "2-1-14",
     cityId: "4",
-    name: "埃斯科贝多-VI"
+    name: "艾尔卡门",
+    mapTitle: "VYNMSA艾尔卡门工业园 (GTP) - El Carmen industrial park",
+    mapImage: "/recruiting-agents/data/2-1-14.jpeg",
+    description: "秉厦集团最新建造的工业园，总占地面积69公顷，地理位置非常优越，设施崭新完备，可租售及定制建造厂房用地充足，可下载园区介绍手册进一步了解详情。",
+    sliderImages: [],
+    title: "VYNMSA艾尔卡门工业园 (GTP)",
+    items: [
+      {
+        title: "主要优势：",
+        list: [
+          "该地区内最近落成工业园",
+          "高速公路环绕",
+          "劳动力非常集中",
+          "全年全天候闭路电视安全监控",
+        ]
+      },
+      {
+        title: "工业园总体优势：",
+        list: [
+          "所有工业园地处劳动力充足市场",
+          "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+          "米宽水泥工业园道路",
+          "全年全天候闭路电视安全监控",
+          "紧邻墨国内重要国道，北部园区临近美国边境公路",
+        ]
+      },
+    ]
   },
   {
     id: "2-1-15",
     cityId: "4",
-    name: "艾尔卡门"
+    name: "圣塔卡琳娜-VI",
+    mapTitle: "VYNMSA 圣塔卡琳娜工业园 SPEC VI - VYNMSA SANTA CATARINA Indl Park",
+    mapImage: "/recruiting-agents/data/2-1-15.jpeg",
+    description: "位于圣塔卡琳娜核心地带，新莱昂州蒙特雷和科阿韦拉州萨尔迪约·拉莫斯阿里斯佩两大主要工业区之间，目前可定制建造项目用地合计26公顷，并有充足空余厂房用于租售，可立即入驻使用，可下载园区介绍手册进一步了解详情。",
+    sliderImages: [],
+    title: "VYNMSA 圣塔卡琳娜工业园 SPEC VI",
+    items: [
+      {
+        title: "主要优势：",
+        list: [
+          "公共交通 (超过5条线路)",
+          "靠近城市经济水平最发达的San Pedro区",
+          "地处两个最大的工业枢纽之间 (拉莫斯阿里斯佩/阿波达卡)",
+          "紧邻主要的高速公路干道",
+          "全年全天候闭路电视安全监控",
+          "劳动力非常集中",
+        ]
+      },
+      {
+        title: "工业园总体优势：",
+        list: [
+          "所有工业园地处劳动力充足市场",
+          "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+          "米宽水泥工业园道路",
+          "全年全天候闭路电视安全监控",
+          "紧邻墨国内重要国道，北部园区临近美国边境公路",
+        ]
+      },
+    ]
   },
   {
     id: "2-1-16",
     cityId: "4",
-    name: "圣塔卡琳娜-VI"
-  },
-  {
-    id: "2-1-17",
-    cityId: "4",
-    name: "圣塔卡琳娜-VII"
+    name: "圣塔卡琳娜-VII",
+    mapTitle: "VYNMSA 圣塔卡琳娜工业园 SPEC VII - VYNMSA SANTA CATARINA Indl Park",
+    mapImage: "/recruiting-agents/data/2-1-14.jpeg",
+    description: "位于圣塔卡琳娜核心地带，新莱昂州蒙特雷和科阿韦拉州萨尔迪约·拉莫斯阿里斯佩两大主要工业区之间，目前可定制建造项目用地合计26公顷，并有充足空余厂房用于租售，可立即入驻使用，可下载园区介绍手册进一步了解详情。",
+    sliderImages: [],
+    title: "VYNMSA 圣塔卡琳娜工业园 SPEC VII",
+    items: [
+      {
+        title: "主要优势：",
+        list: [
+          "公共交通 (超过5条线路)",
+          "靠近城市经济水平最发达的San Pedro区",
+          "地处两个最大的工业枢纽之间 (拉莫斯阿里斯佩/阿波达卡)",
+          "紧邻主要的高速公路干道",
+          "全年全天候闭路电视安全监控",
+          "劳动力非常集中",
+        ]
+      },
+      {
+        title: "工业园总体优势：",
+        list: [
+          "所有工业园地处劳动力充足市场",
+          "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+          "米宽水泥工业园道路",
+          "全年全天候闭路电视安全监控",
+          "紧邻墨国内重要国道，北部园区临近美国边境公路",
+        ]
+      },
+    ]
   },
   {
     id: "2-2-1",
