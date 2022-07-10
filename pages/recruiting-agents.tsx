@@ -59,8 +59,6 @@ const RecruitingAgents = () => {
           </div>
         </div>
       </div>
-
-
       <div className={`${styles.section} ${styles.section2}`}>
         <h3>代理VYNMSA(秉厦)有哪些优势？</h3>
         <span>
@@ -83,33 +81,46 @@ const RecruitingAgents = () => {
         </div>
       </div>
       <div className={styles.images}>
-        <div className={styles.image}>
-          <Image
-            objectFit='cover'
-            layout='fill'
-            src='/recruiting-agents/img-1.jpeg'
-            alt=''
-          />
-        </div>
-        <div className={styles.image}>
-          <Image
-            objectFit='cover'
-            layout='fill'
-            src='/recruiting-agents/img-2.jpeg'
-            alt=''
-          />
-        </div>
-        <div className={styles.image}>
-          <Image
-            objectFit='cover'
-            layout='fill'
-            src='/recruiting-agents/img-3.jpeg'
-            alt=''
-          />
+        <h2>租赁·销售·定制</h2>
+        <div className={styles.grid}>
+          <div className={styles.item}>
+            <div className={styles.image}>
+              <Image
+                objectFit='cover'
+                layout='fill'
+                src='/recruiting-agents/img-1.jpeg'
+                alt=''
+              />
+            </div>
+            <span>工业园区介绍</span>
+          </div>
+          <div className={styles.item}>
+            <div className={styles.image}>
+              <Image
+                objectFit='cover'
+                layout='fill'
+                src='/recruiting-agents/img-2.jpeg'
+                alt=''
+              />
+            </div>
+            <span>可用厂房列表</span>
+          </div>
+          <div className={styles.item}>
+            <div className={styles.image}>
+              <Image
+                objectFit='cover'
+                layout='fill'
+                src='/recruiting-agents/img-3.jpeg'
+                alt=''
+              />
+            </div>
+            <span>VYNMSA工业建筑物的租赁和出售手册（下载矩阵）</span>
+          </div>
         </div>
       </div>
 
       <Companies />
+      {/* <span className={styles.bottomGreen}>VYNMSA (秉厦) 愿携手代理商，共同发展，共同拥抱中墨合作良机！</span> */}
     </Layout>
   )
 }
