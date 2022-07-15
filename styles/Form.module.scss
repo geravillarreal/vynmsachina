@@ -61,6 +61,27 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
+      grid-template-areas:
+        "col1 col2"
+        "actions actions";
+      .col1 {
+        grid-area: col1;
+      }
+      .col2 {
+        grid-area: col2;
+        div{
+          background-color: red;
+          height: 100%;
+          margin-bottom: 0;
+          textarea{
+            height: 100%;
+          }
+        }
+      }
+      .actions {
+        grid-area: actions;
+        padding: 0 50px;
+      }
     }
   }
 }
