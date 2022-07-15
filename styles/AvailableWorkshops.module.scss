@@ -85,7 +85,7 @@
     margin-bottom: 20px;
   }
 
-  .slider{
+  .slider {
     margin-bottom: 100px;
   }
 
@@ -119,14 +119,49 @@
 }
 
 @media (min-width: 1024px) {
+  .content {
+    max-width: 1000px;
+    margin: auto;
+    h2 {
+      text-align: left;
+      font-size: 30px;
+    }
+  }
+  .tabs {
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 30px;
+    justify-content: flex-start;
+    .tab {
+      &:first-child {
+        margin-right: 100px;
+      }
+    }
+    span {
+      font-size: 20px;
+    }
+  }
+  .cities {
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+    .city {
+      margin-right: 100px;
+      .green {
+      }
+    }
+    .locations {
+      display: none;
+    }
+  }
   .map {
     height: 75vh !important;
     margin-bottom: 50px;
-    .mapTitle{
-      width: fit-content
+    .mapTitle {
+      width: fit-content;
     }
   }
-  .description{
+  .description {
     max-width: 600px;
     margin: auto;
     margin-bottom: 100px !important;
@@ -139,6 +174,17 @@
       > div {
         flex: 1;
       }
+    }
+  }
+  .locationsWeb {
+    background-color: #f6f6f6;
+    padding: 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    span {
+      display: block;
+      margin-right: 100px;
+      margin-bottom: 20px;
     }
   }
 }

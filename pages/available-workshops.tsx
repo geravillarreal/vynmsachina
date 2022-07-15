@@ -75,6 +75,22 @@ const AvailableWorkshops = () => {
             ))
           }
         </div>
+
+        {
+          currentCity.id &&
+          <div className={styles.locationsWeb}>
+            {
+              locations.filter(loc => loc.cityId === currentCity.id).map(location => (
+                <span
+                  onClick={() => {
+                    setCurrentLocation(location)
+                  }}
+                  key={location.name}>{location.name}</span>
+              ))
+            }
+          </div>
+        }
+
       </div>
 
       <div className={styles.currentLocation}>
