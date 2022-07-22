@@ -60,8 +60,6 @@ const Companies = () => {
             spaceBetween={50}
             slidesPerView={3}
             modules={[Autoplay]}
-          /*           modules={[Pagination]}
-                    pagination */
           >
             {
               images.map(image => (
