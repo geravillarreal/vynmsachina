@@ -32,7 +32,7 @@ const RecruitingAgents = () => {
   ]
 
   return (
-    <Layout title='Recruiting agents'>
+    <Layout title='诚招代理'>
       <Header
         mobileImage='/recruiting-agents/header-mobile.jpeg'
         webImage='/recruiting-agents/header-web.jpeg'

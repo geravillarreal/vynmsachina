@@ -56,7 +56,7 @@ const AboutUs = () => {
   ]
 
   return (
-    <Layout title='About us'>
+    <Layout title='关于我们'>
       <Header
         webImage='/about-us/header-web.jpeg'
         mobileImage='/about-us/header-mobile.png'

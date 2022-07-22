@@ -21,11 +21,11 @@ const Nav = () => {
     },
     {
       title: '诚招代理',
-      path: '/recruiting-agents'
+      path: '/broker-friendly'
     },
     {
       title: '可用厂房',
-      path: '/available-workshops'
+      path: '/inventory'
     },
     {
       title: '博客',

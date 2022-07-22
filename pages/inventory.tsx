@@ -14,10 +14,8 @@ const AvailableWorkshops = () => {
 
   const [currentLocation, setCurrentLocation] = useState(locations[0])
 
-  console.log(currentLocation);
-
   return (
-    <Layout title=''>
+    <Layout title='可用厂房'>
 
       <Header
         mobileImage='/available-workshops/header.jpeg'

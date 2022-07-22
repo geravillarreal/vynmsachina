@@ -44,7 +44,7 @@ const Home: NextPage = () => {
   ]
 
   return (
-    <Layout title=''>
+    <Layout title='首页'>
       <div className={styles.header}>
 
         <div className={styles.content}>

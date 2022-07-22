@@ -7,9 +7,8 @@ import styles from '../styles/Contact.module.scss'
 
 const ContactUs = () => {
   return (
-    <Layout title='Contact us'>
-
-<Header
+    <Layout title='联系我们'>
+      <Header
         mobileImage='/available-workshops/header.jpeg'
         webImage='/available-workshops/header.jpeg'
       />
