@@ -56,6 +56,7 @@ const Nav = () => {
               layout='fill'
               objectFit='contain'
               alt=''
+              quality={100}
             />
           </a>
 
