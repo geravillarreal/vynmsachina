@@ -74,22 +74,24 @@
   flex-direction: column;
   align-items: center;
   padding: 80px 20px;
-  overflow: hidden;
-  .slider {
-    width: 300px;
-    height: 300px;
-    border-radius: 300px;
-    border: 20px solid gray;
-    margin-bottom: 50px;
+  position: relative;
+  .sliderOutter {
+    overflow: hidden;
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-bottom: 50px;
+  }
+  .sliderInner {
+    border-radius: 250px;
+    border: 20px solid gray;
+  }
+  .image {
     overflow: hidden;
-    .image {
-      overflow: hidden;
-      position: relative;
-      height: 300px;
-      width: 300px;
+    height: 250px;
+    width: 250px;
+    img {
+      border-radius: 250px;
     }
   }
 }
@@ -114,6 +116,7 @@
       iframe {
         width: 100%;
         z-index: 99;
+        height: 300px;
       }
       &::before {
         content: "";
@@ -228,7 +231,7 @@
   .videoWrapper {
     .content {
       .video {
-        iframe{
+        iframe {
           height: 300px;
         }
         &::before {

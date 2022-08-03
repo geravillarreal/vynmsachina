@@ -5,11 +5,12 @@ import Companies from '../components/Companies'
 import Form from '../components/Form'
 import Layout from '../components/Layout'
 import styles from '../styles/Home.module.scss'
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import Link from 'next/link'
 
 
@@ -48,6 +49,8 @@ const Home: NextPage = () => {
     },
 
   ]
+
+  const swiper = useSwiper()
 
   return (
     <Layout title='首页'>
@@ -119,17 +122,18 @@ const Home: NextPage = () => {
       </div>
       <div className={styles.sliderWrapper}>
 
-        <div className={styles.slider}>
-
+        <div className={styles.sliderOutter}>
+        <div className={styles.sliderInner}>
           <Swiper
+            navigation
             className='home-swiper'
             loop
-            autoplay={{
+            /* autoplay={{
               disableOnInteraction: false
-            }}
-            spaceBetween={50}
+            }} */
+            spaceBetween={100}
             slidesPerView={1}
-            modules={[Autoplay]}
+            modules={[Autoplay, Navigation]}
           >
             <SwiperSlide>
               <div className={styles.image}>
@@ -162,8 +166,9 @@ const Home: NextPage = () => {
               </div>
             </SwiperSlide>
           </Swiper>
-
         </div>
+        </div>
+
 
         <div className={styles.content}>
           <div className="underlined">
