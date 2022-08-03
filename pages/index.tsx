@@ -116,6 +116,7 @@ const Home: NextPage = () => {
         <div className={styles.slider}>
 
           <Swiper
+            className='home-swiper'
             loop
             autoplay={{
               disableOnInteraction: false
@@ -131,7 +132,6 @@ const Home: NextPage = () => {
                   alt=''
                   layout='fill'
                   src='/home/slider/slide-1.jpeg'
-
                 />
               </div>
             </SwiperSlide>
@@ -142,7 +142,6 @@ const Home: NextPage = () => {
                   alt=''
                   layout='fill'
                   src='/home/slider/slide-2.jpeg'
-
                 />
               </div>
             </SwiperSlide>
@@ -153,7 +152,6 @@ const Home: NextPage = () => {
                   alt=''
                   layout='fill'
                   src='/home/slider/slide-3.jpeg'
-
                 />
               </div>
             </SwiperSlide>
@@ -179,7 +177,7 @@ const Home: NextPage = () => {
         <div className={styles.content}>
           <span>VYNMSA始终视工业房地产市场最高标准为目标, 为客户建设超出其预期和需求的3A工业设施</span>
           <div className={styles.video}>
-            <video controls autoPlay loop playsInline muted src="/home/video1.mp4"></video>
+            <iframe src="//player.bilibili.com/player.html?aid=635245342&bvid=BV1Kb4y1e7wD&cid=471486947&page=1" scrolling="no"> </iframe>
           </div>
         </div>
       </div>

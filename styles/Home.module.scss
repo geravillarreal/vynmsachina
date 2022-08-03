@@ -100,9 +100,9 @@
 
   .content {
     position: relative;
+    text-align: center;
     z-index: 99;
     color: white;
-
     span {
       display: block;
       margin-bottom: 50px;
@@ -111,7 +111,7 @@
     .video {
       width: 100%;
       position: relative;
-      video {
+      iframe {
         width: 100%;
         z-index: 99;
       }
@@ -228,6 +228,9 @@
   .videoWrapper {
     .content {
       .video {
+        iframe{
+          height: 300px;
+        }
         &::before {
           width: 300px;
           height: 300px;
