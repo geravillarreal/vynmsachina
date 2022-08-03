@@ -18,27 +18,33 @@ const Home: NextPage = () => {
   const services = [
     {
       name: "工业园区位置",
-      image: '/home/service-1.png'
+      image: '/home/service-1.png',
+      path: '/inventory'
     },
     {
       name: "定制厂房解决方案",
-      image: '/home/service-2.png'
+      image: '/home/service-2.png',
+      path: '/inventory'
     },
     {
       name: "服务范畴",
-      image: '/home/service-3.png'
+      image: '/home/service-3.png',
+      path: '/our-services'
     },
     {
       name: "标准厂房出售",
-      image: '/home/service-4.png'
+      image: '/home/service-4.png',
+      path: '/inventory'
     },
     {
       name: "诚招代理",
-      image: '/home/service-5.png'
+      image: '/home/service-5.png',
+      path: '/broker-friendly'
     },
     {
       name: "关于我们",
-      image: '/home/service-6.png'
+      image: '/home/service-6.png',
+      path: '/contact-us'
     },
 
   ]
@@ -82,7 +88,7 @@ const Home: NextPage = () => {
 
           {
             services.map(service => (
-              <Link key={service.name} href='/'>
+              <Link key={service.name} href={service.path}>
                 <a className={styles.item}>
                   <div className={styles.image}>
                     <Image width={80} height={80} alt='' objectFit='contain' src={service.image} />
