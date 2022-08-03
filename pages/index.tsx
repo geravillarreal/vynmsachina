@@ -51,7 +51,12 @@ const Home: NextPage = () => {
           <h1>墨西哥工业房地产</h1>
           <h2>租赁 · 销售 · 定制</h2>
           <Link href='/contact-us'>
-            <a>联系我们</a>
+            <a className='arrow-wrapper'>联系我们
+              <div className="arrow">
+                <div className="triangle"></div>
+                <div className="circle"></div>
+              </div>
+            </a>
           </Link>
         </div>
 
