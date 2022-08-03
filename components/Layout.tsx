@@ -14,7 +14,7 @@ interface Props {
   keywords?: string
 }
 
-const Layout = ({ children, title, description = 'Líderes en productos y servicios de empaque y embalaje.', type, image = '/300x300.png', keywords = '' }: Props) => {
+const Layout = ({ children, title, description = 'Construction and development.', type, image = '/300x300.png', keywords = '' }: Props) => {
 
   const { asPath } = useRouter()
 

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import styles from '../styles/Footer.module.scss'
 
@@ -20,11 +21,11 @@ const Footer = () => {
           <div className={styles.left}>
             <h3>关于我们</h3>
             <div className={styles.list}>
-              <span>历史</span>
-              <span>目标</span>
-              <span>愿景</span>
-              <span>价值观</span>
-              <span>联系我们</span>
+              <Link href='/about-us'><a>历史</a></Link>
+              <Link href='/about-us'><a>目标</a></Link>
+              <Link href='/about-us'><a>愿景</a></Link>
+              <Link href='/about-us'><a>价值观</a></Link>
+              <Link href='/contact-us'><a>联系我们</a></Link>
             </div>
           </div>
           <div className={styles.right}>
@@ -32,32 +33,29 @@ const Footer = () => {
               我们的服务
             </h3>
             <div className={styles.list}>
-              <span>现有厂房租售</span>
-              <span>厂房订制</span>
+              <Link href='/our-services'><a>现有厂房租售</a></Link>
+              <Link href='/our-services'><a>厂房订制</a></Link>
             </div>
           </div>
         </div>
         <div className={styles.social}>
-          <div className={styles.icon}>
+          <a href='https://www.linkedin.com/company/vynmsa/' rel='noreferrer noopener' target='_blank' className={styles.icon}>
             <Image alt='' src='/footer/linkedin.png' layout='fill' />
-          </div>
-          <div className={styles.icon}>
+          </a>
+          <a href='https://www.facebook.com/vynmsa/' rel='noreferrer noopener' target='_blank' className={styles.icon}>
             <Image alt='' src='/footer/facebook.png' layout='fill' />
-          </div>
-          <div className={styles.icon}>
+          </a>
+          <a href='https://api.whatsapp.com/send?phone=528122028599' rel='noreferrer noopener' target='_blank' className={styles.icon}>
             <Image alt='' src='/footer/whatsapp.png' layout='fill' />
-          </div>
-          <div className={styles.icon}>
+          </a>
+          <a href='https://mp.weixin.qq.com/s/wnsA7JNFN_Pu_aCW7CIOcg' rel='noreferrer noopener' target='_blank' className={styles.icon}>
             <Image alt='' src='/footer/weixin.png' layout='fill' />
-          </div>
+          </a>
         </div>
-
         <div className={styles.bottom}>
-          <span>© 2021 VYNMSA 版权所有隐私政策</span>
+          <span>© {new Date().getFullYear()} VYNMSA 版权所有 <a target='_blank' href="/privacy-policy.pdf">隐私政策</a></span>
         </div>
-
       </div>
-
     </footer>
   )
 }

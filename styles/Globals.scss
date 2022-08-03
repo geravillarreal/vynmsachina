@@ -144,6 +144,16 @@ a {
   }
 }
 
+.input {
+  width: 100%;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid #d9d9d9;
+  outline: none;
+  padding: 10px;
+  transition: all .3s;
+}
+
 .form-container {
   height: 100vh;
   background-image: url("/home/lines.png");
