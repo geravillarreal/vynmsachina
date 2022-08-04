@@ -4,8 +4,7 @@ import Header from '../components/Header'
 import Layout from '../components/Layout'
 import styles from '../styles/AboutUs.module.scss'
 import Slider from '../components/Slider';
-
-
+import Link from 'next/link'
 
 const AboutUs = () => {
 
@@ -172,7 +171,9 @@ const AboutUs = () => {
         <div className={styles.content}>
           <span>联系VYNMSA，我们将超出您的期望！
           </span>
-          <button className='btn btn-green'>联系我们</button>
+          <Link href='/contact-us'>
+            <a className='btn btn-green'>联系我们</a>
+          </Link>
         </div>
       </div>
     </Layout>

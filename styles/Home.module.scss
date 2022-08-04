@@ -81,10 +81,20 @@
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    
   }
   .sliderInner {
     border-radius: 250px;
     border: 20px solid gray;
+    width: 290px;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    .sliderInner2 {
+      overflow: hidden;
+      width: 390px;
+      flex-shrink: 0;
+    }
   }
   .image {
     overflow: hidden;
@@ -232,7 +242,7 @@
     .content {
       .video {
         iframe {
-          height: 300px;
+          height: 600px;
         }
         &::before {
           width: 300px;

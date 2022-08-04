@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import styles from '../styles/Slider.module.scss'
 import 'swiper/css/scrollbar';
 import 'swiper/css';
-import { Scrollbar } from 'swiper';
+import { Autoplay, Scrollbar } from 'swiper';
 
 interface Props {
   images: string[]
@@ -18,8 +18,11 @@ const Slider: FC<Props> = ({ images, style }) => {
       style={style}
       className={styles.slider}>
       <Swiper
+        autoplay={{
+          disableOnInteraction: false
+        }}
         scrollbar
-        modules={[Scrollbar]}
+        modules={[Scrollbar, Autoplay]}
         slidesPerView='auto'
         className='about-us-slider'
       >

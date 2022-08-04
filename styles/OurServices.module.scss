@@ -121,7 +121,7 @@
   }
 
   .section1 {
-    background-color: #f0f0f0;
+    background-image: url("/home/lines.png");
     display: flex;
     flex-direction: row-reverse;
     padding: 100px 0;
@@ -148,14 +148,16 @@
 
   .section1 {
     align-items: center;
+    height: 100vh;
   }
 
-  .section2, .section3 {
+  .section2,
+  .section3 {
     display: flex;
     max-width: 1200px;
     margin: auto;
     align-items: center;
-
+    height: 100vh;
     .image {
       width: 50%;
       flex-shrink: 0;
@@ -178,7 +180,7 @@
   .background {
     display: flex;
     flex-direction: column;
-    height: 70vh;
+    height: 100vh;
     justify-content: center;
 
     h3 {
@@ -213,6 +215,11 @@
           }
         }
       }
+    }
+  }
+  .cta{
+    h3{
+      font-size: 35px;
     }
   }
 }

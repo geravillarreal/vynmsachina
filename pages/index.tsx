@@ -123,50 +123,52 @@ const Home: NextPage = () => {
       <div className={styles.sliderWrapper}>
 
         <div className={styles.sliderOutter}>
-        <div className={styles.sliderInner}>
-          <Swiper
-            navigation
-            className='home-swiper'
-            loop
-            /* autoplay={{
-              disableOnInteraction: false
-            }} */
-            spaceBetween={100}
-            slidesPerView={1}
-            modules={[Autoplay, Navigation]}
-          >
-            <SwiperSlide>
-              <div className={styles.image}>
-                <Image
-                  objectFit='cover'
-                  alt=''
-                  layout='fill'
-                  src='/home/slider/slide-1.jpeg'
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={styles.image}>
-                <Image
-                  objectFit='cover'
-                  alt=''
-                  layout='fill'
-                  src='/home/slider/slide-2.jpeg'
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={styles.image}>
-                <Image
-                  objectFit='cover'
-                  alt=''
-                  layout='fill'
-                  src='/home/slider/slide-3.jpeg'
-                />
-              </div>
-            </SwiperSlide>
-          </Swiper>
-        </div>
+          <div className={styles.sliderInner}>
+            <div className={styles.sliderInner2}>
+              <Swiper
+                navigation
+                className='home-swiper'
+                loop
+                autoplay={{
+                  disableOnInteraction: false
+                }}
+                spaceBetween={100}
+                slidesPerView={1}
+                modules={[Autoplay, Navigation]}
+              >
+                <SwiperSlide>
+                  <div className={styles.image}>
+                    <Image
+                      objectFit='cover'
+                      alt=''
+                      layout='fill'
+                      src='/home/slider/slide-1.jpeg'
+                    />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className={styles.image}>
+                    <Image
+                      objectFit='cover'
+                      alt=''
+                      layout='fill'
+                      src='/home/slider/slide-2.jpeg'
+                    />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className={styles.image}>
+                    <Image
+                      objectFit='cover'
+                      alt=''
+                      layout='fill'
+                      src='/home/slider/slide-3.jpeg'
+                    />
+                  </div>
+                </SwiperSlide>
+              </Swiper>
+            </div>
+          </div>
         </div>
 
 

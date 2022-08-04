@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import Header from '../components/Header'
 import Layout from '../components/Layout'
@@ -65,7 +66,6 @@ const OurServices = () => {
         webImage='/our-services/header-web.jpeg'
       />
 
-
       <div className={styles.intro}>
         <div className={styles.content}>
           <span>
@@ -109,15 +109,13 @@ const OurServices = () => {
           </span>
         </div>
 
-        <div className={styles.image}>
-          <div className="green-border-top-left">
-            <Image
-              alt=''
-              objectFit='cover'
-              layout='fill'
-              src='/our-services/5.jpeg' />
-          </div>
-        </div>
+        <Slider
+          images={[
+            '/our-services/5.jpeg',
+            '/our-services/6.jpeg',
+            '/our-services/7.jpeg',
+          ]}
+        />
       </div>
       <div className={styles.background}>
         <Image
@@ -130,7 +128,9 @@ const OurServices = () => {
           <span>
             无论客户在墨投资计划长短，我们都能根据其具体需求提供最适合的厂房出租或销售选择，相较其他工业园更具优势。
           </span>
-          <button className='btn'>厂房清单查询</button>
+          <Link href='/inventory'>
+            <a className='btn btn-white'>厂房清单查询</a>
+          </Link>
         </div>
       </div>
       <div className={styles.icons}>
@@ -188,7 +188,9 @@ const OurServices = () => {
 
       <div className={styles.cta}>
         <h3>联系VYNMSA, 我们将超出您的期望!</h3>
-        <button className='btn btn-green'>联系我们</button>
+        <Link href='/contact-us'>
+          <a className='btn btn-green'>联系我们</a>
+        </Link>
       </div>
     </Layout>
   )
