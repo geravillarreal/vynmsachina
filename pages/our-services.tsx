@@ -86,7 +86,12 @@ const OurServices = () => {
           <div className="underlined">
             <h2>现有厂房</h2>
           </div>
-          <span>多个5000平米以上的国际AAA级高标准厂房，可平面改造或扩建，欢迎企业立即进驻。</span>
+          <div className={styles.text}>
+            <span>
+              多个5000平米以上的国际AAA级高标准厂房，
+            </span>
+            <span>可平面改造或扩建，欢迎企业立即进驻。</span>
+          </div>
         </div>
 
         <div className={styles.image}>
