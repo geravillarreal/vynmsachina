@@ -157,7 +157,7 @@
     max-width: 1200px;
     margin: auto;
     align-items: center;
-    height: 100vh;
+    padding: 100px 0;
     .image {
       width: 50%;
       flex-shrink: 0;
@@ -217,8 +217,9 @@
       }
     }
   }
-  .cta{
-    h3{
+  .cta {
+    padding-bottom: 150px;
+    h3 {
       font-size: 35px;
     }
   }

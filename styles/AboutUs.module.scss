@@ -77,6 +77,14 @@
     }
   }
 
+  .background {
+    .content {
+      span {
+        font-size: 30px;
+      }
+    }
+  }
+
   .values {
     .grid1 {
       width: 40%;
@@ -117,7 +125,7 @@
       flex-shrink: 0;
       margin-left: 50px;
     }
-    .content{
+    .content {
       margin-right: 50px;
     }
   }

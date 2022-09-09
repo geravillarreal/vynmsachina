@@ -66,6 +66,7 @@ const Companies = () => {
                 <SwiperSlide key={image}>
                   <div className={styles.image}>
                     <Image
+                      priority
                       objectFit='contain'
                       alt=''
                       layout='fill'

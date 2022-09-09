@@ -73,7 +73,6 @@ const Form = () => {
           </div>
         </div>
         <div className={styles.actions}>
-          <button type='button' className='btn btn-green'>现在聊天</button>
           <button className='btn btn-green'>联系我们</button>
         </div>
       </form>

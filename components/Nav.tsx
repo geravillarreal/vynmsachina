@@ -77,7 +77,7 @@ const Nav = () => {
                     color: asPath === link.path ? '#007d64' : undefined
                   }}
 
-                  className={asPath===link.path ? styles.active : undefined}
+                  className={asPath === link.path ? styles.active : undefined}
                 >{link.title}</a>
               </Link>
             ))
