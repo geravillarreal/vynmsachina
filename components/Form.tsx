@@ -43,7 +43,7 @@ const Form = () => {
                 ...form,
                 correo: e.target.value
               })
-            }} value={form.correo} name='correo' placeholder='请输入您的电话' type="email" />
+            }} value={form.correo} name='correo' placeholder='请输入您的邮箱' type="email" />
           </div>
           <div className={styles.group}>
             <input onChange={(e) => {

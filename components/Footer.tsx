@@ -53,7 +53,7 @@ const Footer = () => {
           </a>
         </div>
         <div className={styles.bottom}>
-          <span>© {new Date().getFullYear()} VYNMSA 版权所有 <a target='_blank' href="/privacy-policy.pdf">隐私政策</a></span>
+          <span>© {new Date().getFullYear()} VYNMSA 版权所有 <a target='_blank' href="/privacy-policy.pdf">隐私政策</a> REIT PROPIEDADES INDUSTRIALES, S-DE R.L. DE C.V.</span>
         </div>
       </div>
     </footer>
