@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import Link from 'next/link'
 import Companies from '../components/Companies'
 import Form from '../components/Form'
 import Header from '../components/Header'
@@ -92,7 +93,11 @@ const RecruitingAgents = () => {
                 alt=''
               />
             </div>
-            <span>工业园区介绍</span>
+            <Link href='/inventory'>
+              <a>
+                <span>工业园区介绍</span>
+              </a>
+            </Link>
           </div>
           <div className={styles.item}>
             <div className={styles.image}>
@@ -103,7 +108,11 @@ const RecruitingAgents = () => {
                 alt=''
               />
             </div>
-            <span>可用厂房列表</span>
+            <Link href='/inventory'>
+              <a>
+                <span>可用厂房列表</span>
+              </a>
+            </Link>
           </div>
           <div className={styles.item}>
             <div className={styles.image}>
@@ -114,7 +123,9 @@ const RecruitingAgents = () => {
                 alt=''
               />
             </div>
-            <span>VYNMSA工业建筑物的租赁和出售手册（下载矩阵）</span>
+            <a target='_blank' href="/pdf/VYNMSA Northeast & Bajio-Inventory-Building-09Sep22.pdf">
+              <span>VYNMSA工业建筑物的租赁和出售手册（下载矩阵）</span>
+            </a>
           </div>
         </div>
       </div>
