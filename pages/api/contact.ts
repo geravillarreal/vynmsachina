@@ -1,43 +1,51 @@
-import axios from 'axios';
 import type { NextApiRequest, NextApiResponse } from 'next'
-import FormData from 'form-data'
+import sgMail from '@sendgrid/mail'
 
 type Data = {
-  ok: boolean
   message: string,
   status: string
 }
 
-var form = new FormData();
-
-export default async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
+export default function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
   const { nombre, correo, telefono, comentarios } = req.body
-  form.append('nombre', nombre)
-  form.append('telefono', telefono)
-  form.append('correo', correo)
-  form.append('comentarios', comentarios)
-
 
   if (req.method === 'POST') {
-    try {
-      await axios.post('http://www.vynmsachina.com/', form, {
-        headers: {
-          "Content-Type": "multipart/form-data"
+    sgMail.setApiKey(process.env.NEXT_PUBLIC_SENDGRID_API_KEY || '')
+    const msg = {
+      personalizations: [
+        {
+          "to": [
+            {
+              "email": "ayao@vynmsa.com"
+            },
+            {
+              "email": "nancy@renmei.com.mx"
+            },
+          ],
+          "bcc": [
+            {
+              "email": "misael@wearerethink.mx"
+            }
+          ]
         }
-      })
-      return res.json({
-        ok: true,
-        message: 'Sucesfully posted to form',
-        status: 'Success'
-      })
-
-    } catch (error) {
-      return res.status(500).json({
-        ok: false,
-        message: 'Failed to post form' + error,
-        status: 'Error'
-      })
+      ],
+      from: 'no-reply@vynmsachina.com',
+      subject: 'Nueva solicitud de contacto',
+      text:
+        `Recibiste una nueva solicitud de contacto \n 
+      Nombre: ${nombre}\n 
+      Correo electrónico: ${correo}\n
+      Telefono: ${telefono}\n
+      Mensaje: ${comentarios}\n`,
     }
+    return sgMail
+      .send(msg)
+      .then(() => {
+        return res.status(200).json({ status: 'ok', message: 'Email sent' })
+      })
+      .catch((error: any) => {
+        return res.status(500).json({ status: 'error', message: error })
+      })
 
   }
 }

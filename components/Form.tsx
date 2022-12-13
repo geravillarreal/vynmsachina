@@ -54,7 +54,8 @@ const Form = () => {
             }} value={form.telefono} name='telefono' placeholder='请输入您的电话' type="text" />
           </div>
           <div className={styles.group}>
-            <select className='input' defaultValue='0' name="" id="">
+            <select 
+            className='input' defaultValue='0' name="" id="">
               <option disabled value="0">请选择您的身份</option>
               <option value="1">经纪人</option>
               <option value="2">投资者</option>
