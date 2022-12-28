@@ -13,14 +13,13 @@ type FormData = {
 
 const Form = () => {
 
-  const { register, handleSubmit, control, formState: { errors } } = useForm<FormData>();
+  const { register, handleSubmit, control, reset, formState: { errors } } = useForm<FormData>();
 
   const onSubmit = async (values: FormData) => {
-
-    return console.log({ values })
     try {
       await axios.post('/api/contact', values)
-      alert('Success')
+      alert('Your  message has been sent.')
+      reset()
     } catch (error) {
       alert(JSON.stringify(error))
     }

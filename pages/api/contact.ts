@@ -7,7 +7,7 @@ type Data = {
 }
 
 export default function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
-  const { nombre, correo, telefono, comentarios } = req.body
+  const { nombre, correo, telefono, comentarios, tipo } = req.body
 
   if (req.method === 'POST') {
     sgMail.setApiKey(process.env.NEXT_PUBLIC_SENDGRID_API_KEY || '')
@@ -35,6 +35,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<Data>)
         `Recibiste una nueva solicitud de contacto \n 
       Nombre: ${nombre}\n 
       Correo electrónico: ${correo}\n
+      Tipo: ${tipo}\n
       Telefono: ${telefono}\n
       Mensaje: ${comentarios}\n`,
     }
