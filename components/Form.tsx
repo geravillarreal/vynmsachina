@@ -1,21 +1,25 @@
 import axios from 'axios'
 import React, { FormEvent, useRef, useState } from 'react'
+import { useForm } from 'react-hook-form';
 import styles from '../styles/Form.module.scss'
+
+type FormData = {
+  nombre: string
+  correo: string
+  telefono: string
+  tipo: string
+  comentarios: string
+}
+
 const Form = () => {
 
-  const formRef = useRef<any>()
+  const { register, handleSubmit, control, formState: { errors } } = useForm<FormData>();
 
-  const [form, setForm] = useState({
-    nombre: '',
-    correo: '',
-    telefono: '',
-    comentarios: ''
-  })
+  const onSubmit = async (values: FormData) => {
 
-  const handleSubmit = async (event: FormEvent) => {
-    event.preventDefault()
+    return console.log({ values })
     try {
-      await axios.post('/api/contact', form)
+      await axios.post('/api/contact', values)
       alert('Success')
     } catch (error) {
       alert(JSON.stringify(error))
@@ -27,50 +31,76 @@ const Form = () => {
       <div className="underlined">
         <h2>联系我们</h2>
       </div>
-      <form ref={formRef} onSubmit={handleSubmit} className={styles.fields}>
+      <form onSubmit={handleSubmit(onSubmit)} className={styles.fields}>
         <div className={styles.col1}>
           <div className={styles.group}>
-            <input onChange={(e) => {
-              setForm({
-                ...form,
-                nombre: e.target.value
-              })
-            }} value={form.nombre} name='nombre' placeholder='请输入您的姓名' type="text" />
+            <label htmlFor="">请输入您的姓名</label>
+            <input
+              {...register('nombre', {
+                required: true
+              })}
+              placeholder='请输入您的姓名'
+              type="text"
+            />
+            {
+              errors.nombre && <span className="error">Required</span>
+            }
           </div>
           <div className={styles.group}>
-            <input onChange={(e) => {
-              setForm({
-                ...form,
-                correo: e.target.value
-              })
-            }} value={form.correo} name='correo' placeholder='请输入您的邮箱' type="email" />
+            <label htmlFor="">请输入您的邮箱</label>
+            <input
+              {...register('correo', {
+                required: true
+              })}
+              placeholder='请输入您的邮箱'
+              type="email"
+            />
+            {
+              errors.correo && <span className="error">Required</span>
+            }
           </div>
           <div className={styles.group}>
-            <input onChange={(e) => {
-              setForm({
-                ...form,
-                telefono: e.target.value
-              })
-            }} value={form.telefono} name='telefono' placeholder='请输入您的电话' type="text" />
+            <label htmlFor="">请输入您的电话</label>
+            <input
+              {...register('telefono', {
+                required: true
+              })}
+              placeholder='请输入您的电话'
+              type="text"
+              inputMode='numeric'
+            />
+            {
+              errors.telefono && <span className="error">Required</span>
+            }
           </div>
           <div className={styles.group}>
-            <select 
-            className='input' defaultValue='0' name="" id="">
-              <option disabled value="0">请选择您的身份</option>
-              <option value="1">经纪人</option>
-              <option value="2">投资者</option>
-              <option value="4">供应商</option>
+            <label htmlFor="">请选择您的身份</label>
+            <select
+              {...register('tipo', {
+                required: true
+              })}
+              className='input'>
+              <option value="broker">经纪人</option>
+              <option value="investor">投资者</option>
+              <option value="supplier">供应商</option>
             </select>
+            {
+              errors.tipo && <span className="error">Required</span>
+            }
           </div>
         </div>
         <div className={styles.col2}>
           <div className={styles.group}>
-            <textarea onChange={(e) => {
-              setForm({
-                ...form,
-                comentarios: e.target.value
-              })
-            }} value={form.comentarios} placeholder='我们可以怎样帮助您?' name="comentarios" id="" ></textarea>
+            <label htmlFor="">我们可以怎样帮助您</label>
+            <textarea
+              {...register('comentarios', {
+                required: true
+              })}
+              placeholder='我们可以怎样帮助您?'
+            />
+            {
+              errors.comentarios && <span className="error">Required</span>
+            }
           </div>
         </div>
         <div className={styles.actions}>
