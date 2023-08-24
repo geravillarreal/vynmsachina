@@ -118,6 +118,24 @@
   }
 }
 
+.brochure {
+  padding-bottom: 50px;
+  text-align: center;
+  letter-spacing: 0.25em;
+  word-spacing: 0.25em;
+
+  div {
+    height: auto;
+    display: inline-flex;
+  }
+
+  img {
+    height: 30px;
+    margin-top: 3px;
+    margin-right: 1rem;
+  }
+}
+
 @media (min-width: 1024px) {
   .content {
     max-width: 1000px;

@@ -138,6 +138,17 @@ const AvailableWorkshops = () => {
             }
           </div>
         </div>
+        {
+          currentLocation.brochure &&
+          <div className={styles.brochure}>
+          <a target='_blank' href={"/pdf/" + currentLocation.brochure} >
+            <div className='cursor-pointer btn btn-green'>
+                <img src="/pdf/pdf icon.png" alt="PDF ICON" />
+                <span>下载PDF, 了解更多信息</span>
+            </div>
+          </a>
+        </div>
+        }
       </div>
     </Layout>
   )

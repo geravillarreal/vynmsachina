@@ -7,7 +7,7 @@ export const locations = {
         locations: [
           {
             id: "1-1-1",
-            name: "莱昂-VII",
+            name: "莱昂 - 9号",
             mapTitle: "VYNMSA莱昂工业园 SPEC VII – VYNMSA León Industrial Park (León, Gto)",
             mapImage: "",
             description: "距离瓜纳华托国际机场车程30分钟，与汽车制造业走廊距离仅10分钟车程，目前可用于定制建造厂房用地达26公顷，可租售厂房数量充足，园区内企业多来自物流、食品、农产品以及汽车行业",
@@ -37,31 +37,23 @@ export const locations = {
           },
           {
             id: "1-1-2",
-            name: "莱昂-IV"
+            name: "希尔劳 - III期 - 1号"
           },
           {
             id: "1-1-3",
-            name: "希尔劳"
+            name: "依拉普阿托 - 5号"
           },
           {
             id: "1-1-4",
-            name: "瓜纳华托-II"
+            name: "塞拉亚 - 2号"
           },
           {
             id: "1-1-5",
-            name: "瓜纳华托-IV"
-          },
-          {
-            id: "1-1-6",
-            name: "塞拉亚"
-          },
-          {
-            id: "1-1-7",
             name: "阿帕塞奥"
           },
           {
-            id: "1-1-8",
-            name: "圣米格尔德阿连德"
+            id: "1-1-6",
+            name: "圣米格尔德阿连德 - 2号"
           },
         ]
       },
@@ -76,10 +68,6 @@ export const locations = {
             id: "1-2-2",
             name: "克雷塔罗-C"
           },
-          {
-            id: "1-2-3",
-            name: "克雷塔罗-IX"
-          },
         ]
       },
       {
@@ -87,7 +75,7 @@ export const locations = {
         locations: [
           {
             id: "1-3-1",
-            name: "圣路易斯波多西"
+            name: "圣路易斯波多西- II期 (紧凑型) - 3号"
           },
         ]
       },
