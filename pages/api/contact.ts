@@ -19,7 +19,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<Data>)
               "email": "ayao@vynmsa.com"
             },
             {
-              "email": "nancy@renmei.com.mx"
+              "email": "nancybautistamudd@gmail.com"
             },
           ],
           "bcc": [
