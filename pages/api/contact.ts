@@ -16,7 +16,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<Data>)
         {
           "to": [
             {
-              "email": "ayao@vynmsa.com"
+              "email": "lchen@vynmsa.com"
             },
             {
               "email": "nancybautistamudd@gmail.com"
