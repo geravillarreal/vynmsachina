@@ -47,6 +47,5 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<Data>)
       .catch((error: any) => {
         return res.status(500).json({ status: 'error', message: error })
       })
-
   }
 }
