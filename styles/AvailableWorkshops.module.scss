@@ -83,6 +83,9 @@
 
   .description {
     margin-bottom: 20px;
+    text-align: justify;
+    letter-spacing: 1.5px;
+    line-height: 25px;
   }
 
   .slider {
@@ -136,6 +139,13 @@
   }
 }
 
+.notes {
+  text-align: center;
+  padding-bottom: 50px;
+  color: #007d64;
+  font-weight: bold;
+}
+
 @media (min-width: 1024px) {
   .content {
     max-width: 1000px;
@@ -180,7 +190,6 @@
     }
   }
   .description {
-    max-width: 600px;
     margin: auto;
     margin-bottom: 100px !important;
   }

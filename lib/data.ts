@@ -42,12 +42,13 @@ export const locations = [
     id: "1-1-1",
     cityId: "1",
     name: "莱昂 - 9号",
-    mapTitle: "VYNMSA莱昂工业园 SPEC 9号 – VYNMSA León Industrial Park (León, Gto)",
+    mapTitle: "VYNMSA莱昂工业园 – VYNMSA León Industrial Park (León, Gto)",
     mapImage: "/recruiting-agents/data/1-1-1.jpeg",
     description: "距离瓜纳华托国际机场车程30分钟，与汽车制造业走廊距离仅10分钟车程，目前可用于定制建造厂房用地达26公顷，可租售厂房数量充足，园区内企业多来自物流、食品、农产品以及汽车行业",
     sliderImages: [],
     title: "VYNMSA莱昂工业园 SPEC 9号",
     brochure: "VYNMSA Northeast & Bajio-Inventory-Building-09Sep22.pdf",
+    notes: "2024 年第二季度上市",
     items: [
       {
         title: "主要优势:",
@@ -74,7 +75,42 @@ export const locations = [
     id: "1-1-2",
     cityId: "1",
     name: "希尔劳 - III期 - 1号",
-    mapTitle: "VYNMSA瓜纳华托普尔多因特里奥工业园 SPEC C - VYNMSA Guanajuato Puerto Interior (Silao, Gto)",
+    mapTitle: "VYNMSA瓜纳华托普尔多因特里奥工业园 - VYNMSA Guanajuato Puerto Interior (Silao, Gto)",
+    mapImage: "/recruiting-agents/data/1-1-3.jpeg",
+    description: "瓜纳华托普尔多因特里奥工业园临近瓜纳华托国际机场，这个由秉厦精心开发打造的园区目前已有4家企业入驻，可租售及定制建造厂房项目用地约11公顷。",
+    sliderImages: [],
+    title: "VYNMSA瓜纳华托普尔多因特里奥工业园 - III期 SPEC I",
+    brochure: "VYNMSA Northeast & Bajio-Inventory-Building-09Sep22.pdf",
+    notes: "现在有空",
+    items: [
+      {
+        title: "主要优势：",
+        list: [
+          "距离国际机场2公里",
+          "紧邻汽车生产带",
+          "建有袖珍公园，配备多重安保",
+          "价格有竞争力",
+          "靠近州公安厅指挥、通信、控制、计算机和情报（C5I）系统设施，安全保障升级",
+          "瓜纳华托州唯一获得墨西哥工业园协会 (Ampip)认证的“战略保税区”（西语缩写：RFE），外贸企业可享受一系列宽松的政策和优惠（动植物卫生、公共医疗、环境及国家安全行业除外）"
+        ]
+      },
+      {
+        title: "工业园总体优势：",
+        list: [
+          "所有工业园地处劳动力充足市场",
+          "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+          "米宽水泥工业园道路",
+          "全年全天候闭路电视安全监控",
+          "紧邻墨国内重要国道",
+        ]
+      },
+    ]
+  },
+  {
+    id: "1-1-3",
+    cityId: "1",
+    name: "希尔劳 - II期 - C",
+    mapTitle: "VYNMSA瓜纳华托普尔多因特里奥工业园 - VYNMSA Guanajuato Puerto Interior (Silao, Gto)",
     mapImage: "/recruiting-agents/data/1-1-3.jpeg",
     description: "瓜纳华托普尔多因特里奥工业园临近瓜纳华托国际机场，这个由秉厦精心开发打造的园区目前已有4家企业入驻，可租售及定制建造厂房项目用地约11公顷。",
     sliderImages: [],
@@ -105,15 +141,16 @@ export const locations = [
     ]
   },
   {
-    id: "1-1-3",
+    id: "1-1-4",
     cityId: "1",
     name: "依拉普阿托 - 5号",
-    mapTitle: "VYNMSA瓜纳华托工业园 SPEC II - VYNMSA Guanajuato Industrial Park (Gto, Gto)",
+    mapTitle: "VYNMSA瓜纳华托工业园 - VYNMSA Guanajuato Industrial Park (Silao,Gto)",
     mapImage: "/recruiting-agents/data/1-1-4.jpeg",
     description: "该工业园位于瓜纳华托首府，距离瓜纳华托国际机场20分钟车程，紧邻汽车制造业走廊，目前可租售及定制建造厂房用地面积达60公顷。",
     sliderImages: [],
-    title: "VYNMSA瓜纳华托工业园 SPEC II",
+    title: "VYNMSA瓜纳华托工业园 SPEC V",
     brochure: "VYNMSA Northeast & Bajio-Inventory-Building-09Sep22.pdf",
+    notes: "2024 年第二季度上市",
     items: [
       {
         title: "主要优势：",
@@ -136,10 +173,10 @@ export const locations = [
     ]
   },
   {
-    id: "1-1-4",
+    id: "1-1-5",
     cityId: "1",
     name: "塞拉亚 - 2号",
-    mapTitle: "VYNMSA塞拉亚工业园 SPEC II - VYNMSA Celaya Industrial Park (Celaya, Gto)",
+    mapTitle: "VYNMSA塞拉亚工业园 - VYNMSA Celaya Industrial Park (Celaya, Gto)",
     mapImage: "/recruiting-agents/data/1-1-6.jpeg",
     description: "位于瓜纳华托州塞拉亚，可租售及定制建造厂房项目面积合计7公顷，企业可立即入驻",
     sliderImages: [],
@@ -166,8 +203,8 @@ export const locations = [
       },
     ]
   },
-  {
-    id: "1-1-5",
+  /*{
+    id: "1-1-6",
     cityId: "1",
     name: "阿帕塞奥",
     mapTitle: "VYNMSA阿帕塞奥工业园 - VYNMSA Apaseo Industrial Park (Apaseo el Grande, Gto)",
@@ -200,7 +237,7 @@ export const locations = [
 
   },
   {
-    id: "1-1-6",
+    id: "1-1-7",
     cityId: "1",
     name: "圣米格尔德阿连德 - 2号",
     mapTitle: "圣米格尔德阿连德工商业园 SPEC II - Polígono Empresarial Zona Industrial San Miguel de Allende (San Miguel de Allende, Gto)",
@@ -229,16 +266,18 @@ export const locations = [
         ]
       },
     ]
-  },
+  },*/
   {
     id: "1-2-1",
     cityId: "2",
-    name: "艾尔马尔克斯",
+    name: "艾尔马尔克斯 - II期 -1号",
     mapTitle: "VYNMSA克雷塔罗工业园 - VYNMSA Querétaro Industrial Park (El Marqués, Qro)",
     mapImage: "/recruiting-agents/data/1-2-1.jpeg",
     description: "位于克雷塔罗东南角的艾尔马尔克斯（El Marqués），驾车只需10分钟即可到达克雷塔罗国际机场。该工业园是秉厦旗下园区开发理念最先进的代表，并且紧邻北美自贸57号公路，园区内可租售及定制建造厂房项目用地面积20公顷左右，可满足客户灵活多样的要求。",
     sliderImages: [],
-    title: "VYNMSA克雷塔罗工业园 SPEC III",
+    title: "艾尔马尔克斯 - II期 - 1",
+    notes: "2024 年第四季度上市",
+    brochure: "VYNMSA Northeast & Bajio-Inventory-Building-09Sep22.pdf",
     items: [
       {
         title: "主要优势：",
@@ -263,12 +302,46 @@ export const locations = [
   {
     id: "1-2-2",
     cityId: "2",
+    name: "艾尔马尔克斯 - II期 -2号",
+    mapTitle: "VYNMSA克雷塔罗工业园 - VYNMSA Querétaro Industrial Park (El Marqués, Qro)",
+    mapImage: "/recruiting-agents/data/1-2-1.jpeg",
+    description: "位于克雷塔罗东南角的艾尔马尔克斯（El Marqués），驾车只需10分钟即可到达克雷塔罗国际机场。该工业园是秉厦旗下园区开发理念最先进的代表，并且紧邻北美自贸57号公路，园区内可租售及定制建造厂房项目用地面积20公顷左右，可满足客户灵活多样的要求。",
+    sliderImages: [],
+    title: "艾尔马尔克斯 - II期 - 2",
+    notes: "2024 年第四季度上市",
+    brochure: "VYNMSA Northeast & Bajio-Inventory-Building-09Sep22.pdf",
+    items: [
+      {
+        title: "主要优势：",
+        list: [
+          "距离克雷塔罗国际机场10分钟车程",
+          "畅享北美自由贸易高速公路网 （开往墨西哥城、圣路易斯·瓜纳华托·蒙特雷路段）",
+          "航空、电气、数据储存等高科技企业为主",
+        ]
+      },
+      {
+        title: "工业园总体优势：",
+        list: [
+          "所有工业园地处劳动力充足市场",
+          "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+          "米宽水泥工业园道路",
+          "全年全天候闭路电视安全监控",
+          "紧邻墨国内重要国道.",
+        ]
+      },
+    ]
+  },
+  {
+    id: "1-2-3",
+    cityId: "2",
     name: "克雷塔罗-C",
     mapTitle: "克雷塔罗PIQ工业园 - Parque Industrial Querétaro PIQ (Qro, Qro)",
     mapImage: "/recruiting-agents/data/1-2-2.jpeg",
     description: "秉厦在克雷塔罗州的最新工业园项目，距离克雷塔罗州机场35分钟车程，可租售及定制建造厂房项目用地占20公顷左右，目前已进驻来自日、德、加、美等地企业14家。。",
     sliderImages: [],
-    title: "克雷塔罗PIQ工业园",
+    title: "克雷塔罗PIQ工业园- SPEC C",
+    notes: "2024 年第四季度上市",
+    brochure: "VYNMSA Northeast & Bajio-Inventory-Building-09Sep22.pdf",
     items: [
       {
         title: "主要优势：",

@@ -128,11 +128,13 @@ const AvailableWorkshops = () => {
               currentLocation.items?.map(item => (
                 <div key={item.title}>
                   <h4>{item.title}</h4>
+                  <ul>
                   {
                     item.list.map(li => (
-                      <span key={li}>{li}</span>
+                      <li><span key={li}>{li}</span></li>
                     ))
                   }
+                  </ul>
                 </div>
               ))
             }
@@ -147,6 +149,12 @@ const AvailableWorkshops = () => {
                 <span>下载PDF, 了解更多信息</span>
               </div>
             </a>
+          </div>
+        }
+        {
+          currentLocation.notes &&
+          <div className={styles.notes}>
+            <span>{currentLocation.notes}</span>
           </div>
         }
       </div>
