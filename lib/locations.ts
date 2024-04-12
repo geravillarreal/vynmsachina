@@ -150,11 +150,7 @@ export const locations = {
           {
             id: "2-1-16",
             name: "圣塔卡琳娜-VI"
-          },
-          {
-            id: "2-1-17",
-            name: "圣塔卡琳娜-VII"
-          },
+          }
         ]
       },
       {
@@ -167,11 +163,7 @@ export const locations = {
           {
             id: "2-2-2",
             name: "拉莫斯阿里斯佩-K",
-          },
-          {
-            id: "2-2-3",
-            name: "拉莫斯阿里斯佩-VII",
-          },
+          }
         ]
       }
     ]
