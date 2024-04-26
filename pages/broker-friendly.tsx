@@ -63,7 +63,7 @@ const RecruitingAgents = () => {
       <div className={`${styles.section} ${styles.section2}`}>
         <h3>代理VYNMSA(秉厦)有哪些优势？</h3>
         <span>
-          作为墨西哥顶尖的工业园区建设开发商，VYNMSA (秉厦)已成功完成450多个项目，在墨西哥北部和中部5个工业大州建有33个工业园区，总面积达250万平米，目前约有20个工业/货仓空间可立即入驻
+        作为墨西哥顶尖的工业园区建设开发商，VYNMSA (秉厦)已成功完成500多个项目，在墨西哥北部和中部5个工业大州建有26个工业园区，总面积达250万平米，目前约有20个工业/货仓空间可立即入驻. 
         </span>
         <div className={styles.grid}>
           {

@@ -18,8 +18,8 @@ const AvailableWorkshops = () => {
     <Layout title='可用厂房'>
 
       <Header
-        mobileImage='/available-workshops/header.jpeg'
-        webImage='/available-workshops/header.jpeg'
+        mobileImage={currentLocation.image}
+        webImage={currentLocation.image}
       />
 
       <div className={styles.content}>
@@ -114,10 +114,7 @@ const AvailableWorkshops = () => {
               style={{
                 width: '100%'
               }}
-              images={[
-                '/about-us/intro/slide-1.jpeg',
-                '/about-us/intro/slide-2.jpeg',
-              ]}
+              images={currentLocation.sliderImages}
             />
           </div>
           <div className={styles.title}>
