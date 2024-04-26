@@ -128,7 +128,7 @@ const AvailableWorkshops = () => {
                   <ul>
                   {
                     item.list.map(li => (
-                      <li><span key={li}>{li}</span></li>
+                      <li key={li} ><span>{li}</span></li>
                     ))
                   }
                   </ul>
