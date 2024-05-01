@@ -49,7 +49,7 @@ const Companies = () => {
               layout='fill'
             />
           </div>
-          <span>向国内外顶级客户成功交付超过450个重大项目</span>
+          <span>向国内外顶级客户成功交付超过500个重大项目</span>
         </div>
         <div className={styles.companiesSlider}>
           <Swiper

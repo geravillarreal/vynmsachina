@@ -63,7 +63,7 @@ const RecruitingAgents = () => {
       <div className={`${styles.section} ${styles.section2}`}>
         <h3>代理VYNMSA(秉厦)有哪些优势？</h3>
         <span>
-        作为墨西哥顶尖的工业园区建设开发商，VYNMSA (秉厦)已成功完成500多个项目，在墨西哥北部和中部5个工业大州建有26个工业园区，总面积达250万平米，目前约有20个工业/货仓空间可立即入驻. 
+        作为墨西哥顶尖的工业园区建设开发商，VYNMSA (秉厦)已成功完成500多个项目，在墨西哥北部和中部5个工业大州建有26个工业园区，总面积达400万平米，目前约有20个工业/货仓空间可立即入驻. 
         </span>
         <div className={styles.grid}>
           {
@@ -86,14 +86,18 @@ const RecruitingAgents = () => {
         <div className={styles.grid}>
           <div className={styles.item}>
             <div className={styles.image}>
-              <Image
-                objectFit='cover'
-                layout='fill'
-                src='/recruiting-agents/img-1.jpeg'
-                alt=''
-              />
+              <Link href='/about-us'>
+                <a>
+                <Image
+                  objectFit='cover'
+                  layout='fill'
+                  src='/recruiting-agents/img-1.jpeg'
+                  alt=''
+                />
+                </a>
+              </Link>
             </div>
-            <Link href='/inventory'>
+            <Link href='/about-us'>
               <a>
                 <span>工业园区介绍</span>
               </a>
@@ -101,12 +105,16 @@ const RecruitingAgents = () => {
           </div>
           <div className={styles.item}>
             <div className={styles.image}>
-              <Image
-                objectFit='cover'
-                layout='fill'
-                src='/recruiting-agents/img-2.jpeg'
-                alt=''
-              />
+              <Link href='/inventory'>
+                <a>
+                  <Image
+                    objectFit='cover'
+                    layout='fill'
+                    src='/recruiting-agents/img-2.jpeg'
+                    alt=''
+                  />
+                </a>
+              </Link>
             </div>
             <Link href='/inventory'>
               <a>
@@ -116,14 +124,16 @@ const RecruitingAgents = () => {
           </div>
           <div className={styles.item}>
             <div className={styles.image}>
-              <Image
-                objectFit='cover'
-                layout='fill'
-                src='/recruiting-agents/img-3.jpeg'
-                alt=''
-              />
+              <a target='_blank' href="/pdf/Inventory-Building-VYNMSA-04Abr-24.pdf">
+                <Image
+                  objectFit='cover'
+                  layout='fill'
+                  src='/recruiting-agents/img-3.jpeg'
+                  alt=''
+                />
+              </a>
             </div>
-            <a target='_blank' href="/pdf/VYNMSA Northeast & Bajio-Inventory-Building-09Sep22.pdf">
+            <a target='_blank' href="/pdf/Inventory-Building-VYNMSA-04Abr-24.pdf">
               <span>VYNMSA工业建筑物的租赁和出售手册（下载矩阵）</span>
             </a>
           </div>
