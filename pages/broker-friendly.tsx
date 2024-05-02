@@ -124,7 +124,7 @@ const RecruitingAgents = () => {
           </div>
           <div className={styles.item}>
             <div className={styles.image}>
-              <a target='_blank' href="/pdf/Inventory-Building-VYNMSA-04Abr-24.pdf">
+              <a target='_blank' href="/pdf/no-delete/Inventory-Building-VYNMSA-04Abr-24.pdf">
                 <Image
                   objectFit='cover'
                   layout='fill'
@@ -133,7 +133,7 @@ const RecruitingAgents = () => {
                 />
               </a>
             </div>
-            <a target='_blank' href="/pdf/Inventory-Building-VYNMSA-04Abr-24.pdf">
+            <a target='_blank' href="/pdf/no-delete/Inventory-Building-VYNMSA-04Abr-24.pdf">
               <span>VYNMSA工业建筑物的租赁和出售手册（下载矩阵）</span>
             </a>
           </div>

@@ -1,6 +1,6 @@
 export const regions = [{id: "1", name: "巴希奥地区"},{id: "2", name: "蒙特雷大都市区"}]
 
-export const cities = [{id: "1", name: "克雷塔罗", regionId: "1"},{id: "2", name: "圣路易斯波多西", regionId: "1"},{id: "3", name: "瓜纳华托", regionId: "1"},{id: "1", name: "新莱昂州", regionId: "2"},{id: "2", name: "科阿韦拉州", regionId: "2"}]
+export const cities = [{id: "1", name: "克雷塔罗", regionId: "1"},{id: "2", name: "圣路易斯波多西", regionId: "1"},{id: "3", name: "瓜纳华托", regionId: "1"},{id: "4", name: "新莱昂州", regionId: "2"},{id: "5", name: "科阿韦拉州", regionId: "2"}]
 
 export const locations = [
 	{
@@ -102,7 +102,7 @@ export const locations = [
     ]
 	},
 	{
-		id: "1-2-1",
+		id: "1-2-4",
 		cityId: "2",
 		name: "圣路易斯波多西 - I期 (紧凑型) - 13号",
 		mapTitle: "物流自由贸易区工业园 - Logistik Industrial Park (SLP, SLP)",
@@ -135,7 +135,7 @@ export const locations = [
     ]
 	},
 	{
-		id: "1-3-1",
+		id: "1-3-5",
 		cityId: "3",
 		name: "依拉普阿托 - 5号",
 		mapTitle: "VYNMSA瓜纳华托工业园 - VYNMSA Guanajuato Industrial Park (Irapuato,Gto)",
@@ -168,7 +168,7 @@ export const locations = [
     ]
 	},
 	{
-		id: "1-3-2",
+		id: "1-3-6",
 		cityId: "3",
 		name: "塞拉亚 - 2号",
 		mapTitle: "VYNMSA塞拉亚工业园 - VYNMSA Celaya Industrial Park (Celaya, Gto)",
@@ -201,7 +201,7 @@ export const locations = [
     ]
 	},
 	{
-		id: "1-3-3",
+		id: "1-3-7",
 		cityId: "3",
 		name: "希尔劳 - II期 - C",
 		mapTitle: "VYNMSA瓜纳华托普尔多因特里奥工业园 - VYNMSA Guanajuato Puerto Interior II (Silao, Gto)",
@@ -237,7 +237,7 @@ export const locations = [
     ]
 	},
 	{
-		id: "1-3-4",
+		id: "1-3-8",
 		cityId: "3",
 		name: "莱昂 - 9号",
 		mapTitle: "VYNMSA莱昂工业园 – VYNMSA León Industrial Park (León, Gto)",
@@ -271,8 +271,8 @@ export const locations = [
     ]
 	},
 	{
-		id: "2-1-1",
-		cityId: "1",
+		id: "2-4-9",
+		cityId: "4",
 		name: "圣塔卡琳娜-II期 -A",
 		mapTitle: "VYNMSA 圣塔卡琳娜工业园 - VYNMSA Santa Catarina Park II",
 		description: "位于圣塔卡琳娜核心地带，新莱昂州蒙特雷和科阿韦拉州萨尔迪约·拉莫斯阿里斯佩两大主要工业区之间，目前可定制建造项目用地合计26公顷，并有充足空余厂房用于租售，可立即入驻使用，可下载园区介绍手册进一步了解详情。",
@@ -307,8 +307,8 @@ export const locations = [
     ]
 	},
 	{
-		id: "2-1-2",
-		cityId: "1",
+		id: "2-4-10",
+		cityId: "4",
 		name: "圣塔卡琳娜-都市工业园 II - A号",
 		mapTitle: "都市工业园 II - VYNMSA Metropolitan Pak II (Santa Catarina, Nuevo Leon)",
 		description: "位于圣塔卡琳娜核心地带，新莱昂州蒙特雷和科阿韦拉州萨尔迪约·拉莫斯阿里斯佩两大主要工业区之间，目前可定制建造项目用地合计26公顷，并有充足空余厂房用于租售，可立即入驻使用，可下载园区介绍手册进一步了解详情。",
@@ -343,8 +343,8 @@ export const locations = [
     ]
 	},
 	{
-		id: "2-1-3",
-		cityId: "1",
+		id: "2-4-11",
+		cityId: "4",
 		name: "埃斯科贝多-I期 -5号",
 		mapTitle: "VYNMSA 埃斯科贝多- VYNMSA Escobedo Park I",
 		description: "位于新莱昂州埃斯科贝多的东北部里布拉门多（Libramiento）高速公路带上，紧邻多式联运站，距离蒙特雷国际机场20分钟以内车程。工业园由I期和II期组成，总占地面积达100公顷，有足够的租售及定制建设用地，园区内已入驻中、德、韩、美等大型企业，可下载园区介绍手册进一步了解详情。",
@@ -378,8 +378,8 @@ export const locations = [
     ]
 	},
 	{
-		id: "2-1-4",
-		cityId: "1",
+		id: "2-4-12",
+		cityId: "4",
 		name: "西内嘉德弗洛雷斯 -A",
 		mapTitle: "VYNMSA 北工业园 - VYNMSA North Industrial Park",
 		description: "建于1999年，位于新莱昂州西内嘉德弗洛雷斯，亚洲及国际客户众多，目前可租售及定制建造厂房用地达300公顷，可下载园区介绍手册进一步了解详情。",
@@ -412,8 +412,8 @@ export const locations = [
     ]
 	},
 	{
-		id: "2-1-5",
-		cityId: "1",
+		id: "2-4-13",
+		cityId: "4",
 		name: "西内嘉德弗洛雷斯 -B",
 		mapTitle: "VYNMSA 北工业园 - VYNMSA North Industrial Park",
 		description: "建于1999年，位于新莱昂州西内嘉德弗洛雷斯，亚洲及国际客户众多，目前可租售及定制建造厂房用地达300公顷，可下载园区介绍手册进一步了解详情。",
@@ -446,8 +446,8 @@ export const locations = [
     ]
 	},
 	{
-		id: "2-1-6",
-		cityId: "1",
+		id: "2-4-14",
+		cityId: "4",
 		name: "阿波达卡-OMA 15号",
 		mapTitle: "OMA VYNMSA机场工业园 - OMA VYNMSA AERO Industrial Park, Apodaca",
 		description: "建于2014年，因位于机场核心范围内，是蒙特雷市内联邦安全系数最高的工业园区。目前已有9个国际企业入驻，可租售及定制建造厂房项目用地达42公顷，可下载园区介绍手册进一步了解详情。",
@@ -480,8 +480,8 @@ export const locations = [
     ]
 	},
 	{
-		id: "2-1-7",
-		cityId: "1",
+		id: "2-4-15",
+		cityId: "4",
 		name: "阿波达卡-OMA SB",
 		mapTitle: "OMA VYNMSA机场工业园 - OMA VYNMSA AERO Industrial Park, Apodaca",
 		description: "建于2014年，因位于机场核心范围内，是蒙特雷市内联邦安全系数最高的工业园区。目前已有9个国际企业入驻，可租售及定制建造厂房项目用地达42公顷，可下载园区介绍手册进一步了解详情。",
@@ -514,8 +514,8 @@ export const locations = [
     ]
 	},
 	{
-		id: "2-1-8",
-		cityId: "1",
+		id: "2-4-16",
+		cityId: "4",
 		name: "阿波达卡-机场",
 		mapTitle: "VYNMSA机场阿波达卡工业园 - VYNMSA Aeropuerto Apodaca Industrial Park",
 		description: "位于阿波达卡工业集群区，已有六家亚洲企业进驻，目前可租售及定制建造厂房项目用地为26公顷，可下载园区介绍手册进一步了解详情。",
@@ -550,8 +550,8 @@ export const locations = [
     ]
 	},
 	{
-		id: "2-1-9",
-		cityId: "1",
+		id: "2-4-17",
+		cityId: "4",
 		name: "阿波达卡工业园- G",
 		mapTitle: "VYNMSA 阿波达卡工业园 - VYNMSA Apodaca Industrial Park",
 		description: "位于阿波达卡工业集群区，已有六家亚洲企业进驻，目前可租售及定制建造厂房项目用地为26公顷，可下载园区介绍手册进一步了解详情。",
@@ -586,8 +586,8 @@ export const locations = [
     ]
 	},
 	{
-		id: "2-1-10",
-		cityId: "1",
+		id: "2-4-18",
+		cityId: "4",
 		name: "阿波达卡工业园- J",
 		mapTitle: "VYNMSA 阿波达卡工业园 - VYNMSA Apodaca Industrial Park",
 		description: "位于阿波达卡工业集群区，已有六家亚洲企业进驻，目前可租售及定制建造厂房项目用地为26公顷，可下载园区介绍手册进一步了解详情。",
@@ -622,8 +622,8 @@ export const locations = [
     ]
 	},
 	{
-		id: "2-2-1",
-		cityId: "2",
+		id: "2-5-19",
+		cityId: "5",
 		name: "拉莫斯阿里斯佩- I期 9号",
 		mapTitle: "VYNMSA 拉莫斯阿里斯佩业园 I - VYNMSA Ramos Arizpe I",
 		description: "位于科阿韦拉州拉莫斯阿里斯佩，由I期和II期组成，均地处墨西哥北部工业发达地带，国际尤其是亚洲客户众多，目前可租售及定制建造厂房项目用地达60公顷，可下载园区介绍手册进一步了解详情。",
@@ -657,8 +657,8 @@ export const locations = [
     ]
 	},
 	{
-		id: "2-2-2",
-		cityId: "2",
+		id: "2-5-20",
+		cityId: "5",
 		name: "拉莫斯阿里斯佩- V期- A",
 		mapTitle: "VYNMSA 拉莫斯阿里斯佩业园 V - VYNMSA Ramos Arizpe V",
 		description: "位于科阿韦拉州拉莫斯阿里斯佩，由I期和II期组成，均地处墨西哥北部工业发达地带，国际尤其是亚洲客户众多，目前可租售及定制建造厂房项目用地达60公顷，可下载园区介绍手册进一步了解详情。",
