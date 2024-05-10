@@ -10,7 +10,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<Data>)
   const { nombre, correo, telefono, comentarios, tipo } = req.body
 
   if (req.method === 'POST') {
-    sgMail.setApiKey(process.env.NEXT_PUBLIC_SENDGRID_API_KEY || '')
+    sgMail.setApiKey(process.env.NEXT_PUBLIC_SENDGRID_API_KEY || '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')
     const msg = {
       personalizations: [
         {
@@ -24,7 +24,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<Data>)
           ],
           "bcc": [
             {
-              "email": "misael@wearerethink.mx"
+              "email": "gerardovillarreal3a@hotmail.com"
             }
           ]
         }
