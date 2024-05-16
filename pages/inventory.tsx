@@ -141,8 +141,13 @@ const AvailableWorkshops = () => {
           currentLocation.brochure &&
           <div className={styles.brochure}>
             <a target='_blank' rel='noreferrer' href={"/pdf/" + currentLocation.brochure} >
-              <div className='cursor-pointer btn btn-green'>
-                <img src="/pdf/pdf icon.png" alt="PDF ICON" />
+              <div className={styles.pdfIcon}>
+                <Image
+                  src='/pdf/pdf icon.png'
+                  alt='PDF ICON'
+                  width={35}
+                  height={30}
+                />
                 <span>下载PDF, 了解更多信息</span>
               </div>
             </a>

@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Script
         id="google-analytics-code"
         src='https://www.googletagmanager.com/gtag/js?id=UA-106577678-2'
-        strategy="beforeInteractive"
+        strategy="afterInteractive"
       />
       <Script
         id="google-analytics"

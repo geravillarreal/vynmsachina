@@ -132,10 +132,17 @@
     display: inline-flex;
   }
 
-  img {
-    height: 30px;
+  .pdfIcon {
+    cursor: pointer;
     margin-top: 3px;
     margin-right: 1rem;
+    font-size: 16px;
+    padding: 10px 20px;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    background-color: #007d64;
+    color: white;
   }
 }
 
