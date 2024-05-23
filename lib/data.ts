@@ -588,6 +588,42 @@ export const locations = [
 	{
 		id: "2-4-18",
 		cityId: "4",
+		name: "阿波达卡工业园- H",
+		mapTitle: "VYNMSA 阿波达卡工业园 - VYNMSA Apodaca Industrial Park",
+		description: "位于阿波达卡工业集群区，已有六家亚洲企业进驻，目前可租售及定制建造厂房项目用地为26公顷，可下载园区介绍手册进一步了解详情。",
+		title: "阿波达卡工业园- H",
+		notes: "",
+		sliderImages: ["/recruiting-agents/data/sliderImages/Apodaca SPEC J 1.png", "/recruiting-agents/data/sliderImages/Apodaca SPEC J 2.png"],
+		image: "/recruiting-agents/data/headers/monolito genérico vynmsa.png",
+		mapImage: "/recruiting-agents/data/monolito genérico vynmsa.png",
+		brochure: "Naves-Industriales-Apodaca-VAIP-SPEC-H-CH.pdf",
+		items: [
+      {
+        title: "主要优势：",
+        list: [
+          "公共交通发达",
+          "位于阿波达卡产业集群地带",
+          "距离机场10分钟以内车程",
+          "高速公路环绕",
+          "劳动力非常集中",
+          "全年全天候闭路电视安全监控",
+        ]
+      },
+      {
+        title: "工业园总体优势：",
+        list: [
+          "所有工业园地处劳动力充足市场",
+          "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+          "米宽水泥工业园道路",
+          "全年全天候闭路电视安全监控",
+          "紧邻墨国内重要国道，北部园区临近美国边境公路",
+        ]
+      },
+    ]
+	},
+	{
+		id: "2-4-19",
+		cityId: "4",
 		name: "阿波达卡工业园- J",
 		mapTitle: "VYNMSA 阿波达卡工业园 - VYNMSA Apodaca Industrial Park",
 		description: "位于阿波达卡工业集群区，已有六家亚洲企业进驻，目前可租售及定制建造厂房项目用地为26公顷，可下载园区介绍手册进一步了解详情。",
@@ -622,7 +658,7 @@ export const locations = [
     ]
 	},
 	{
-		id: "2-5-19",
+		id: "2-5-20",
 		cityId: "5",
 		name: "拉莫斯阿里斯佩- I期 9号",
 		mapTitle: "VYNMSA 拉莫斯阿里斯佩业园 I - VYNMSA Ramos Arizpe I",
@@ -657,7 +693,7 @@ export const locations = [
     ]
 	},
 	{
-		id: "2-5-20",
+		id: "2-5-21",
 		cityId: "5",
 		name: "拉莫斯阿里斯佩- V期- A",
 		mapTitle: "VYNMSA 拉莫斯阿里斯佩业园 V - VYNMSA Ramos Arizpe V",
