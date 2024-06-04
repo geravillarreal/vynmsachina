@@ -1,10 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
   images: {
-    domains: [
-      'localhost',
-      "1.gravatar.com"
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'vynmsachina.com',
+        pathname: '**',
+      },
     ],
   },
 }

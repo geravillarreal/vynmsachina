@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useState } from 'react'
@@ -45,20 +45,15 @@ const Nav = () => {
     <nav className={styles.navWrapper}>
       <div className={styles.nav}>
 
-        <Link
-          href='/'
-        >
-          <a
-            className={styles.logo}
-          >
-            <Image
-              src='/logo-vynmsa.png'
-              layout='fill'
-              objectFit='contain'
-              alt=''
-              quality={100}
-            />
-          </a>
+        <Link href='/' className={styles.logo}>
+
+          <Image
+            src='/logo-vynmsa.png'
+            layout='fill'
+            objectFit='contain'
+            alt=''
+            quality={100}
+          />
 
         </Link>
 
@@ -68,17 +63,15 @@ const Nav = () => {
               <Link
                 /*  */
                 href={link.path}
-                key={link.title}>
-                <a
-                  onClick={() => {
-                    setVisible(false)
-                  }}
-                  style={{
-                    color: asPath === link.path ? '#007d64' : undefined
-                  }}
-
-                  className={asPath === link.path ? styles.active : undefined}
-                >{link.title}</a>
+                key={link.title}
+                onClick={() => {
+                  setVisible(false)
+                }}
+                style={{
+                  color: asPath === link.path ? '#007d64' : undefined
+                }}
+                className={asPath === link.path ? styles.active : undefined}>
+                {link.title}
               </Link>
             ))
           }
@@ -107,12 +100,11 @@ const Nav = () => {
                     setVisible(false)
                   }} */
                   href={link.path}
-                  key={link.title}>
-                  <a
-                    style={{
-                      color: asPath === link.path ? '#007d64' : undefined
-                    }}
-                  >{link.title}</a>
+                  key={link.title}
+                  style={{
+                    color: asPath === link.path ? '#007d64' : undefined
+                  }}>
+                  {link.title}
                 </Link>
               ))
             }
@@ -120,7 +112,7 @@ const Nav = () => {
         }
       </div>
     </nav>
-  )
+  );
 }
 
 export default Nav

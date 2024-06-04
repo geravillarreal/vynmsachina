@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import Link from 'next/link'
 import React from 'react'
 import Header from '../components/Header'
@@ -133,8 +133,8 @@ const OurServices = () => {
           <span>
           无论客户在墨投资计划长短，我们都能根据其具体需求提供最适合的厂房出租或销售，相较其他工业园更具优势。
           </span>
-          <Link href='/inventory'>
-            <a className='btn btn-white'>厂房清单查询</a>
+          <Link href='/inventory' className='btn btn-white'>
+            厂房清单查询
           </Link>
         </div>
       </div>
@@ -193,12 +193,12 @@ const OurServices = () => {
 
       <div className={styles.cta}>
         <h3>联系VYNMSA, 我们将超出您的期望!</h3>
-        <Link href='/contact-us'>
-          <a className='btn btn-green'>联系我们</a>
+        <Link href='/contact-us' className='btn btn-green'>
+          联系我们
         </Link>
       </div>
     </Layout>
-  )
+  );
 }
 
 export default OurServices

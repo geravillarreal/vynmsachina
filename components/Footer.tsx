@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import Link from 'next/link'
 import React from 'react'
 import styles from '../styles/Footer.module.scss'
@@ -21,11 +21,11 @@ const Footer = () => {
           <div className={styles.left}>
             <h3>关于我们</h3>
             <div className={styles.list}>
-              <Link href='/about-us'><a>历史</a></Link>
-              <Link href='/about-us'><a>目标</a></Link>
-              <Link href='/about-us'><a>愿景</a></Link>
-              <Link href='/about-us'><a>价值观</a></Link>
-              <Link href='/contact-us'><a>联系我们</a></Link>
+              <Link href='/about-us'>历史</Link>
+              <Link href='/about-us'>目标</Link>
+              <Link href='/about-us'>愿景</Link>
+              <Link href='/about-us'>价值观</Link>
+              <Link href='/contact-us'>联系我们</Link>
             </div>
           </div>
           <div className={styles.right}>
@@ -33,8 +33,8 @@ const Footer = () => {
               我们的服务
             </h3>
             <div className={styles.list}>
-              <Link href='/our-services'><a>现有厂房租售</a></Link>
-              <Link href='/our-services'><a>厂房订制</a></Link>
+              <Link href='/our-services'>现有厂房租售</Link>
+              <Link href='/our-services'>厂房订制</Link>
             </div>
           </div>
         </div>
@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
+  );
 }
 
 export default Footer

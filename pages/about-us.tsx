@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import React from 'react'
 import Header from '../components/Header'
 import Layout from '../components/Layout'
@@ -165,13 +165,13 @@ const AboutUs = () => {
         <div className={styles.content}>
           <span>联系VYNMSA，我们将超出您的期望！
           </span>
-          <Link href='/contact-us'>
-            <a className='btn btn-green'>联系我们</a>
+          <Link href='/contact-us' className='btn btn-green'>
+            联系我们
           </Link>
         </div>
       </div>
     </Layout>
-  )
+  );
 }
 
 export default AboutUs

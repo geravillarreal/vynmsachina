@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import React from 'react'
 import Link from 'next/link'
 import Companies from '../components/Companies'
@@ -87,39 +87,39 @@ const RecruitingAgents = () => {
           <div className={styles.item}>
             <div className={styles.image}>
               <Link href='/about-us'>
-                <a>
+
                 <Image
                   objectFit='cover'
                   layout='fill'
                   src='/recruiting-agents/img-1.jpeg'
                   alt=''
                 />
-                </a>
+
               </Link>
             </div>
             <Link href='/about-us'>
-              <a>
-                <span>工业园区介绍</span>
-              </a>
+
+              <span>工业园区介绍</span>
+
             </Link>
           </div>
           <div className={styles.item}>
             <div className={styles.image}>
               <Link href='/inventory'>
-                <a>
-                  <Image
-                    objectFit='cover'
-                    layout='fill'
-                    src='/recruiting-agents/img-2.jpeg'
-                    alt=''
-                  />
-                </a>
+
+                <Image
+                  objectFit='cover'
+                  layout='fill'
+                  src='/recruiting-agents/img-2.jpeg'
+                  alt=''
+                />
+
               </Link>
             </div>
             <Link href='/inventory'>
-              <a>
-                <span>可用厂房列表</span>
-              </a>
+
+              <span>可用厂房列表</span>
+
             </Link>
           </div>
           <div className={styles.item}>
@@ -143,7 +143,7 @@ const RecruitingAgents = () => {
       <Companies />
       {/* <span className={styles.bottomGreen}>VYNMSA (秉厦) 愿携手代理商，共同发展，共同拥抱中墨合作良机！</span> */}
     </Layout>
-  )
+  );
 }
 
 export default RecruitingAgents

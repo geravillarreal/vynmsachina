@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import Companies from '../components/Companies'
 import Form from '../components/Form'
 import Layout from '../components/Layout'
@@ -59,13 +59,12 @@ const Home: NextPage = () => {
         <div className={styles.content}>
           <h1>墨西哥工业房地产</h1>
           <h2>租赁 · 销售 · 定制</h2>
-          <Link href='/contact-us'>
-            <a className='arrow-wrapper'>联系我们
-              <div className="arrow">
-                <div className="triangle"></div>
-                <div className="circle"></div>
-              </div>
-            </a>
+          <Link href='/contact-us' className='arrow-wrapper'>
+            联系我们<div className="arrow">
+              <div className="triangle"></div>
+              <div className="circle"></div>
+            </div>
+
           </Link>
         </div>
 
@@ -91,14 +90,14 @@ const Home: NextPage = () => {
 
           {
             services.map(service => (
-              <Link key={service.name} href={service.path}>
-                <a className={styles.item}>
-                  <div className={styles.image}>
-                    <Image width={80} height={80} alt='' objectFit='contain' src={service.image} />
-                  </div>
-                  <span>{service.name}</span>
-                </a>
-              </Link>
+              (<Link key={service.name} href={service.path} className={styles.item}>
+
+                <div className={styles.image}>
+                  <Image width={80} height={80} alt='' objectFit='contain' src={service.image} />
+                </div>
+                <span>{service.name}</span>
+
+              </Link>)
             ))
           }
 
@@ -196,7 +195,7 @@ const Home: NextPage = () => {
       </div>
       <Companies />
     </Layout>
-  )
+  );
 }
 
 export default Home
