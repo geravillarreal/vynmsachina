@@ -1,18 +1,21 @@
 .companiesWrapper {
-  padding: 50px 0px;
+  padding-top: 20px;
 }
 
 .companies {
   text-align: center;
   padding: 20px;
+  max-width: 70%;
+  margin: auto;
+
   .countries {
     margin-bottom: 20px;
-    .imageGreen {
+    .image {
       display: none;
     }
     .image,
     .imageGreen {
-      height: 60px;
+      height: 58px;
       position: relative;
       margin-bottom: 20px;
     }
@@ -47,33 +50,21 @@
     padding: 20px 60px;
     position: relative;
     z-index: 2;
+    font-size: 40px;
   }
 }
 
-@media (min-width: 768px) {
-  .companiesHeader {
-    margin-bottom: 70px;
-    h2 {
-      font-size: 40px;
-    }
+@media (min-width: 769px) {
+  .companiesWrapper {
+    padding-top: 50px;
   }
-  .companies {
-    max-width: 70%;
-    margin: auto;
 
-    .countries,
-    .companiesSlider {
-      width: 70%;
-      margin: 20px auto;
-    }
+  .companies {
+    max-width: 50%;
     .countries {
-      .image {
-        display: none;
-      }
+      margin-bottom: 0px;
       .imageGreen {
-        height: 80px;
-        display: block;
-        width: 100%;
+        height: 82px;
       }
     }
   }

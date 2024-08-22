@@ -19,32 +19,32 @@ const Home: NextPage = () => {
   const services = [
     {
       name: "工业园区位置",
-      image: '/home/service-1.png',
+      image: '/home/service-1.svg',
       path: '/inventory'
     },
     {
       name: "定制厂房解决方案",
-      image: '/home/service-2.png',
+      image: '/home/service-2.svg',
       path: '/inventory'
     },
     {
       name: "服务范畴",
-      image: '/home/service-3.png',
+      image: '/home/service-3.svg',
       path: '/our-services'
     },
     {
       name: "标准厂房出售",
-      image: '/home/service-4.png',
+      image: '/home/service-4.svg',
       path: '/inventory'
     },
     {
       name: "诚招代理",
-      image: '/home/service-5.png',
+      image: '/home/service-5.svg',
       path: '/broker-friendly'
     },
     {
       name: "关于我们",
-      image: '/home/service-6.png',
+      image: '/home/service-6.svg',
       path: '/contact-us'
     },
 
@@ -59,12 +59,9 @@ const Home: NextPage = () => {
         <div className={styles.content}>
           <h1>墨西哥工业房地产</h1>
           <h2>租赁 · 销售 · 定制</h2>
-          <Link href='/contact-us' className='arrow-wrapper'>
-            联系我们<div className="arrow">
-              <div className="triangle"></div>
-              <div className="circle"></div>
-            </div>
-
+          
+          <Link href='/contact-us'>
+            <button className='btn btn-green'>联系我们</button>
           </Link>
         </div>
 
@@ -72,17 +69,13 @@ const Home: NextPage = () => {
           alt=''
           objectFit='cover'
           layout='fill'
-          src='/home/home-header.jpeg'
+          src='/home/home-header.png'
         />
-
-        <div className='wave1'>
-
-        </div>
 
       </div>
       <div className={styles.services}>
 
-        <div className='underlined'>
+        <div className={styles.title}>
           <h2>您对什么感兴趣?</h2>
         </div>
 
@@ -93,7 +86,7 @@ const Home: NextPage = () => {
               (<Link key={service.name} href={service.path} className={styles.item}>
 
                 <div className={styles.image}>
-                  <Image width={80} height={80} alt='' objectFit='contain' src={service.image} />
+                  <Image width={55} height={55} alt='' objectFit='contain' src={service.image} />
                 </div>
                 <span>{service.name}</span>
 
