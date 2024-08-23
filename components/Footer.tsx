@@ -10,7 +10,7 @@ const Footer = () => {
       <div className={styles.footer}>
         <div className={styles.qr}>
           <Image
-            src='/footer/logo-footer.svg'
+            src='/footer/logo-vynmsa.png'
             width={197}
             height={47}
             alt=''
@@ -52,27 +52,9 @@ const Footer = () => {
               <a href='https://www.linkedin.com/company/vynmsa/' rel='noreferrer noopener' target='_blank' className={styles.icon}>
                 <Image alt='' src='/footer/linkedin.png' layout='fill' />
               </a>
-              <a href='https://www.facebook.com/vynmsa/' rel='noreferrer noopener' target='_blank' className={styles.icon}>
-                <Image alt='' src='/footer/facebook.png' layout='fill' />
-              </a>
-              <a href='https://www.youtube.com/@VYNMSA_' rel='noreferrer noopener' target='_blank' className={styles.icon}>
-                <Image alt='' src='/footer/youtube.png' layout='fill' />
-              </a>
-              <a href='https://www.instagram.com/vynmsa_/' rel='noreferrer noopener' target='_blank' className={styles.icon}>
-                <Image alt='' src='/footer/instagram.png' layout='fill' />
-              </a>
-              <a href='https://x.com/vynmsa' rel='noreferrer noopener' target='_blank' className={styles.icon}>
-                <Image alt='' src='/footer/x.png' layout='fill' />
-              </a>
               <a href='https://api.whatsapp.com/send?phone=528122028599' rel='noreferrer noopener' target='_blank' className={styles.icon}>
                 <Image alt='' src='/footer/whatsapp.png' layout='fill' />
               </a>
-            </div>
-            <div className={styles.list}>
-              <span>CORPORATE</span>
-              <span>81 8356 7978</span>
-              <span>SALES</span>
-              <span>81 2202 8599</span>
             </div>
           </div>
         </div>
