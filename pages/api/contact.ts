@@ -21,6 +21,9 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<Data>)
             {
               "email": "nancy@daoheagency.com"
             },
+            {
+              "email": "schen@vynmsa.com"
+            }
           ],
           "bcc": [
             {
