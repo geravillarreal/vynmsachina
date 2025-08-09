@@ -1,18 +1,30 @@
 import Image from "next/legacy/image"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Header from '../components/Header'
 import Layout from '../components/Layout'
 import Slider from '../components/Slider'
-import { cities, locations, regions } from '../lib/data'
 import styles from '../styles/AvailableWorkshops.module.scss'
+import { Inventory, Region, City, Location } from '../types/inventory'
 
 const AvailableWorkshops = () => {
 
-  const [currentRegion, setCurrentRegion] = useState(regions[0])
+  const [data, setData] = useState<Inventory>({ regions: [], cities: [], locations: [] })
+  const [currentRegion, setCurrentRegion] = useState<Region | null>(null)
+  const [currentCity, setCurrentCity] = useState<City | null>(null)
+  const [currentLocation, setCurrentLocation] = useState<Location | null>(null)
 
-  const [currentCity, setCurrentCity] = useState(cities[0])
+  useEffect(() => {
+    fetch('/api/inventory')
+      .then(res => res.json())
+      .then((inv: Inventory) => {
+        setData(inv)
+        setCurrentRegion(inv.regions[0])
+        setCurrentCity(inv.cities[0])
+        setCurrentLocation(inv.locations[0])
+      })
+  }, [])
 
-  const [currentLocation, setCurrentLocation] = useState(locations[0])
+  if (!currentRegion || !currentCity || !currentLocation) return null
 
   return (
     <Layout title='可用厂房'>
@@ -28,12 +40,12 @@ const AvailableWorkshops = () => {
         <div className={styles.tabs}>
 
           {
-            regions.map(region => (
+            data.regions.map(region => (
               <div
                 key={region.id}
                 onClick={() => {
                   setCurrentRegion(region)
-                  setCurrentCity(cities.find(city => city.regionId === region.id) as any)
+                  setCurrentCity(data.cities.find(city => city.regionId === region.id) as any)
                 }}
                 className={currentRegion.id === region.id ? `${styles.tab} ${styles.active}` : styles.tab}>
                 <span>{region.name}</span>
@@ -44,7 +56,7 @@ const AvailableWorkshops = () => {
 
         <div className={styles.cities}>
           {
-            cities.filter(city => city.regionId === currentRegion.id).map(city => (
+            data.cities.filter(city => city.regionId === currentRegion.id).map(city => (
               <div key={city.name} className={styles.city}>
                 <div
                   onClick={() => {
@@ -59,7 +71,7 @@ const AvailableWorkshops = () => {
                   currentCity.id === city.id &&
                   <div className={styles.locations}>
                     {
-                      locations.filter(loc => loc.cityId === currentCity.id).map(location => (
+                      data.locations.filter(loc => loc.cityId === currentCity.id).map(location => (
                         <span
                           onClick={() => {
                             setCurrentLocation(location)
@@ -78,7 +90,7 @@ const AvailableWorkshops = () => {
           currentCity.id &&
           <div className={styles.locationsWeb}>
             {
-              locations.filter(loc => loc.cityId === currentCity.id).map(location => (
+              data.locations.filter(loc => loc.cityId === currentCity.id).map(location => (
                 <span
                   onClick={() => {
                     setCurrentLocation(location)
