@@ -147,6 +147,17 @@ export default function InventoryAdmin() {
     }
   };
 
+  const duplicateLocation = (source: Location) => {
+    // Copia profunda y limpia el ID para que el POST cree uno nuevo
+    const clone: Location = JSON.parse(JSON.stringify(source));
+    clone.id = ''; // importante: ID vacío para que el server genere uno nuevo
+    // nombre sugerido
+    clone.name = source.name ? `${source.name} (copy)` : 'Copy';
+    setEditing({ type: null }); // asegurarnos que el botón principal diga "Add Location"
+    setLoc({ ...emptyLoc, ...clone });
+    // Nota: los archivos (imágenes/PDF) quedan referenciados al mismo path.
+  };
+
   if (loading) return <div className="container py-4">Loading...</div>;
 
   return (
@@ -345,12 +356,30 @@ export default function InventoryAdmin() {
                   <strong>{l.name}</strong> <small className="text-muted">(id: {l.id}, city: {l.cityId})</small>
                 </div>
                 <div className="btn-group">
-                  <button className="btn btn-sm btn-outline-secondary" onClick={()=>{ setLoc({ ...emptyLoc, ...l }); setEditing({ type: 'location', itemId: l.id }); }}>Edit</button>
-                  <button className="btn btn-sm btn-outline-danger" onClick={()=>askDelete('location', l.id, l.name)}>Delete</button>
+                  <button
+                    className="btn btn-sm btn-outline-secondary"
+                    onClick={()=>{ setLoc({ ...emptyLoc, ...l }); setEditing({ type: 'location', itemId: l.id }); }}
+                  >
+                    Edit
+                  </button>
+                  <button
+                    className="btn btn-sm btn-outline-primary"
+                    onClick={()=> duplicateLocation(l)}
+                    title="Create a new location using this data"
+                  >
+                    Duplicate
+                  </button>
+                  <button
+                    className="btn btn-sm btn-outline-danger"
+                    onClick={()=>askDelete('location', l.id, l.name)}
+                  >
+                    Delete
+                  </button>
                 </div>
               </li>
             ))}
           </ul>
+
         </div>
       </div>
 
