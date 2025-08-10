@@ -1,32 +1,19 @@
+// pages/api/upload.ts
 import type { NextApiRequest, NextApiResponse } from 'next';
 import formidable, { File } from 'formidable';
 import fs from 'fs';
 import path from 'path';
 
-export const config = {
-  api: { bodyParser: false }
-};
+export const config = { api: { bodyParser: false } };
 
 function ensureDir(p: string) {
   if (!fs.existsSync(p)) fs.mkdirSync(p, { recursive: true });
 }
 
-const slugify = (s: string) =>
-  (s || '')
-    .toString()
-    .toLowerCase()
-    .normalize('NFKD')
-    .replace(/[\u0300-\u036f]/g, '') // quita diacríticos
-    .replace(/[^a-z0-9]+/g, '-')     // no alfanumérico -> guion
-    .replace(/(^-|-$)/g, '')         // trim guiones
-    .slice(0, 80);
-
 function uniquePath(baseDir: string, baseName: string): string {
-  // Evita sobrescribir: si existe, añade -1, -2, ...
   const { name, ext } = path.parse(baseName);
   let candidate = path.join(baseDir, baseName);
   if (!fs.existsSync(candidate)) return candidate;
-
   let i = 1;
   while (true) {
     const next = path.join(baseDir, `${name}-${i}${ext}`);
@@ -40,52 +27,47 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
   const form = formidable({ multiples: true, maxFileSize: 50 * 1024 * 1024 });
 
-  form.parse(req, (err, fields: any, files: any) => {
+  form.parse(req, (err, fields, files) => {
     if (err) return res.status(400).json({ error: 'Upload error' });
 
-    const kind = (fields.kind as string) || 'image'; // 'image' | 'pdf'
-    const pdfId = (fields.pdfId as string) || '';     // opcional
-    const pdfTitle = (fields.pdfTitle as string) || '';// opcional
+    // 'image' | 'pdf' (default: image)
+    const kindField = (fields.kind as string[] | undefined)?.[0];
+    const kind = kindField === 'pdf' ? 'pdf' : 'image';
 
     const baseDir = path.join(
       process.cwd(),
       'public',
       'uploads',
-      kind[0] === 'pdf' ? 'pdf' : 'images'
+      kind === 'pdf' ? 'pdf' : 'images'
     );
     ensureDir(baseDir);
 
-    const input = files.file as File | File[] | undefined;
+    const input = (files as any).file as File | File[] | undefined;
     const arr = Array.isArray(input) ? input : input ? [input] : [];
+    if (arr.length === 0) return res.status(400).json({ error: 'No file uploaded' });
+
     const results: string[] = [];
 
-    arr.forEach((f) => {
-      const orig = f.originalFilename || '';
-      const ext = path.extname(orig).toLowerCase();
+    for (const f of arr) {
+      const origName = f.originalFilename || f.newFilename || 'file';
+      const ext = (path.extname(origName) || (kind === 'pdf' ? '.pdf' : '.png')).toLowerCase();
 
-      if (kind[0] === 'pdf') {
-        // Nombre deseado: <ID>-<slug(title)>.pdf (si hay datos); si no, fallback aleatorio
-        const safeTitle = slugify(pdfTitle || path.basename(orig, ext) || 'document');
-        const safeId = slugify(pdfId || '');
-        const baseFile =
-          (safeId ? `${safeId}-` : '') + (safeTitle || 'document') + '.pdf';
+      console.log(kind)
 
-        const destPath = uniquePath(baseDir, baseFile);
-        fs.copyFileSync(f.filepath, destPath);
-
-        const publicPath = `/uploads/pdf/${path.basename(destPath)}`;
-        results.push(publicPath);
+      if (kind === 'pdf') {
+        // Mantener nombre original (evita colisiones con uniquePath)
+        const desired = path.basename(origName, path.extname(origName)) + ext;
+        const destPath = uniquePath(baseDir, desired);
+        fs.renameSync(f.filepath, destPath);
+        results.push(`/uploads/pdf/${path.basename(destPath)}`);
       } else {
-        // IMÁGENES: nombre aleatorio conservando extensión cuando exista
-        const safeExt = ext || '.png';
-        const name = `${Date.now()}_${Math.random().toString(36).slice(2)}${safeExt}`;
+        // Imagen -> nombre único
+        const name = `${Date.now()}_${Math.random().toString(36).slice(2)}${ext}`;
         const dest = path.join(baseDir, name);
-        fs.copyFileSync(f.filepath, dest);
-
-        const publicPath = `/uploads/images/${name}`;
-        results.push(publicPath);
+        fs.renameSync(f.filepath, dest);
+        results.push(`/uploads/images/${name}`);
       }
-    });
+    }
 
     return res.status(200).json({ paths: results });
   });

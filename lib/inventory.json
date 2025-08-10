@@ -521,96 +521,19 @@
       ]
     },
     {
-      "id": "2-4-14",
-      "cityId": "4",
-      "name": "阿波达卡-OMA 15号",
-      "mapTitle": "OMA VYNMSA机场工业园 - OMA VYNMSA AERO Industrial Park, Apodaca",
-      "description": "建于2014年，因位于机场核心范围内，是蒙特雷市内联邦安全系数最高的工业园区。目前已有9个国际企业入驻，可租售及定制建造厂房项目用地达42公顷，可下载园区介绍手册进一步了解详情。",
-      "title": "阿波达卡-OMA-15号",
-      "notes": "2024 年第四季度上市",
-      "sliderImages": [
-        "/recruiting-agents/data/sliderImages/slide-1.jpeg",
-        "/recruiting-agents/data/sliderImages/slide-2.jpeg"
-      ],
-      "image": "/recruiting-agents/data/headers/OMA VYNMSA Monolito 2.png",
-      "mapImage": "/recruiting-agents/data/OMA VYNMSA Monolito 2.png",
-      "brochure": "Naves-Industriales-NuevoLeon-VNIP-SPEC-B-CH (1).pdf",
-      "items": [
-        {
-          "title": "主要优势：",
-          "list": [
-            "地处机场核心地带，园区紧靠机场，仅需两分钟车程",
-            "企业宣传绝佳位置",
-            "便捷的物流服务",
-            "联邦安全系数最高，全年全天候闭路电视安全监控"
-          ]
-        },
-        {
-          "title": "工业园总体优势：",
-          "list": [
-            "所有工业园地处劳动力充足市场",
-            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
-            "米宽水泥工业园道路",
-            "全年全天候闭路电视安全监控",
-            "紧邻墨国内重要国道，北部园区临近美国边境公路"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "2-4-15",
-      "cityId": "4",
-      "name": "阿波达卡-OMA SB",
-      "mapTitle": "OMA VYNMSA机场工业园 - OMA VYNMSA AERO Industrial Park, Apodaca",
-      "description": "建于2014年，因位于机场核心范围内，是蒙特雷市内联邦安全系数最高的工业园区。目前已有9个国际企业入驻，可租售及定制建造厂房项目用地达42公顷，可下载园区介绍手册进一步了解详情。",
-      "title": "阿波达卡-OMA-SB",
-      "notes": "2024 年一季度上市",
-      "sliderImages": [
-        "/recruiting-agents/data/sliderImages/slide-1.jpeg",
-        "/recruiting-agents/data/sliderImages/slide-2.jpeg"
-      ],
-      "image": "/recruiting-agents/data/headers/OMA VYNMSA Monolito 2.png",
-      "mapImage": "/recruiting-agents/data/OMA VYNMSA Monolito 2.png",
-      "brochure": "Naves-Industriales-Apodaca-OMA-SPEC-SB-CH.pdf",
-      "items": [
-        {
-          "title": "主要优势：",
-          "list": [
-            "地处机场核心地带，园区紧靠机场，仅需两分钟车程",
-            "企业宣传绝佳位置",
-            "便捷的物流服务",
-            "联邦安全系数最高，全年全天候闭路电视安全监控"
-          ]
-        },
-        {
-          "title": "工业园总体优势：",
-          "list": [
-            "所有工业园地处劳动力充足市场",
-            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
-            "米宽水泥工业园道路",
-            "全年全天候闭路电视安全监控",
-            "紧邻墨国内重要国道，北部园区临近美国边境公路"
-          ]
-        }
-      ]
-    },
-    {
       "id": "2-4-16",
-      "cityId": "4",
       "name": "阿波达卡-机场",
+      "cityId": "4",
+      "title": "阿波达卡-机场 - 5号",
       "mapTitle": "VYNMSA机场阿波达卡工业园 - VYNMSA Aeropuerto Apodaca Industrial Park",
       "description": "位于阿波达卡工业集群区，已有六家亚洲企业进驻，目前可租售及定制建造厂房项目用地为26公顷，可下载园区介绍手册进一步了解详情。",
-      "title": "阿波达卡-机场 - 5号",
-      "notes": "2024 年第三季度上市",
+      "notes": "",
       "sliderImages": [
         "/recruiting-agents/data/sliderImages/Apodaca SPEC G 1 .png",
         "/recruiting-agents/data/sliderImages/Apodaca SPEC G 2.png",
         "/recruiting-agents/data/sliderImages/Apodaca SPEC J 1.png",
         "/recruiting-agents/data/sliderImages/Apodaca SPEC J 2.png"
       ],
-      "image": "/recruiting-agents/data/headers/monolito genérico vynmsa.png",
-      "mapImage": "/recruiting-agents/data/monolito genérico vynmsa.png",
-      "brochure": "Naves-Industriales-Apodaca-VAAIP-SPEC-IV-CH.pdf",
       "items": [
         {
           "title": "主要优势：",
@@ -633,7 +556,10 @@
             "紧邻墨国内重要国道，北部园区临近美国边境公路"
           ]
         }
-      ]
+      ],
+      "image": "/recruiting-agents/data/headers/monolito genérico vynmsa.png",
+      "mapImage": "/uploads/images/1754785779720_sra7ue3p09.png",
+      "brochure": "/uploads/pdf/Naves-Industriales-Apodaca-VAAIP-SPEC-K.pdf"
     },
     {
       "id": "2-4-17",
@@ -827,6 +753,88 @@
           ]
         }
       ]
+    },
+    {
+      "name": "阿波达卡东 – SPEC I",
+      "cityId": "4",
+      "title": "阿波达卡东 – SPEC I",
+      "mapTitle": "VYNMSA 阿波达卡东工业园 - SPEC I",
+      "description": "探索我们位于阿波达卡的工业建筑，是追求高效与互联的企业的理想选择。该物业总面积为29,332平方米（315,727平方英尺），建筑面积为15,725平方米（169,262平方英尺），旨在最大化生产力。",
+      "notes": "2025 年第三季度上市",
+      "sliderImages": [
+        "/uploads/images/1754799214635_gn3ns5qf4b.jpg",
+        "/uploads/images/1754799214680_yk7yk2d4mpp.jpg",
+        "/uploads/images/1754799214727_xg7bsp3ins.jpg",
+        "/uploads/images/1754799214771_mf4uklth9h.jpg"
+      ],
+      "items": [
+        {
+          "title": "主要优势",
+          "list": [
+            "公共交通发达",
+            "位于阿波达卡产业集群地带",
+            "距离机场10分钟以内车程",
+            "高速公路环绕",
+            "劳动力非常集中",
+            "全年全天候闭路电视安全监控"
+          ]
+        },
+        {
+          "title": "工业园总体优势",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道，北部园区临近美国边境公路"
+          ]
+        }
+      ],
+      "image": "/uploads/images/1754799119005_568xopg03sw.png",
+      "mapImage": "/uploads/images/1754799128136_69ued0ybf9n.png",
+      "brochure": "/uploads/pdf/Naves-Industriales-Martel-SPEC-I.pdf",
+      "id": "spec-i"
+    },
+    {
+      "name": "阿波达卡东 – SPEC II",
+      "cityId": "4",
+      "title": "阿波达卡东 – SPEC II",
+      "mapTitle": "VYNMSA 阿波达卡东工业园 - SPEC II",
+      "description": "如果您正在寻找位于阿波达卡的工业仓库，我们的 “SPEC II” 建筑将是您企业的理想选择。该物业占地总面积为44,953平方米（483,870平方英尺），建筑面积为26,020平方米（280,079平方英尺），旨在最大化生产力和效率。它配备宽敞且功能齐全的空间，包括15.24米 x 26.23米（50英尺 x 86英尺1英寸）的跨距尺寸，可实现灵活的运营布局。\n\n此外，其战略性位置可方便通往主要高速公路，优化您企业的物流。该区域以拥有高技能劳动力而闻名，为您的业务增长提供竞争优势。如果您有兴趣在阿波达卡租赁工业仓库，该物业是您的最佳选择。立即联系我们了解更多详情，让您的企业迈向新高度！",
+      "notes": "2025 年第四季度上市",
+      "sliderImages": [
+        "/uploads/images/1754857884070_rjz91i6v96.jpg",
+        "/uploads/images/1754857884110_xiwtgqdm1u.jpg",
+        "/uploads/images/1754857884145_5xlavdxnvp.jpg",
+        "/uploads/images/1754857884181_2obew527z12.jpg"
+      ],
+      "items": [
+        {
+          "title": "主要优势",
+          "list": [
+            "公共交通发达",
+            "位于阿波达卡产业集群地带",
+            "距离机场10分钟以内车程",
+            "高速公路环绕",
+            "劳动力非常集中",
+            "全年全天候闭路电视安全监控"
+          ]
+        },
+        {
+          "title": "工业园总体优势",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道，北部园区临近美国边境公路"
+          ]
+        }
+      ],
+      "image": "/uploads/images/1754857762555_ghx54w4ewuo.png",
+      "mapImage": "/uploads/images/1754857773501_b0yryyoties.png",
+      "brochure": "/uploads/pdf/Naves-Industriales-Martel-SPEC-II.pdf",
+      "id": "spec-ii"
     }
   ]
 }

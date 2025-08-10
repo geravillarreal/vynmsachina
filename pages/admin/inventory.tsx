@@ -62,16 +62,20 @@ export default function InventoryAdmin() {
   const uploadOne = async (file: File, kind: 'image'|'pdf'): Promise<string> => {
     const fd = new FormData();
     fd.append('kind', kind);
-    // Para PDF podemos pasar id/title si quieres nombres bonitos:
     if (kind === 'pdf') {
       if (loc.id) fd.append('pdfId', loc.id);
       if (loc.title) fd.append('pdfTitle', String(loc.title));
     }
     fd.append('file', file);
+
     const res = await fetch('/api/upload', { method: 'POST', body: fd });
     if (!res.ok) throw new Error('upload error');
-    const { paths } = await res.json();
-    return paths[0];
+
+    const j = await res.json();
+    // Soporta ambos formatos: { paths: [...] } y { filePath: '...' }
+    const path = (j?.paths?.[0]) ?? j?.filePath ?? j?.path;
+    if (!path) throw new Error('upload response missing path');
+    return path as string;
   };
 
   // Location: dynamic sections
