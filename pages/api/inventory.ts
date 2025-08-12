@@ -17,18 +17,42 @@ const slugify = (s: string) =>
 
 const rand = () => Math.random().toString(36).slice(2, 8);
 
-function genUniqueId(kind: 'region'|'city'|'location', name: string | undefined, data: InventoryData): string {
-  const base = name ? slugify(name) : kind;
-  const set = new Set(
-    kind === 'region' ? data.regions.map(r => r.id)
-    : kind === 'city' ? data.cities.map(c => c.id)
-    : data.locations.map(l => l.id)
-  );
-  let id = base || kind;
-  if (!set.has(id)) return id;
-  do { id = `${base || kind}-${rand()}`; } while (set.has(id));
-  return id;
+function nextNumericId<T extends { id: string }>(arr: T[]): string {
+  const nums = arr
+    .map(x => {
+      const n = Number(x.id);
+      return Number.isInteger(n) && n > 0 ? n : null;
+    })
+    .filter((n): n is number => n !== null);
+  const max = nums.length ? Math.max(...nums) : 0;
+  return String(max + 1);
 }
+
+// genera ID numérico por tipo
+function genNumericId(kind: 'region'|'city'|'location', data: InventoryData): string {
+  if (kind === 'region') return nextNumericId(data.regions);
+  if (kind === 'city')   return nextNumericId(data.cities);
+  return nextNumericId(data.locations);
+}
+
+function nextLocationConsecutive(data: InventoryData, regionId: string, cityId: string): string {
+  // Busca IDs existentes con patrón regionId-cityId-<n>
+  const re = new RegExp(`^${escapeRegExp(regionId)}-${escapeRegExp(cityId)}-(\\d+)$`);
+  let max = 0;
+  for (const l of data.locations) {
+    const m = typeof l.id === 'string' ? l.id.match(re) : null;
+    if (m && m[1]) {
+      const n = Number(m[1]);
+      if (Number.isInteger(n) && n > max) max = n;
+    }
+  }
+  return String(max + 1);
+}
+
+function escapeRegExp(s: string) {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
 
 /** ---------- Helpers de archivos ---------- **/
 
@@ -120,19 +144,32 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
     if (type === 'region') {
       const r: Region = { ...item };
-      r.id = genUniqueId('region', r.name, data);
+      r.id = genNumericId('region', data); // <- ahora numérico
       data.regions.push(r);
     } else if (type === 'city') {
       const c: City = { ...item };
-      c.id = genUniqueId('city', c.name, data);
+      c.id = genNumericId('city', data);
       data.cities.push(c);
     } else if (type === 'location') {
       const l: Location = { ...item };
-      l.id = genUniqueId('location', l.name, data);
+      if (!l.cityId) {
+        return res.status(400).json({ error: 'location.cityId is required to generate ID' });
+      }
+      const city = data.cities.find(c => c.id === l.cityId);
+      if (!city) {
+        return res.status(400).json({ error: `City not found for cityId=${l.cityId}` });
+      }
+
+      const regionId = city.regionId;
+      const consecutive = nextLocationConsecutive(data, regionId, city.id);
+
+      l.id = `${regionId}-${city.id}-${consecutive}`;
+
       data.locations.push(l);
     } else {
       return res.status(400).json({ error: 'Invalid type' });
     }
+
 
     writeInventory(data);
     return res.status(201).json({ ok: true });

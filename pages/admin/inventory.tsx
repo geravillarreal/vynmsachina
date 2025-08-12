@@ -158,6 +158,15 @@ export default function InventoryAdmin() {
     // Nota: los archivos (imágenes/PDF) quedan referenciados al mismo path.
   };
 
+  const removeSliderImage = (idx: number) => {
+    setLoc(l => {
+      const next = { ...l, sliderImages: [...(l.sliderImages || [])] };
+      next.sliderImages.splice(idx, 1);
+      return next;
+    });
+  };
+
+
   if (loading) return <div className="container py-4">Loading...</div>;
 
   return (
@@ -271,38 +280,198 @@ export default function InventoryAdmin() {
             {/* Media uploaders */}
             <div className="col-md-4">
               <label className="form-label">Main Image</label>
-              <input type="file" className="form-control" accept="image/*" onChange={async e=>{
-                const f = e.target.files?.[0]; if (!f) return; const p = await uploadOne(f,'image'); setLoc({ ...loc, image: p });
-              }} />
-              {loc.image && <div className="small mt-1">{loc.image}</div>}
+              <input
+                type="file"
+                className="form-control"
+                accept="image/*"
+                onChange={async (e) => {
+                  const input = e.currentTarget as HTMLInputElement;
+                  const f = input.files?.[0];
+                  input.value = '';
+                  if (!f) return;
+                  const p = await uploadOne(f, 'image');
+                  setLoc({ ...loc, image: p });
+                }}
+              />
+              {loc.image && (
+                <div className="card mt-2">
+                  <img
+                    src={loc.image}
+                    alt="main"
+                    className="card-img-top"
+                    style={{ objectFit: 'cover', height: 180 }}
+                  />
+                  <div className="card-body p-2">
+                    <div className="small text-truncate" title={loc.image}>{loc.image}</div>
+                  </div>
+                  <div className="card-footer bg-transparent border-0 pb-3 pt-0">
+                    <button
+                      type="button"
+                      className="btn btn-sm btn-outline-danger w-100"
+                      onClick={() => setLoc(prev => ({ ...prev, image: undefined }))}
+                    >
+                      Remove
+                    </button>
+                  </div>
+                </div>
+              )}
             </div>
+
             <div className="col-md-4">
               <label className="form-label">Map Image</label>
-              <input type="file" className="form-control" accept="image/*" onChange={async e=>{
-                const f = e.target.files?.[0]; if (!f) return; const p = await uploadOne(f,'image'); setLoc({ ...loc, mapImage: p });
-              }} />
-              {loc.mapImage && <div className="small mt-1">{loc.mapImage}</div>}
+              <input
+                type="file"
+                className="form-control"
+                accept="image/*"
+                onChange={async (e) => {
+                  const input = e.currentTarget as HTMLInputElement;
+                  const f = input.files?.[0];
+                  input.value = '';
+                  if (!f) return;
+                  const p = await uploadOne(f, 'image');
+                  setLoc({ ...loc, mapImage: p });
+                }}
+              />
+              {loc.mapImage && (
+                <div className="card mt-2">
+                  <img
+                    src={loc.mapImage}
+                    alt="map"
+                    className="card-img-top"
+                    style={{ objectFit: 'cover', height: 180 }}
+                  />
+                  <div className="card-body p-2">
+                    <div className="small text-truncate" title={loc.mapImage}>{loc.mapImage}</div>
+                  </div>
+                  <div className="card-footer bg-transparent border-0 pb-3 pt-0">
+                    <button
+                      type="button"
+                      className="btn btn-sm btn-outline-danger w-100"
+                      onClick={() => setLoc(prev => ({ ...prev, mapImage: undefined }))}
+                    >
+                      Remove
+                    </button>
+                  </div>
+                </div>
+              )}
             </div>
+
             <div className="col-md-4">
               <label className="form-label">Brochure (PDF)</label>
-              <input type="file" className="form-control" accept="application/pdf" onChange={async e=>{
-                const f = e.target.files?.[0]; if (!f) return; const p = await uploadOne(f,'pdf'); setLoc({ ...loc, brochure: p });
-              }} />
-              {loc.brochure && <div className="small mt-1">{loc.brochure}</div>}
+              <input
+                type="file"
+                className="form-control"
+                accept="application/pdf"
+                onChange={async (e) => {
+                  const input = e.currentTarget as HTMLInputElement;
+                  const f = input.files?.[0];
+                  input.value = '';
+                  if (!f) return;
+                  const p = await uploadOne(f, 'pdf');
+                  setLoc({ ...loc, brochure: p });
+                }}
+              />
+              {loc.brochure && (
+                <div className="card mt-2">
+                  <div className="ratio ratio-16x9">
+                    <iframe
+                      src={`${loc.brochure}#page=1&toolbar=0&navpanes=0&scrollbar=0`}
+                      title="brochure preview"
+                      style={{ border: 0 }}
+                    />
+                  </div>
+                  <div className="card-body p-2">
+                    <div className="small text-truncate" title={loc.brochure}>{loc.brochure}</div>
+                  </div>
+                  <div className="card-footer bg-transparent border-0 pb-3 pt-0">
+                    <div className="d-flex gap-2">
+                      <a
+                        href={loc.brochure}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="btn btn-sm btn-outline-secondary flex-fill"
+                      >
+                        Open
+                      </a>
+                      <button
+                        type="button"
+                        className="btn btn-sm btn-outline-danger flex-fill"
+                        onClick={() => setLoc(prev => ({ ...prev, brochure: undefined }))}
+                      >
+                        Remove
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
 
             <div className="col-md-12">
               <label className="form-label">Slider Images</label>
-              <input type="file" className="form-control" multiple accept="image/*" onChange={async e=>{
-                const files = Array.from(e.target.files||[]);
-                const paths: string[] = [];
-                for (const f of files) { paths.push(await uploadOne(f as File, 'image')); }
-                setLoc({ ...loc, sliderImages: [...(loc.sliderImages||[]), ...paths] });
-              }} />
-              {!!(loc.sliderImages||[]).length && (
-                <ul className="small mt-2">
-                  {(loc.sliderImages||[]).map((p,i)=>(<li key={i}>{p}</li>))}
-                </ul>
+              <input
+                type="file"
+                className="form-control"
+                multiple
+                accept="image/*"
+                onChange={async (e) => {
+                  // Captura el input ANTES de cualquier await (para evitar el pooling)
+                  const input = e.currentTarget as HTMLInputElement;
+                  const files = Array.from(input.files || []);
+                  // Limpia inmediatamente; así también puedes volver a subir las mismas imágenes
+                  input.value = '';
+
+                  if (!files.length) return;
+
+                  try {
+                    const paths: string[] = [];
+                    for (const f of files) {
+                      paths.push(await uploadOne(f as File, 'image'));
+                    }
+                    setLoc(prev => ({
+                      ...prev,
+                      sliderImages: [...(prev.sliderImages || []), ...paths],
+                    }));
+                  } catch (err) {
+                    console.error('upload error', err);
+                    // opcional: muestra toast/alert
+                  }
+                }}
+              />
+
+
+              {!!(loc.sliderImages || []).length && (
+                <div className="row row-cols-2 row-cols-md-3 g-3 mt-2">
+                  {(loc.sliderImages || []).map((p, i) => (
+                    <div className="col" key={`${p}-${i}`}>
+                      <div className="card h-100">
+                        {/* mini preview */}
+                        <img
+                          src={p}
+                          alt={`slide ${i + 1}`}
+                          className="card-img-top"
+                          style={{ objectFit: 'cover', height: 140 }}
+                        />
+                        <div className="card-body p-2">
+                          <div className="small text-truncate" title={p}>{p}</div>
+                        </div>
+                        <div className="card-footer bg-transparent border-0 pb-3 pt-0">
+                          <button
+                            type="button"
+                            className="btn btn-sm btn-outline-danger w-100"
+                            onClick={() => {
+                              // confirm simple; si quieres modal, lo integro luego
+                              if (window.confirm(`Remove this image from the slider?\n\n${p}`)) {
+                                removeSliderImage(i);
+                              }
+                            }}
+                          >
+                            Remove
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               )}
             </div>
 
