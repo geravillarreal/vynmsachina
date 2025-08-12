@@ -166,6 +166,22 @@ export default function InventoryAdmin() {
     });
   };
 
+  // state local (arriba del componente, junto a otros useState)
+  const [brochureUrl, setBrochureUrl] = useState('');
+
+  // helper para fetch por URL
+  const fetchPdfByUrl = async (url: string) => {
+    const fd = new FormData();
+    fd.append('kind', 'pdf');
+    fd.append('url', url);
+    const res = await fetch('/api/upload', { method: 'POST', body: fd });
+    if (!res.ok) throw new Error('download error');
+    const j = await res.json();
+    const path = (j?.paths?.[0]) ?? j?.filePath ?? j?.path;
+    if (!path) throw new Error('missing path');
+    return path as string;
+  };
+
 
   if (loading) return <div className="container py-4">Loading...</div>;
 
@@ -358,19 +374,50 @@ export default function InventoryAdmin() {
 
             <div className="col-md-4">
               <label className="form-label">Brochure (PDF)</label>
-              <input
-                type="file"
-                className="form-control"
-                accept="application/pdf"
-                onChange={async (e) => {
-                  const input = e.currentTarget as HTMLInputElement;
-                  const f = input.files?.[0];
-                  input.value = '';
-                  if (!f) return;
-                  const p = await uploadOne(f, 'pdf');
-                  setLoc({ ...loc, brochure: p });
-                }}
-              />
+              <div className="input-group mb-2">
+                <input
+                  type="file"
+                  className="form-control"
+                  accept="application/pdf"
+                  onChange={async (e) => {
+                    const input = e.currentTarget as HTMLInputElement;
+                    const f = input.files?.[0];
+                    input.value = '';
+                    if (!f) return;
+                    const p = await uploadOne(f, 'pdf');
+                    setLoc({ ...loc, brochure: p });
+                  }}
+                />
+              </div>
+
+              {/* URL fetch */}
+              <div className="input-group">
+                <input
+                  type="url"
+                  className="form-control"
+                  placeholder="https://example.com/file.pdf"
+                  value={brochureUrl}
+                  onChange={(e) => setBrochureUrl(e.target.value)}
+                />
+                <button
+                  className="btn btn-outline-primary"
+                  type="button"
+                  onClick={async () => {
+                    if (!brochureUrl.trim()) return;
+                    try {
+                      const p = await fetchPdfByUrl(brochureUrl.trim());
+                      setLoc(prev => ({ ...prev, brochure: p }));
+                      setBrochureUrl('');
+                    } catch (e) {
+                      alert('Could not download this PDF URL.');
+                      console.error(e);
+                    }
+                  }}
+                >
+                  Fetch from URL
+                </button>
+              </div>
+
               {loc.brochure && (
                 <div className="card mt-2">
                   <div className="ratio ratio-16x9">
@@ -385,12 +432,7 @@ export default function InventoryAdmin() {
                   </div>
                   <div className="card-footer bg-transparent border-0 pb-3 pt-0">
                     <div className="d-flex gap-2">
-                      <a
-                        href={loc.brochure}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="btn btn-sm btn-outline-secondary flex-fill"
-                      >
+                      <a href={loc.brochure} target="_blank" rel="noreferrer" className="btn btn-sm btn-outline-secondary flex-fill">
                         Open
                       </a>
                       <button
