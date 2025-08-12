@@ -1,0 +1,1685 @@
+{
+  "regions": [
+    {
+      "id": "1",
+      "name": "巴希奥地区"
+    },
+    {
+      "id": "2",
+      "name": "蒙特雷大都市区"
+    }
+  ],
+  "cities": [
+    {
+      "id": "1",
+      "name": "克雷塔罗",
+      "regionId": "1"
+    },
+    {
+      "id": "2",
+      "name": "圣路易斯波多西",
+      "regionId": "1"
+    },
+    {
+      "id": "3",
+      "name": "瓜纳华托",
+      "regionId": "1"
+    },
+    {
+      "id": "4",
+      "name": "新莱昂州",
+      "regionId": "2"
+    },
+    {
+      "id": "5",
+      "name": "科阿韦拉州",
+      "regionId": "2"
+    }
+  ],
+  "locations": [
+    {
+      "id": "1-1-1",
+      "name": "克雷塔罗-C",
+      "cityId": "1",
+      "title": "克雷塔罗PIQ工业园- SPEC C",
+      "mapTitle": "克雷塔罗PIQ工业园 - Parque Industrial Querétaro PIQ (Qro, Qro)",
+      "description": "秉厦在克雷塔罗州的最新工业园项目，距离克雷塔罗州机场35分钟车程，可租售及定制建造厂房项目用地占20公顷左右，目前已进驻来自日、德、加、美等地企业14家。",
+      "notes": "",
+      "sliderImages": [
+        "/recruiting-agents/data/sliderImages/Copia de VYNMSA_PIQF42017_SPEC C_MODELO_VISTA_2.png",
+        "/recruiting-agents/data/sliderImages/Copia de VYNMSA_PIQF42017_SPEC C_MODELO_VISTA_4.png"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "配有班车，方便员工及访客进出工业园",
+            "距离克雷塔罗国际机场45分钟以内车程."
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道"
+          ]
+        }
+      ],
+      "image": "/uploads/images/1754964568148_30a716svbn2.jpg",
+      "mapImage": "/uploads/images/1754964574741_099p59oe4dvb.png",
+      "brochure": "Naves-Industriales-Queretaro-PIQ-SPEC-C-CH.pdf"
+    },
+    {
+      "id": "1-2-4",
+      "name": "圣路易斯波多西 - I期 (紧凑型) - 13号",
+      "cityId": "2",
+      "title": "圣路易斯波多西- I期 (紧凑型) - 13号",
+      "mapTitle": "物流自由贸易区工业园 - Logistik Industrial Park (SLP, SLP)",
+      "description": "地处墨西哥最大公园内，自然环境优越，此物流工业园分两期，总占地面积超过80公顷。该工业园II期有充足的租售厂房，可立即入驻；工业园I期有可定制建造厂房用地，可根据企业具体需求打造优质的空间。园区目前已有中、美、加等多国品牌客户进驻。",
+      "notes": "",
+      "sliderImages": [
+        "/uploads/images/1754964846520_0r70ywh690z.jpg",
+        "/uploads/images/1754964847663_oitjo0jamn.jpg",
+        "/uploads/images/1754964848895_2e1idqkjzl6.jpg"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "毗邻铁路运输线，可建专用线接轨站",
+            "靠近主要高速公路",
+            "建有袖珍公园，全天候闭路电视监控."
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道."
+          ]
+        }
+      ],
+      "image": "/uploads/images/1754964754930_m26b0euuag.jpg",
+      "mapImage": "/uploads/images/1754964760913_rlo4p9ksuyi.png",
+      "brochure": "/uploads/pdf/naves-industriales-sanluis-logistik-20i-spec-xiii.pdf"
+    },
+    {
+      "id": "1-3-5",
+      "cityId": "3",
+      "name": "依拉普阿托 - 5号",
+      "mapTitle": "VYNMSA瓜纳华托工业园 - VYNMSA Guanajuato Industrial Park (Irapuato,Gto)",
+      "description": "该工业园位于瓜纳华托首府，距离瓜纳华托国际机场20分钟车程，紧邻汽车制造业走廊，目前可租售及定制建造厂房用地面积达60公顷。",
+      "title": "VYNMSA瓜纳华托工业园 - 5号",
+      "notes": "2024 年第二季度上市",
+      "sliderImages": [
+        "/recruiting-agents/data/sliderImages/3. Gto Industrial Park.jpg",
+        "/recruiting-agents/data/sliderImages/Copia de _EO_4911-Edit.jpg",
+        "/recruiting-agents/data/sliderImages/Copia de _EO_4966-Edit.jpg"
+      ],
+      "image": "/recruiting-agents/data/headers/Copia de IMG_7430.png",
+      "mapImage": "/recruiting-agents/data/Copia de IMG_7430.png",
+      "brochure": "Naves-Industriales-Irapuato-SPEC-V-CH.pdf",
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "电力供应优质、稳定",
+            "距离瓜纳华托国际机场30分钟以内车程.",
+            "紧邻汽车生产带"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1-3-6",
+      "cityId": "3",
+      "name": "塞拉亚 - 2号",
+      "mapTitle": "VYNMSA塞拉亚工业园 - VYNMSA Celaya Industrial Park (Celaya, Gto)",
+      "description": " 位于瓜纳华托州塞拉亚，可租售及定制建造厂房项目面积合计7公顷，企业可立即入驻.",
+      "title": "VYNMSA塞拉亚工业园 - 2号",
+      "notes": "",
+      "sliderImages": [
+        "/recruiting-agents/data/sliderImages/Copia de Celaya - SPEC II (3).jpg",
+        "/recruiting-agents/data/sliderImages/Copia de Celaya - SPEC II.jpg"
+      ],
+      "image": "/recruiting-agents/data/headers/4. Monolito VYNMSA Celaya (1).png",
+      "mapImage": "/recruiting-agents/data/4. Monolito VYNMSA Celaya (1).png",
+      "brochure": "Naves-Industriales-Celaya-SPEC-II-CH.pdf",
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "距离本田汽车加工厂20分钟车程",
+            "靠近伊拉普尔托、萨拉曼卡（马自达工厂所在地）和希尔劳工业区",
+            "地处连接多个重要工业大州的物流枢纽中心"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水、通电、通燃气、排水",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1-3-7",
+      "name": "希尔劳 - II期 - D",
+      "cityId": "3",
+      "title": "VYNMSA瓜纳华托普尔多因特里奥工业园 - II期 SPEC D",
+      "mapTitle": "VYNMSA瓜纳华托普尔多因特里奥工业园 - VYNMSA Guanajuato Puerto Interior II (Silao, Gto)",
+      "description": "瓜纳华托普尔多因特里奥工业园临近瓜纳华托国际机场，这个由秉厦精心开发打造的园区目前已有4家企业入驻，可租售及定制建造厂房项目用地约11公顷。",
+      "notes": "",
+      "sliderImages": [
+        "/recruiting-agents/data/sliderImages/Copia de Puerto-Interior-SPEC-C-13.jpeg",
+        "/recruiting-agents/data/sliderImages/Copia de Puerto-Interior-SPEC-C-14.jpeg"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "距离国际机场2公里",
+            "紧邻汽车生产带",
+            "建有袖珍公园，配备多重安保",
+            "价格有竞争力",
+            "靠近州公安厅指挥、通信、控制、计算机和情报（C5I）系统设施，安全保障升级",
+            "瓜纳华托州唯一获得墨西哥工业园协会 (Ampip)认证的“战略保税区”（西语缩写：RFE），外贸企业可享受一系列宽松的政策和优惠（动植物卫生、公共医疗、环境及国家安全行业除外）"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道"
+          ]
+        }
+      ],
+      "image": "/recruiting-agents/data/headers/2. Monolito Gto Puerto Interior.png",
+      "mapImage": "/recruiting-agents/data/2. Monolito Gto Puerto Interior.png",
+      "brochure": "/uploads/pdf/Naves-Industriales-Silao-PuertoInteriorII-SPEC-D.pdf"
+    },
+    {
+      "id": "1-3-8",
+      "name": "莱昂 - 9号",
+      "cityId": "3",
+      "title": "VYNMSA莱昂工业园 SPEC 9号",
+      "mapTitle": "VYNMSA莱昂工业园 – VYNMSA León Industrial Park (León, Gto)",
+      "description": "距离瓜纳华托国际机场车程30分钟，与汽车制造业走廊距离仅10分钟车程，目前可用于定制建造厂房用地达26公顷，可租售厂房数量充足，园区内企业多来自物流、食品、农产品以及汽车行业",
+      "notes": "2025 年第四季度上市",
+      "sliderImages": [
+        "/recruiting-agents/data/sliderImages/Copia de VYNMSA_VLIP_SPECIX_OP2_3.png",
+        "/recruiting-agents/data/sliderImages/Copia de VYNMS_VLIP_SPECIX_OP2_2.2.png"
+      ],
+      "items": [
+        {
+          "title": "主要优势:",
+          "list": [
+            "紧邻汽车生产带",
+            "接近主要高速干道",
+            "距离市区较近",
+            "地处莱昂传统工业区"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道"
+          ]
+        }
+      ],
+      "image": "/recruiting-agents/data/headers/1. Monolito León.png",
+      "mapImage": "/recruiting-agents/data/1. Monolito León.png",
+      "brochure": "/uploads/pdf/Naves-Industriales-Leon-VLIP-SPEC-X.pdf"
+    },
+    {
+      "id": "2-4-10",
+      "name": "圣塔卡琳娜-都市工业园 II - A号",
+      "cityId": "4",
+      "title": "圣塔卡琳娜-都市工业园 II - A号",
+      "mapTitle": "都市工业园 II - VYNMSA Metropolitan Pak II (Santa Catarina, Nuevo Leon)",
+      "description": "位于圣塔卡琳娜核心地带，新莱昂州蒙特雷和科阿韦拉州萨尔迪约·拉莫斯阿里斯佩两大主要工业区之间，目前可定制建造项目用地合计26公顷，并有充足空余厂房用于租售，可立即入驻使用，可下载园区介绍手册进一步了解详情。",
+      "notes": "2025 年第四季度上市",
+      "sliderImages": [
+        "/recruiting-agents/data/sliderImages/Copia de MODELO EXTERIOR_STCII_SPEC A_VIEW-2.png",
+        "/recruiting-agents/data/sliderImages/Monolito Santa Catarina.jpg"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "公共交通 (超过5条线路)",
+            "靠近城市经济水平最发达的San Pedro区",
+            "地处两个最大的工业枢纽之间 (拉莫斯阿里斯佩/阿波达卡)",
+            "紧邻主要的高速公路干道",
+            "全年全天候闭路电视安全监控",
+            "劳动力非常集中"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道，北部园区临近美国边境公路"
+          ]
+        }
+      ],
+      "image": "/recruiting-agents/data/headers/Monolito Santa Catarina.png",
+      "mapImage": "/recruiting-agents/data/Monolito Santa Catarina.png",
+      "brochure": "/uploads/pdf/Naves-Industriales-SantaCatarina-II-SPEC-A.pdf"
+    },
+    {
+      "id": "2-4-12",
+      "cityId": "4",
+      "name": "西内嘉德弗洛雷斯 -A",
+      "mapTitle": "VYNMSA 北工业园 - VYNMSA North Industrial Park",
+      "description": "建于1999年，位于新莱昂州西内嘉德弗洛雷斯，亚洲及国际客户众多，目前可租售及定制建造厂房用地达300公顷，可下载园区介绍手册进一步了解详情。",
+      "title": "VYNMSA 北工业园 - SPEC A ",
+      "notes": "2024 年第三季度上市",
+      "sliderImages": [
+        "/recruiting-agents/data/sliderImages/SPEC A_1.png",
+        "/recruiting-agents/data/sliderImages/SPEC A_2.png"
+      ],
+      "image": "/recruiting-agents/data/headers/monolito genérico vynmsa.png",
+      "mapImage": "/recruiting-agents/data/monolito genérico vynmsa.png",
+      "brochure": "Naves-Industriales-NuevoLeon-VNIP-SPEC-A-CH.pdf",
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "离墨美边境最近的工业园，紧邻主要的高速公路干道",
+            "全年全天候闭路电视安全监控",
+            "劳动力非常集中",
+            "墨西哥国内占地面积最大的工业园之一"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道，北部园区临近美国边境公路"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2-4-13",
+      "cityId": "4",
+      "name": "西内嘉德弗洛雷斯 -B",
+      "mapTitle": "VYNMSA 北工业园 - VYNMSA North Industrial Park",
+      "description": "建于1999年，位于新莱昂州西内嘉德弗洛雷斯，亚洲及国际客户众多，目前可租售及定制建造厂房用地达300公顷，可下载园区介绍手册进一步了解详情。",
+      "title": "VYNMSA 北工业园 - SPEC B",
+      "notes": "2024 年第三季度上市",
+      "sliderImages": [
+        "/recruiting-agents/data/sliderImages/SPEC A_1.png",
+        "/recruiting-agents/data/sliderImages/SPEC A_2.png"
+      ],
+      "image": "/recruiting-agents/data/headers/monolito genérico vynmsa.png",
+      "mapImage": "/recruiting-agents/data/monolito genérico vynmsa.png",
+      "brochure": "Naves-Industriales-NuevoLeon-VNIP-SPEC-B-CH.pdf",
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "离墨美边境最近的工业园，紧邻主要的高速公路干道",
+            "全年全天候闭路电视安全监控",
+            "劳动力非常集中",
+            "墨西哥国内占地面积最大的工业园之一"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道，北部园区临近美国边境公路"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2-4-16",
+      "name": "阿波达卡-机场",
+      "cityId": "4",
+      "title": "阿波达卡-机场 - 5号",
+      "mapTitle": "VYNMSA机场阿波达卡工业园 - VYNMSA Aeropuerto Apodaca Industrial Park",
+      "description": "位于阿波达卡工业集群区，已有六家亚洲企业进驻，目前可租售及定制建造厂房项目用地为26公顷，可下载园区介绍手册进一步了解详情。",
+      "notes": "",
+      "sliderImages": [
+        "/recruiting-agents/data/sliderImages/Apodaca SPEC G 1 .png",
+        "/recruiting-agents/data/sliderImages/Apodaca SPEC G 2.png",
+        "/recruiting-agents/data/sliderImages/Apodaca SPEC J 1.png",
+        "/recruiting-agents/data/sliderImages/Apodaca SPEC J 2.png"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "公共交通发达",
+            "位于阿波达卡产业集群地带",
+            "距离机场10分钟以内车程",
+            "高速公路环绕",
+            "劳动力非常集中",
+            "全年全天候闭路电视安全监控"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道，北部园区临近美国边境公路"
+          ]
+        }
+      ],
+      "image": "/recruiting-agents/data/headers/monolito genérico vynmsa.png",
+      "mapImage": "/uploads/images/1754785779720_sra7ue3p09.png",
+      "brochure": "/uploads/pdf/Naves-Industriales-Apodaca-VAAIP-SPEC-K.pdf"
+    },
+    {
+      "id": "2-4-17",
+      "cityId": "4",
+      "name": "阿波达卡工业园- G",
+      "mapTitle": "VYNMSA 阿波达卡工业园 - VYNMSA Apodaca Industrial Park",
+      "description": "位于阿波达卡工业集群区，已有六家亚洲企业进驻，目前可租售及定制建造厂房项目用地为26公顷，可下载园区介绍手册进一步了解详情。",
+      "title": "阿波达卡工业园- G",
+      "notes": "2024 年第三季度上市",
+      "sliderImages": [
+        "/recruiting-agents/data/sliderImages/Apodaca SPEC G 1 .png",
+        "/recruiting-agents/data/sliderImages/Apodaca SPEC G 2.png"
+      ],
+      "image": "/recruiting-agents/data/headers/monolito genérico vynmsa.png",
+      "mapImage": "/recruiting-agents/data/monolito genérico vynmsa.png",
+      "brochure": "Naves-Industriales-Apodaca-VAIP-SPEC-J-CH.pdf",
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "公共交通发达",
+            "位于阿波达卡产业集群地带",
+            "距离机场10分钟以内车程",
+            "高速公路环绕",
+            "劳动力非常集中",
+            "全年全天候闭路电视安全监控"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道，北部园区临近美国边境公路"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2-4-18",
+      "cityId": "4",
+      "name": "阿波达卡工业园- H",
+      "mapTitle": "VYNMSA 阿波达卡工业园 - VYNMSA Apodaca Industrial Park",
+      "description": "位于阿波达卡工业集群区，已有六家亚洲企业进驻，目前可租售及定制建造厂房项目用地为26公顷，可下载园区介绍手册进一步了解详情。",
+      "title": "阿波达卡工业园- H",
+      "notes": "",
+      "sliderImages": [
+        "/recruiting-agents/data/sliderImages/Apodaca SPEC J 1.png",
+        "/recruiting-agents/data/sliderImages/Apodaca SPEC J 2.png"
+      ],
+      "image": "/recruiting-agents/data/headers/monolito genérico vynmsa.png",
+      "mapImage": "/recruiting-agents/data/monolito genérico vynmsa.png",
+      "brochure": "Naves-Industriales-Apodaca-VAIP-SPEC-H-CH.pdf",
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "公共交通发达",
+            "位于阿波达卡产业集群地带",
+            "距离机场10分钟以内车程",
+            "高速公路环绕",
+            "劳动力非常集中",
+            "全年全天候闭路电视安全监控"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道，北部园区临近美国边境公路"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2-4-19",
+      "cityId": "4",
+      "name": "阿波达卡工业园- J",
+      "mapTitle": "VYNMSA 阿波达卡工业园 - VYNMSA Apodaca Industrial Park",
+      "description": "位于阿波达卡工业集群区，已有六家亚洲企业进驻，目前可租售及定制建造厂房项目用地为26公顷，可下载园区介绍手册进一步了解详情。",
+      "title": "阿波达卡工业园- J",
+      "notes": "2024 年第三季度上市",
+      "sliderImages": [
+        "/recruiting-agents/data/sliderImages/Apodaca SPEC J 1.png",
+        "/recruiting-agents/data/sliderImages/Apodaca SPEC J 2.png"
+      ],
+      "image": "/recruiting-agents/data/headers/monolito genérico vynmsa.png",
+      "mapImage": "/recruiting-agents/data/monolito genérico vynmsa.png",
+      "brochure": "Naves-Industriales-Apodaca-VAIP-SPEC-G-CH.pdf",
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "公共交通发达",
+            "位于阿波达卡产业集群地带",
+            "距离机场10分钟以内车程",
+            "高速公路环绕",
+            "劳动力非常集中",
+            "全年全天候闭路电视安全监控"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道，北部园区临近美国边境公路"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2-5-20",
+      "name": "拉莫斯阿里斯佩- I期 9号",
+      "cityId": "5",
+      "title": "拉莫斯阿里斯佩- I期 9号",
+      "mapTitle": "VYNMSA 拉莫斯阿里斯佩业园 I - VYNMSA Ramos Arizpe I",
+      "description": "位于科阿韦拉州拉莫斯阿里斯佩，由I期和II期组成，均地处墨西哥北部工业发达地带，国际尤其是亚洲客户众多，目前可租售及定制建造厂房项目用地达60公顷，可下载园区介绍手册进一步了解详情。",
+      "notes": "",
+      "sliderImages": [
+        "/recruiting-agents/data/sliderImages/Copia de DJI_0055.jpg",
+        "/recruiting-agents/data/sliderImages/Copia de DJI_0111.jpg",
+        "/uploads/images/1754961117125_vf9uw8bnf1a.png"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "位于墨西哥北部的产业集中地带",
+            "公共交通便捷",
+            "高速公路环绕，连接墨西哥城以及其他南部城市",
+            "劳动力非常集中",
+            "全年全天候闭路电视安全监控"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道，北部园区临近美国边境公路"
+          ]
+        }
+      ],
+      "image": "/recruiting-agents/data/headers/monolito genérico vynmsa.png",
+      "mapImage": "/recruiting-agents/data/monolito genérico vynmsa.png",
+      "brochure": "/uploads/pdf/Naves-Industriales-RamosArizpe-VRAIP-SPEC-K.pdf"
+    },
+    {
+      "name": "阿波达卡东 – SPEC I",
+      "cityId": "4",
+      "title": "阿波达卡东 – SPEC I",
+      "mapTitle": "VYNMSA 阿波达卡东工业园 - SPEC I",
+      "description": "探索我们位于阿波达卡的工业建筑，是追求高效与互联的企业的理想选择。该物业总面积为29,332平方米（315,727平方英尺），建筑面积为15,725平方米（169,262平方英尺），旨在最大化生产力。",
+      "notes": "2025 年第三季度上市",
+      "sliderImages": [
+        "/uploads/images/1754799214635_gn3ns5qf4b.jpg",
+        "/uploads/images/1754799214680_yk7yk2d4mpp.jpg",
+        "/uploads/images/1754799214727_xg7bsp3ins.jpg",
+        "/uploads/images/1754799214771_mf4uklth9h.jpg"
+      ],
+      "items": [
+        {
+          "title": "主要优势",
+          "list": [
+            "公共交通发达",
+            "位于阿波达卡产业集群地带",
+            "距离机场10分钟以内车程",
+            "高速公路环绕",
+            "劳动力非常集中",
+            "全年全天候闭路电视安全监控"
+          ]
+        },
+        {
+          "title": "工业园总体优势",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道，北部园区临近美国边境公路"
+          ]
+        }
+      ],
+      "image": "/uploads/images/1754799119005_568xopg03sw.png",
+      "mapImage": "/uploads/images/1754799128136_69ued0ybf9n.png",
+      "brochure": "/uploads/pdf/Naves-Industriales-Martel-SPEC-I.pdf",
+      "id": "spec-i"
+    },
+    {
+      "name": "阿波达卡东 – SPEC II",
+      "cityId": "4",
+      "title": "阿波达卡东 – SPEC II",
+      "mapTitle": "VYNMSA 阿波达卡东工业园 - SPEC II",
+      "description": "如果您正在寻找位于阿波达卡的工业仓库，我们的 “SPEC II” 建筑将是您企业的理想选择。该物业占地总面积为44,953平方米（483,870平方英尺），建筑面积为26,020平方米（280,079平方英尺），旨在最大化生产力和效率。它配备宽敞且功能齐全的空间，包括15.24米 x 26.23米（50英尺 x 86英尺1英寸）的跨距尺寸，可实现灵活的运营布局。\n\n此外，其战略性位置可方便通往主要高速公路，优化您企业的物流。该区域以拥有高技能劳动力而闻名，为您的业务增长提供竞争优势。如果您有兴趣在阿波达卡租赁工业仓库，该物业是您的最佳选择。立即联系我们了解更多详情，让您的企业迈向新高度！",
+      "notes": "2025 年第四季度上市",
+      "sliderImages": [
+        "/uploads/images/1754857884070_rjz91i6v96.jpg",
+        "/uploads/images/1754857884110_xiwtgqdm1u.jpg",
+        "/uploads/images/1754857884145_5xlavdxnvp.jpg",
+        "/uploads/images/1754857884181_2obew527z12.jpg"
+      ],
+      "items": [
+        {
+          "title": "主要优势",
+          "list": [
+            "公共交通发达",
+            "位于阿波达卡产业集群地带",
+            "距离机场10分钟以内车程",
+            "高速公路环绕",
+            "劳动力非常集中",
+            "全年全天候闭路电视安全监控"
+          ]
+        },
+        {
+          "title": "工业园总体优势",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道，北部园区临近美国边境公路"
+          ]
+        }
+      ],
+      "image": "/uploads/images/1754857762555_ghx54w4ewuo.png",
+      "mapImage": "/uploads/images/1754857773501_b0yryyoties.png",
+      "brochure": "/uploads/pdf/Naves-Industriales-Martel-SPEC-II.pdf",
+      "id": "spec-ii"
+    },
+    {
+      "id": "ii",
+      "name": "埃斯科贝多 II - SPEC XI",
+      "cityId": "4",
+      "title": "VYNMSA埃斯科贝多工业园 - II期 ",
+      "mapTitle": "VYNMSA埃斯科贝多工业园 - II期 - VYNMSA Escobedo Park II",
+      "description": "位于新莱昂州埃斯科贝多最具战略价值的区域，这座现代化工业设施为寻求高性能空间的企业提供了绝佳机会。项目专为最大化运营效率而设计，配备先进的基础设施，全面支持制造、仓储及分销业务。\n\n该物业占地面积 68,006 平方米（732,010 平方英尺），建筑面积 38,864 平方米（418,332 平方英尺），为多种行业提供充足且灵活的空间。布局包括跨距 15.24 米 x 22.58 米（50 英尺 x 74 英尺1 英寸）、净高 9.14 米（30 英尺）、共 12 个跨距单元及 10 个装卸码头位置，确保物流流程高效顺畅。\n\n凭借其在埃斯科贝多的优越地理位置，该设施可便捷连接主要交通干道，助力企业实现全国乃至国际的高效分销。",
+      "notes": "2025 年第四季度上市",
+      "sliderImages": [
+        "/recruiting-agents/data/sliderImages/Copia de Escobedo Aérea.jpg"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "紧邻通往美国的高速公路",
+            "公共交通 (5 条线路)",
+            "附近公路环绕，节省物流成本",
+            "劳动力非常集中",
+            "全年全天候闭路电视安全监控"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道，北部园区临近美国边境公路"
+          ]
+        }
+      ],
+      "image": "/uploads/images/1754955927119_kyr0koyn0ag.png",
+      "mapImage": "/uploads/images/1754955933894_dpeetd93ogg.png",
+      "brochure": "/uploads/pdf/Naves-Industriales-Escobedo-VEPII-SPEC-XI.pdf"
+    },
+    {
+      "id": "ii-spec-a",
+      "name": "埃斯科贝多 II - SPEC A",
+      "cityId": "4",
+      "title": "VYNMSA埃斯科贝多工业园 - II期 ",
+      "mapTitle": "VYNMSA埃斯科贝多工业园 - II期 - VYNMSA Escobedo Park II",
+      "description": "位于新莱昂州埃斯科贝多的核心工业区，这座现代化工业设施为制造、物流及分销企业提供绝佳的运营优势。紧邻主要高速公路，便于快速连接全国及国际市场。占地面积 11,377 平方米（209,261 平方英尺），建筑面积 5,600 平方米（60,283 平方英尺），跨距 10.20 米 x 22.42 米，布局高效灵活，能够满足多样化的生产与仓储需求。配备 3 个装卸码头及 2 个预留位置，确保货物流转顺畅无阻。选择 VYNMSA，助您提升生产力、优化供应链，并在竞争中脱颖而出。立即联系我们，预约参观！",
+      "notes": "2025 年第四季度上市",
+      "sliderImages": [
+        "/recruiting-agents/data/sliderImages/Copia de Escobedo Aérea.jpg"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "紧邻通往美国的高速公路",
+            "公共交通 (5 条线路)",
+            "附近公路环绕，节省物流成本",
+            "劳动力非常集中",
+            "全年全天候闭路电视安全监控"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道，北部园区临近美国边境公路"
+          ]
+        }
+      ],
+      "image": "/uploads/images/1754955927119_kyr0koyn0ag.png",
+      "mapImage": "/uploads/images/1754955933894_dpeetd93ogg.png",
+      "brochure": "/uploads/pdf/Naves-Industriales-Escobedo-VEP-II-SPEC-A.pdf"
+    },
+    {
+      "id": "location",
+      "name": "瓜达卢佩",
+      "cityId": "4",
+      "title": "艾奎杜克多工业园",
+      "mapTitle": "艾奎杜克多工业园 - Acueducto Industrial Park",
+      "description": "位于新莱昂州埃斯科贝多的核心工业区，这座现代化工业设施为制造、物流及分销企业提供绝佳的运营优势。紧邻主要高速公路，便于快速连接全国及国际市场。占地面积 11,377 平方米（209,261 平方英尺），建筑面积 5,600 平方米（60,283 平方英尺），跨距 10.20 米 x 22.42 米，布局高效灵活，能够满足多样化的生产与仓储需求。配备 3 个装卸码头及 2 个预留位置，确保货物流转顺畅无阻。选择 VYNMSA，助您提升生产力、优化供应链，并在竞争中脱颖而出。立即联系我们，预约参观！",
+      "notes": "2025 年第四季度上市",
+      "sliderImages": [
+        "/recruiting-agents/data/sliderImages/Copia de Escobedo Aérea.jpg"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "紧邻通往美国的高速公路",
+            "公共交通 (5 条线路)",
+            "附近公路环绕，节省物流成本",
+            "劳动力非常集中",
+            "全年全天候闭路电视安全监控"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道，北部园区临近美国边境公路"
+          ]
+        }
+      ],
+      "image": "/uploads/images/1754955927119_kyr0koyn0ag.png",
+      "mapImage": "/uploads/images/1754955933894_dpeetd93ogg.png",
+      "brochure": "/uploads/pdf/Naves-Industriales-Guadalupe-SPEC-VIII.pdf"
+    },
+    {
+      "id": "1",
+      "name": "佩斯奎利亚 - SPEC V",
+      "cityId": "4",
+      "title": "机场科技工业园",
+      "mapTitle": "机场科技工业园 - Airport Technology Park",
+      "description": "探索我们位于机场科技园的全新库存建筑“SPEC V”，距离蒙特雷国际机场（Pesquería）仅 15 分钟车程。该现代化工业园区位置优越，便于连接国内外市场。\n\n该工业建筑建筑面积为 11,211 平方米（124,215 平方英尺），预计将在 2025 年第一季度对外出租。跨距尺寸为 10.20 米 x 22.77 米（33 英尺6 英寸 x 74 英尺8 英寸），配备 6 个装卸码头 + 5 个预留码头，以及一个混凝土坡道。此工业仓库享有园区提供的所有配套服务，助您快速启动并高效运营。",
+      "notes": "",
+      "sliderImages": [
+        "/uploads/images/1754957162284_zjik6a3fhx.jpg",
+        "/uploads/images/1754957164703_t5pmul6p1th.jpg"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "紧邻通往美国的高速公路",
+            "公共交通 (5 条线路)",
+            "附近公路环绕，节省物流成本",
+            "劳动力非常集中",
+            "全年全天候闭路电视安全监控"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道，北部园区临近美国边境公路"
+          ]
+        }
+      ],
+      "image": "/uploads/images/1754955927119_kyr0koyn0ag.png",
+      "mapImage": "/uploads/images/1754955933894_dpeetd93ogg.png",
+      "brochure": "/uploads/pdf/Naves-Industriales-Pesqueria-ATP-SPEC-V.pdf"
+    },
+    {
+      "id": "2-4-20",
+      "name": "佩斯奎利亚 - SPEC A",
+      "cityId": "4",
+      "title": "机场科技工业园",
+      "mapTitle": "机场科技工业园 - Airport Technology Park",
+      "description": "探索我们位于机场科技园的全新库存建筑“SPEC A”，距离蒙特雷国际机场（Pesquería）仅 15 分钟车程。该现代化工业园区位置优越，便于连接国内外市场。\n\n该工业建筑建筑面积为 11,211 平方米（124,215 平方英尺），预计将在 2025 年第一季度对外出租。跨距尺寸为 10.20 米 x 22.77 米（33 英尺6 英寸 x 74 英尺8 英寸），配备 6 个装卸码头 + 5 个预留码头，以及一个混凝土坡道。此工业仓库享有园区提供的所有配套服务，助您快速启动并高效运营。",
+      "notes": "",
+      "sliderImages": [
+        "/uploads/images/1754957162284_zjik6a3fhx.jpg",
+        "/uploads/images/1754957164703_t5pmul6p1th.jpg"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "紧邻通往美国的高速公路",
+            "公共交通 (5 条线路)",
+            "附近公路环绕，节省物流成本",
+            "劳动力非常集中",
+            "全年全天候闭路电视安全监控"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道，北部园区临近美国边境公路"
+          ]
+        }
+      ],
+      "image": "/uploads/images/1754955927119_kyr0koyn0ag.png",
+      "mapImage": "/uploads/images/1754955933894_dpeetd93ogg.png",
+      "brochure": "/uploads/pdf/Naves-Industriales-Pesqueria-ATP-SPEC-A.pdf"
+    },
+    {
+      "id": "2-4-21",
+      "name": "圣卡塔琳娜 - SPEC IV",
+      "cityId": "4",
+      "title": "VYNMSA 圣塔卡琳娜工业园 - I期 ",
+      "mapTitle": "VYNMSA 圣塔卡琳娜工业园 - I期  - VYNMSA Santa Catarina Industrial Park I",
+      "description": "SPEC IV” 库存工业建筑位于 VYNMSA 圣卡塔利娜工业园，专为满足现代制造与物流需求而打造。建筑面积为 4,323 平方米（46,532 平方英尺），跨距尺寸为 10.20 米 x 27.61 米，布局宽敞灵活，适应多种业务场景。\n\n该建筑配备充足的停车位、装卸码头和坡道，并享有园区提供的全套配套服务，包括出入口控制、现场安保和 24/7 全天候 CCTV 监控，为您的企业运营提供高效与安全的双重保障。",
+      "notes": "",
+      "sliderImages": [
+        "/uploads/images/1754958428994_ec5n620lsl.png",
+        "/uploads/images/1754958429018_rolc3a9k6sj.jpg"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "紧邻通往美国的高速公路",
+            "公共交通 (5 条线路)",
+            "附近公路环绕，节省物流成本",
+            "劳动力非常集中",
+            "全年全天候闭路电视安全监控"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道，北部园区临近美国边境公路"
+          ]
+        }
+      ],
+      "image": "/uploads/images/1754958440888_kyun5j7xvx.jpg",
+      "mapImage": "/uploads/images/1754958451914_tgbfhgi4crn.png",
+      "brochure": "/uploads/pdf/Naves-Industriales-SantaCatarina-VSCIP-SPEC-IV.pdf"
+    },
+    {
+      "id": "2-4-22",
+      "name": "圣卡塔琳娜 - SPEC IX",
+      "cityId": "4",
+      "title": "VYNMSA 圣塔卡琳娜工业园 - I期 ",
+      "mapTitle": "VYNMSA 圣塔卡琳娜工业园 - I期  - VYNMSA Santa Catarina Industrial Park I",
+      "description": "SPEC IX” 库存工业建筑位于 VYNMSA 圣卡塔利娜工业园，专为满足现代制造与物流需求而打造。建筑面积为 4,323 平方米（46,532 平方英尺），跨距尺寸为 10.20 米 x 27.61 米，布局宽敞灵活，适应多种业务场景。\n\n该建筑配备充足的停车位、装卸码头和坡道，并享有园区提供的全套配套服务，包括出入口控制、现场安保和 24/7 全天候 CCTV 监控，为您的企业运营提供高效与安全的双重保障。",
+      "notes": "",
+      "sliderImages": [
+        "/uploads/images/1754958490971_dn4ayoj2xjj.png",
+        "/uploads/images/1754958490994_faq5d0hyhpc.jpg"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "紧邻通往美国的高速公路",
+            "公共交通 (5 条线路)",
+            "附近公路环绕，节省物流成本",
+            "劳动力非常集中",
+            "全年全天候闭路电视安全监控"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道，北部园区临近美国边境公路"
+          ]
+        }
+      ],
+      "image": "/uploads/images/1754958497933_69yc2k57bev.jpg",
+      "mapImage": "/uploads/images/1754958503259_ncaacug1ar9.png",
+      "brochure": "/uploads/pdf/Naves-Industriales-SantaCatarina-VSCIP-SPEC-IX.pdf"
+    },
+    {
+      "name": "都市工业园  - I期 - SPEC I",
+      "cityId": "4",
+      "title": "VYNMSA都市工业园  - I期 ",
+      "mapTitle": "VYNMSA都市工业园  - I期   - VYNMSA Metropolitan Industrial Park I",
+      "description": "探索我们位于新莱昂州圣卡塔利娜工业区的全新库存建筑“SPEC I”，坐落于 VYNMSA 大都会工业园的核心位置。该建筑面积为 9,080 平方米，提供宽敞的跨距尺寸 24.50 米 x 10.11 米，为您的运营布局带来更多灵活性。\n\n此外，配备 9.90 平方米的警卫室，确保全天候的安保与出入口管控，让您的企业运营无忧。来亲身体验这一现代化空间为您的公司带来的优势与机遇。",
+      "notes": "",
+      "sliderImages": [
+        "/uploads/images/1754958490971_dn4ayoj2xjj.png",
+        "/uploads/images/1754960385796_b8riinxhiss.jpg"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "紧邻通往美国的高速公路",
+            "公共交通 (5 条线路)",
+            "附近公路环绕，节省物流成本",
+            "劳动力非常集中",
+            "全年全天候闭路电视安全监控"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道，北部园区临近美国边境公路"
+          ]
+        }
+      ],
+      "image": "/uploads/images/1754958497933_69yc2k57bev.jpg",
+      "mapImage": "/uploads/images/1754958503259_ncaacug1ar9.png",
+      "brochure": "/uploads/pdf/Naves-Industriales-SantaCatarina-VMIP-SPEC-I.pdf",
+      "id": "2-4-23"
+    },
+    {
+      "name": "都市工业园  - I期 - SPEC II",
+      "cityId": "4",
+      "title": "VYNMSA都市工业园  - I期 ",
+      "mapTitle": "VYNMSA都市工业园  - I期   - VYNMSA Metropolitan Industrial Park I",
+      "description": "探索我们位于 VYNMSA 大都会工业园的全新库存建筑“SPEC II”。该建筑面积为 16,312 平方米，提供宽敞的空间布局，跨距尺寸为 22.45 米 x 15.24 米，能够满足多种生产与仓储需求。\n\n此外，配备 9.90 平方米的安保亭，确保全天候的安全与出入口管控，让您的企业运营更加安心。欢迎前来了解这一现代化空间为您的公司带来的无限可能。",
+      "notes": "2025 年第四季度上市",
+      "sliderImages": [
+        "/uploads/images/1754958490971_dn4ayoj2xjj.png",
+        "/uploads/images/1754960385796_b8riinxhiss.jpg"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "紧邻通往美国的高速公路",
+            "公共交通 (5 条线路)",
+            "附近公路环绕，节省物流成本",
+            "劳动力非常集中",
+            "全年全天候闭路电视安全监控"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道，北部园区临近美国边境公路"
+          ]
+        }
+      ],
+      "image": "/uploads/images/1754958497933_69yc2k57bev.jpg",
+      "mapImage": "/uploads/images/1754958503259_ncaacug1ar9.png",
+      "brochure": "/uploads/pdf/Naves-Industriales-SantaCatarina-VMIP-SPEC-II.pdf",
+      "id": "2-4-24"
+    },
+    {
+      "name": "都市工业园  - I期 - SPEC III",
+      "cityId": "4",
+      "title": "VYNMSA都市工业园  - I期 ",
+      "mapTitle": "VYNMSA都市工业园  - I期   - VYNMSA Metropolitan Industrial Park I",
+      "description": "探索我们位于 VYNMSA 大都会工业园的全新库存建筑“SPEC III”。该建筑面积为 16,312 平方米，提供宽敞的空间布局，跨距尺寸为 22.45 米 x 15.24 米，能够满足多种生产与仓储需求。\n\n此外，配备 9.90 平方米的安保亭，确保全天候的安全与出入口管控，让您的企业运营更加安心。欢迎前来了解这一现代化空间为您的公司带来的无限可能。",
+      "notes": "2025 年第四季度上市",
+      "sliderImages": [
+        "/uploads/images/1754958490971_dn4ayoj2xjj.png",
+        "/uploads/images/1754960385796_b8riinxhiss.jpg"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "紧邻通往美国的高速公路",
+            "公共交通 (5 条线路)",
+            "附近公路环绕，节省物流成本",
+            "劳动力非常集中",
+            "全年全天候闭路电视安全监控"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道，北部园区临近美国边境公路"
+          ]
+        }
+      ],
+      "image": "/uploads/images/1754958497933_69yc2k57bev.jpg",
+      "mapImage": "/uploads/images/1754958503259_ncaacug1ar9.png",
+      "brochure": "/uploads/pdf/Naves-Industriales-SantaCatarina-VMIP-SPEC-III.pdf",
+      "id": "2-4-25"
+    },
+    {
+      "id": "2-4-26",
+      "name": "蒙特莫雷洛斯",
+      "cityId": "4",
+      "title": "VYNMSA 蒙特莫雷洛斯工业园 ",
+      "mapTitle": "VYNMSA 蒙特莫雷洛斯工业园 - VYNMSA Montemorelos Industrial Park",
+      "description": "VYNMSA 蒙特莫雷洛斯工业园是该地区唯一的工业园区，非常适合制造型企业。目前园区已吸引日本客户日立化成入驻，彰显其优越的投资价值。\n\n园区拥有充足的土地，可用于定制化建设项目（Build-to-Suit），以满足不同企业的独特需求。蒙特莫雷洛斯还拥有高素质的劳动力资源，为企业发展提供坚实保障。",
+      "notes": "",
+      "sliderImages": [
+        "/uploads/images/1754960893548_sfjbrvdu1j.jpg",
+        "/uploads/images/1754960897064_jyp6rkiebd.jpg",
+        "/uploads/images/1754960899559_97k5laevhsu.jpg"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "紧邻通往美国的高速公路",
+            "公共交通 (5 条线路)",
+            "附近公路环绕，节省物流成本",
+            "劳动力非常集中",
+            "全年全天候闭路电视安全监控"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道，北部园区临近美国边境公路"
+          ]
+        }
+      ],
+      "image": "/uploads/images/1754960853180_s05oqtx6zek.jpg",
+      "mapImage": "/uploads/images/1754960859976_us6k43gc13.png",
+      "brochure": "/uploads/pdf/Parques-Industriales-Montemorelos-VMIP.pdf"
+    },
+    {
+      "name": "圣塔卡琳娜工业园 - IV期",
+      "cityId": "5",
+      "title": "圣塔卡琳娜工业园 - IV期",
+      "mapTitle": "VYNMSA 圣塔卡琳娜工业园 - IV期 - VYNMSA Ramos Arizpe Industrial Park IV",
+      "description": "VYNMSA 拉莫斯阿里斯佩工业园 IV 是我们最新的工业园区之一，坐落于蓬勃发展的工业城市——科阿韦拉州拉莫斯阿里斯佩。该园区配备最先进的基础设施，并提供企业高效运营所需的全套服务。\n\n此外，园区地理位置优越，可直接连接萨尔蒂约西北环线（Libramiento Norponiente de Saltillo）。周边拥有丰富的高技能劳动力资源，能够满足您企业的多样化需求。",
+      "notes": "",
+      "sliderImages": [
+        "/recruiting-agents/data/sliderImages/Copia de DJI_0055.jpg",
+        "/recruiting-agents/data/sliderImages/Copia de DJI_0111.jpg",
+        "/uploads/images/1754961117125_vf9uw8bnf1a.png"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "位于墨西哥北部的产业集中地带",
+            "公共交通便捷",
+            "高速公路环绕，连接墨西哥城以及其他南部城市",
+            "劳动力非常集中",
+            "全年全天候闭路电视安全监控"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道，北部园区临近美国边境公路"
+          ]
+        }
+      ],
+      "image": "/recruiting-agents/data/headers/monolito genérico vynmsa.png",
+      "mapImage": "/recruiting-agents/data/monolito genérico vynmsa.png",
+      "brochure": "/uploads/pdf/Naves-Industriales-RamosArizpe-VRAIP-IV-SPEC-I.pdf",
+      "id": "2-5-22"
+    },
+    {
+      "name": "圣塔卡琳娜工业园 - IV期 - SPEC II",
+      "cityId": "5",
+      "title": "圣塔卡琳娜工业园 - IV期",
+      "mapTitle": "VYNMSA 圣塔卡琳娜工业园 - IV期 - VYNMSA Ramos Arizpe Industrial Park IV",
+      "description": "VYNMSA 拉莫斯阿里斯佩工业园 IV 是我们最新的工业园区之一，坐落于蓬勃发展的工业城市——科阿韦拉州拉莫斯阿里斯佩。该园区配备最先进的基础设施，并提供企业高效运营所需的全套服务。\n\n此外，园区地理位置优越，可直接连接萨尔蒂约西北环线（Libramiento Norponiente de Saltillo）。周边拥有丰富的高技能劳动力资源，能够满足您企业的多样化需求。",
+      "notes": "2025 年第四季度上市",
+      "sliderImages": [
+        "/recruiting-agents/data/sliderImages/Copia de DJI_0055.jpg",
+        "/recruiting-agents/data/sliderImages/Copia de DJI_0111.jpg",
+        "/uploads/images/1754961117125_vf9uw8bnf1a.png"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "位于墨西哥北部的产业集中地带",
+            "公共交通便捷",
+            "高速公路环绕，连接墨西哥城以及其他南部城市",
+            "劳动力非常集中",
+            "全年全天候闭路电视安全监控"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道，北部园区临近美国边境公路"
+          ]
+        }
+      ],
+      "image": "/recruiting-agents/data/headers/monolito genérico vynmsa.png",
+      "mapImage": "/recruiting-agents/data/monolito genérico vynmsa.png",
+      "brochure": "/uploads/pdf/Naves-Industriales-RamosArizpe-VRAIP-IV-SPEC-II.pdf",
+      "id": "2-5-23"
+    },
+    {
+      "name": "圣塔卡琳娜工业园 - IV期 - SPEC IV",
+      "cityId": "5",
+      "title": "圣塔卡琳娜工业园 - IV期",
+      "mapTitle": "VYNMSA 圣塔卡琳娜工业园 - IV期 - VYNMSA Ramos Arizpe Industrial Park IV",
+      "description": "VYNMSA 拉莫斯阿里斯佩工业园 IV 是我们最新的工业园区之一，坐落于蓬勃发展的工业城市——科阿韦拉州拉莫斯阿里斯佩。该园区配备最先进的基础设施，并提供企业高效运营所需的全套服务。\n\n此外，园区地理位置优越，可直接连接萨尔蒂约西北环线（Libramiento Norponiente de Saltillo）。周边拥有丰富的高技能劳动力资源，能够满足您企业的多样化需求。",
+      "notes": "2025 年第四季度上市",
+      "sliderImages": [
+        "/recruiting-agents/data/sliderImages/Copia de DJI_0055.jpg",
+        "/recruiting-agents/data/sliderImages/Copia de DJI_0111.jpg",
+        "/uploads/images/1754961117125_vf9uw8bnf1a.png"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "位于墨西哥北部的产业集中地带",
+            "公共交通便捷",
+            "高速公路环绕，连接墨西哥城以及其他南部城市",
+            "劳动力非常集中",
+            "全年全天候闭路电视安全监控"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道，北部园区临近美国边境公路"
+          ]
+        }
+      ],
+      "image": "/recruiting-agents/data/headers/monolito genérico vynmsa.png",
+      "mapImage": "/recruiting-agents/data/monolito genérico vynmsa.png",
+      "brochure": "/uploads/pdf/Naves-Industriales-RamosArizpe-VRAIP-IV-SPEC-IV.pdf",
+      "id": "2-5-24"
+    },
+    {
+      "name": "托雷翁工业园 - SPEC I",
+      "cityId": "5",
+      "title": "VYNMSA托雷翁工业园",
+      "mapTitle": "VYNMSA托雷翁工业园 - VYNMSA Torreón Industrial Park",
+      "description": "VYNMSA 托雷翁工业园是我们最新的工业园区之一，位于蓬勃发展的工业城市——科阿韦拉州托雷翁。园区配备最先进的基础设施，并提供企业高效运营所需的全套服务。\n\n此外，周边拥有丰富的高技能劳动力资源，能够充分满足您企业的用工需求。",
+      "notes": "",
+      "sliderImages": [
+        "/uploads/images/1754961906879_r7kn1oj7sr9.jpg",
+        "/uploads/images/1754961908383_q38ojmd9eu.jpg",
+        "/uploads/images/1754961910320_vuwis3he49.jpg"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "位于墨西哥北部的产业集中地带",
+            "公共交通便捷",
+            "高速公路环绕，连接墨西哥城以及其他南部城市",
+            "劳动力非常集中",
+            "全年全天候闭路电视安全监控"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道，北部园区临近美国边境公路"
+          ]
+        }
+      ],
+      "image": "/recruiting-agents/data/headers/monolito genérico vynmsa.png",
+      "mapImage": "/uploads/images/1754961839605_76eb9j3fspf.png",
+      "brochure": "/uploads/pdf/Naves-Industriales-Torreon-VTIP-SPEC-I.pdf",
+      "id": "2-5-25"
+    },
+    {
+      "name": "托雷翁工业园 - SPEC II",
+      "cityId": "5",
+      "title": "VYNMSA托雷翁工业园",
+      "mapTitle": "VYNMSA托雷翁工业园 - VYNMSA Torreón Industrial Park",
+      "description": "VYNMSA 托雷翁工业园是我们最新的工业园区之一，位于蓬勃发展的工业城市——科阿韦拉州托雷翁。园区配备最先进的基础设施，并提供企业高效运营所需的全套服务。\n\n此外，周边拥有丰富的高技能劳动力资源，能够充分满足您企业的用工需求。",
+      "notes": "",
+      "sliderImages": [
+        "/uploads/images/1754961906879_r7kn1oj7sr9.jpg",
+        "/uploads/images/1754961908383_q38ojmd9eu.jpg",
+        "/uploads/images/1754961910320_vuwis3he49.jpg"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "位于墨西哥北部的产业集中地带",
+            "公共交通便捷",
+            "高速公路环绕，连接墨西哥城以及其他南部城市",
+            "劳动力非常集中",
+            "全年全天候闭路电视安全监控"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道，北部园区临近美国边境公路"
+          ]
+        }
+      ],
+      "image": "/recruiting-agents/data/headers/monolito genérico vynmsa.png",
+      "mapImage": "/uploads/images/1754961839605_76eb9j3fspf.png",
+      "brochure": "/uploads/pdf/Naves-Industriales-Torreon-VTIP-SPEC-II.pdf",
+      "id": "2-5-26"
+    },
+    {
+      "name": "希尔劳 - II期 - SPEC II",
+      "cityId": "3",
+      "title": "VYNMSA瓜纳华托普尔多因特里奥工业园 - I期 SPEC II",
+      "mapTitle": "VYNMSA瓜纳华托普尔多因特里奥工业园 - VYNMSA Guanajuato Puerto Interior I",
+      "description": "距离瓜纳华托国际机场仅 10 分钟车程，坐落着享誉国际的瓜纳华托内港工业园，我们在此设有 VYNMSA Pocket Park。VYNMSA 瓜纳华托内港工业园 II 拥有可立即入驻的现成工业厂房可供租赁，同时还提供充足空间用于定制化建设项目（Build-To-Suit）及交钥匙工程（Turnkey Projects），满足您企业的多元化需求。\n\n园区周边聚集了大量具备专业经验的技术人才，可快速融入您的团队。在内港工业园区内，已有来自加拿大、美国、德国、西班牙、意大利、日本及墨西哥等 18 个国家的 122 家企业入驻。过去五年，瓜纳华托州在外商直接投资（FDI）方面稳居全墨西哥前三。",
+      "notes": "",
+      "sliderImages": [
+        "/recruiting-agents/data/sliderImages/Copia de Puerto-Interior-SPEC-C-13.jpeg",
+        "/recruiting-agents/data/sliderImages/Copia de Puerto-Interior-SPEC-C-14.jpeg"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "距离国际机场2公里",
+            "紧邻汽车生产带",
+            "建有袖珍公园，配备多重安保",
+            "价格有竞争力",
+            "靠近州公安厅指挥、通信、控制、计算机和情报（C5I）系统设施，安全保障升级",
+            "瓜纳华托州唯一获得墨西哥工业园协会 (Ampip)认证的“战略保税区”（西语缩写：RFE），外贸企业可享受一系列宽松的政策和优惠（动植物卫生、公共医疗、环境及国家安全行业除外）"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道"
+          ]
+        }
+      ],
+      "image": "/recruiting-agents/data/headers/2. Monolito Gto Puerto Interior.png",
+      "mapImage": "/recruiting-agents/data/2. Monolito Gto Puerto Interior.png",
+      "brochure": "/uploads/pdf/Naves-Industriales-Silao-VGPI-SPEC-II.pdf",
+      "id": "1-3-9"
+    },
+    {
+      "id": "1-3-10",
+      "name": "瓜纳华托普尔多因特里奥工业园 - IV期 - SPEC I",
+      "cityId": "3",
+      "title": "VYNMSA瓜纳华托普尔多因特里奥工业园 - IV期 - SPEC I",
+      "mapTitle": "VYNMSA瓜纳华托普尔多因特里奥工业园 - IV期 - VYNMSA Guanajuato Puerto Interior IV",
+      "description": "内港工业园被誉为拉丁美洲最具活力的工业综合体，得益于其独特的物流平台，将航空、公路与铁路三大交通方式集于一地。VYNMSA 瓜纳华托内港工业园 III 位于西劳市的战略位置，坐落于瓜纳华托国际机场（BJX）与 Ferromex 铁路线之间，区位优势显著。\n\n园区配备齐全的公共设施，包括电力、天然气、自来水与排水系统。同时提供充足土地用于定制化建设项目（Build-to-Suit），并拥有可立即入驻的出租工业厂房，助力您的企业快速投入运营。",
+      "notes": "2025 年第四季度上市",
+      "sliderImages": [
+        "/recruiting-agents/data/sliderImages/Copia de Puerto-Interior-SPEC-C-13.jpeg",
+        "/recruiting-agents/data/sliderImages/Copia de Puerto-Interior-SPEC-C-14.jpeg"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "距离国际机场2公里",
+            "紧邻汽车生产带",
+            "建有袖珍公园，配备多重安保",
+            "价格有竞争力",
+            "靠近州公安厅指挥、通信、控制、计算机和情报（C5I）系统设施，安全保障升级",
+            "瓜纳华托州唯一获得墨西哥工业园协会 (Ampip)认证的“战略保税区”（西语缩写：RFE），外贸企业可享受一系列宽松的政策和优惠（动植物卫生、公共医疗、环境及国家安全行业除外）"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道"
+          ]
+        }
+      ],
+      "image": "/recruiting-agents/data/headers/2. Monolito Gto Puerto Interior.png",
+      "mapImage": "/recruiting-agents/data/2. Monolito Gto Puerto Interior.png",
+      "brochure": "/uploads/pdf/naves-industriales-silao-puertointerioriv-spec-i-3.pdf"
+    },
+    {
+      "name": "瓜纳华托普尔多因特里奥工业园 - IV期 - SPEC II",
+      "cityId": "3",
+      "title": "VYNMSA瓜纳华托普尔多因特里奥工业园 - IV期 - SPEC II",
+      "mapTitle": "VYNMSA瓜纳华托普尔多因特里奥工业园 - IV期 - VYNMSA Guanajuato Puerto Interior IV",
+      "description": "内港工业园被誉为拉丁美洲最具活力的工业综合体，得益于其独特的物流平台，将航空、公路与铁路三大交通方式集于一地。VYNMSA 瓜纳华托内港工业园 III 位于西劳市的战略位置，坐落于瓜纳华托国际机场（BJX）与 Ferromex 铁路线之间，区位优势显著。\n\n园区配备齐全的公共设施，包括电力、天然气、自来水与排水系统。同时提供充足土地用于定制化建设项目（Build-to-Suit），并拥有可立即入驻的出租工业厂房，助力您的企业快速投入运营。",
+      "notes": "2025 年第四季度上市",
+      "sliderImages": [
+        "/recruiting-agents/data/sliderImages/Copia de Puerto-Interior-SPEC-C-13.jpeg",
+        "/recruiting-agents/data/sliderImages/Copia de Puerto-Interior-SPEC-C-14.jpeg"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "距离国际机场2公里",
+            "紧邻汽车生产带",
+            "建有袖珍公园，配备多重安保",
+            "价格有竞争力",
+            "靠近州公安厅指挥、通信、控制、计算机和情报（C5I）系统设施，安全保障升级",
+            "瓜纳华托州唯一获得墨西哥工业园协会 (Ampip)认证的“战略保税区”（西语缩写：RFE），外贸企业可享受一系列宽松的政策和优惠（动植物卫生、公共医疗、环境及国家安全行业除外）"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道"
+          ]
+        }
+      ],
+      "image": "/recruiting-agents/data/headers/2. Monolito Gto Puerto Interior.png",
+      "mapImage": "/recruiting-agents/data/2. Monolito Gto Puerto Interior.png",
+      "brochure": "/uploads/pdf/naves-industriales-silao-puertointerioriv-spec-ii.pdf",
+      "id": "1-3-11"
+    },
+    {
+      "name": "机场克雷塔罗工业园 - SPEC A",
+      "cityId": "1",
+      "title": "VYNMSA机场克雷塔罗工业园",
+      "mapTitle": "VYNMSA机场克雷塔罗工业园 - Parque Querétaro Aeropuerto",
+      "description": "VYNMSA 克雷塔罗工业园位于克雷塔罗东南部，距离克雷塔罗国际机场（BJX）仅 25 分钟车程，毗邻 57 号 NAFTA / USMCA（T-MEC）高速公路，拥有全球领先的现代化基础设施理念。\n\n园区配备最优质的基础设施与齐全的公共服务，包括电力、水源、排水系统、语音与数据通信，确保您的企业高效运营。我们提供可立即入驻的现成工业厂房，以及可用于定制化建设项目（Build-to-Suit）的土地，均可出租，满足您多样化的业务需求。",
+      "notes": "",
+      "sliderImages": [
+        "/recruiting-agents/data/sliderImages/Copia de IMG_7285.jpg",
+        "/recruiting-agents/data/sliderImages/Copia de VQIP-SPEC-IV-00.png",
+        "/recruiting-agents/data/sliderImages/VQIP2.jpg"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "距离克雷塔罗国际机场10分钟车程",
+            "畅享北美自由贸易高速公路网 （开往墨西哥城、圣路易斯·瓜纳华托·蒙特雷路段）",
+            "航空、电气、数据储存等高科技企业为主"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道."
+          ]
+        }
+      ],
+      "image": "/uploads/images/1754963888107_wmhp2nev4c.jpg",
+      "mapImage": "/uploads/images/1754963924890_5pm4teiqz1b.png",
+      "brochure": "/uploads/pdf/naves-industriales-queretaro-pqa-spec-a.pdf",
+      "id": "1-1-4"
+    },
+    {
+      "name": "机场克雷塔罗工业园 - SPEC B",
+      "cityId": "1",
+      "title": "VYNMSA机场克雷塔罗工业园",
+      "mapTitle": "VYNMSA机场克雷塔罗工业园 - Parque Querétaro Aeropuerto",
+      "description": "VYNMSA 克雷塔罗工业园位于克雷塔罗东南部，距离克雷塔罗国际机场（BJX）仅 25 分钟车程，毗邻 57 号 NAFTA / USMCA（T-MEC）高速公路，拥有全球领先的现代化基础设施理念。\n\n园区配备最优质的基础设施与齐全的公共服务，包括电力、水源、排水系统、语音与数据通信，确保您的企业高效运营。我们提供可立即入驻的现成工业厂房，以及可用于定制化建设项目（Build-to-Suit）的土地，均可出租，满足您多样化的业务需求。",
+      "notes": "",
+      "sliderImages": [
+        "/recruiting-agents/data/sliderImages/Copia de IMG_7285.jpg",
+        "/recruiting-agents/data/sliderImages/Copia de VQIP-SPEC-IV-00.png",
+        "/recruiting-agents/data/sliderImages/VQIP2.jpg"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "距离克雷塔罗国际机场10分钟车程",
+            "畅享北美自由贸易高速公路网 （开往墨西哥城、圣路易斯·瓜纳华托·蒙特雷路段）",
+            "航空、电气、数据储存等高科技企业为主"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道."
+          ]
+        }
+      ],
+      "image": "/uploads/images/1754963888107_wmhp2nev4c.jpg",
+      "mapImage": "/uploads/images/1754963924890_5pm4teiqz1b.png",
+      "brochure": "/uploads/pdf/naves-industriales-queretaro-pqa-spec-b.pdf",
+      "id": "1-1-5"
+    },
+    {
+      "name": "克雷塔罗工业园 - I期 - SPEC V",
+      "cityId": "1",
+      "title": "VYNMSA克雷塔罗工业园 - I期",
+      "mapTitle": "VYNMSA克雷塔罗工业园 - I期 - VYNMSA Querétaro Industrial Park I",
+      "description": "探索我们位于克雷塔罗马尔克斯工业区的全新库存建筑“SPEC V”，坐落于 VYNMSA 克雷塔罗工业园的核心位置。该建筑面积为 10,459 平方米，跨距尺寸为 21.11 米 x 15.24 米，空间布局灵活高效。\n\n我们的工业厂房配备园区提供的全部公共设施，确保您的企业高效、顺畅地运营。欢迎前来了解这一现代化工业空间为您的公司带来的优势与机遇。",
+      "notes": "2025 年第四季度上市",
+      "sliderImages": [
+        "/recruiting-agents/data/sliderImages/Copia de IMG_7285.jpg",
+        "/recruiting-agents/data/sliderImages/VQIP2.jpg",
+        "/uploads/images/1754964279106_qzbmfwx5s0f.jpg",
+        "/uploads/images/1754964280871_10ojlx4pthp.jpg",
+        "/uploads/images/1754964282198_5libvab84f5.jpg",
+        "/uploads/images/1754964285494_3oktsaiyabt.jpg"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "距离克雷塔罗国际机场10分钟车程",
+            "畅享北美自由贸易高速公路网 （开往墨西哥城、圣路易斯·瓜纳华托·蒙特雷路段）",
+            "航空、电气、数据储存等高科技企业为主"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道."
+          ]
+        }
+      ],
+      "image": "/uploads/images/1754963888107_wmhp2nev4c.jpg",
+      "mapImage": "/uploads/images/1754963924890_5pm4teiqz1b.png",
+      "brochure": "/uploads/pdf/naves-industriales-queretaro-vqip-spec-v.pdf",
+      "id": "1-1-6"
+    },
+    {
+      "name": "克雷塔罗工业园 - I期 - SPEC VI",
+      "cityId": "1",
+      "title": "VYNMSA克雷塔罗工业园 - I期",
+      "mapTitle": "VYNMSA克雷塔罗工业园 - I期 - VYNMSA Querétaro Industrial Park I",
+      "description": "探索我们位于克雷塔罗马尔克斯工业区的全新库存建筑“SPEC VI”，坐落于 VYNMSA 克雷塔罗工业园的核心位置。该建筑面积为 10,459 平方米，跨距尺寸为 21.11 米 x 15.24 米，空间布局灵活高效。\n\n我们的工业厂房配备园区提供的全部公共设施，确保您的企业高效、顺畅地运营。欢迎前来了解这一现代化工业空间为您的公司带来的优势与机遇。",
+      "notes": "2025 年第四季度上市",
+      "sliderImages": [
+        "/recruiting-agents/data/sliderImages/Copia de IMG_7285.jpg",
+        "/recruiting-agents/data/sliderImages/VQIP2.jpg",
+        "/uploads/images/1754964279106_qzbmfwx5s0f.jpg",
+        "/uploads/images/1754964280871_10ojlx4pthp.jpg",
+        "/uploads/images/1754964282198_5libvab84f5.jpg",
+        "/uploads/images/1754964285494_3oktsaiyabt.jpg"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "距离克雷塔罗国际机场10分钟车程",
+            "畅享北美自由贸易高速公路网 （开往墨西哥城、圣路易斯·瓜纳华托·蒙特雷路段）",
+            "航空、电气、数据储存等高科技企业为主"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道."
+          ]
+        }
+      ],
+      "image": "/uploads/images/1754963888107_wmhp2nev4c.jpg",
+      "mapImage": "/uploads/images/1754963924890_5pm4teiqz1b.png",
+      "brochure": "/uploads/pdf/naves-industriales-queretaro-vqip-spec-vi.pdf",
+      "id": "1-1-7"
+    },
+    {
+      "name": "克雷塔罗工业园 - I期 - SPEC VII",
+      "cityId": "1",
+      "title": "VYNMSA克雷塔罗工业园 - I期",
+      "mapTitle": "VYNMSA克雷塔罗工业园 - I期 - VYNMSA Querétaro Industrial Park I",
+      "description": "探索我们位于克雷塔罗马尔克斯工业区的全新库存建筑“SPEC VII”，坐落于 VYNMSA 克雷塔罗工业园的核心位置。该建筑面积为 10,459 平方米，跨距尺寸为 21.11 米 x 15.24 米，空间布局灵活高效。\n\n我们的工业厂房配备园区提供的全部公共设施，确保您的企业高效、顺畅地运营。欢迎前来了解这一现代化工业空间为您的公司带来的优势与机遇。",
+      "notes": "2025 年第四季度上市",
+      "sliderImages": [
+        "/recruiting-agents/data/sliderImages/Copia de IMG_7285.jpg",
+        "/recruiting-agents/data/sliderImages/VQIP2.jpg",
+        "/uploads/images/1754964279106_qzbmfwx5s0f.jpg",
+        "/uploads/images/1754964280871_10ojlx4pthp.jpg",
+        "/uploads/images/1754964282198_5libvab84f5.jpg",
+        "/uploads/images/1754964285494_3oktsaiyabt.jpg"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "距离克雷塔罗国际机场10分钟车程",
+            "畅享北美自由贸易高速公路网 （开往墨西哥城、圣路易斯·瓜纳华托·蒙特雷路段）",
+            "航空、电气、数据储存等高科技企业为主"
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道."
+          ]
+        }
+      ],
+      "image": "/uploads/images/1754963888107_wmhp2nev4c.jpg",
+      "mapImage": "/uploads/images/1754963924890_5pm4teiqz1b.png",
+      "brochure": "/uploads/pdf/naves-industriales-queretaro-vqip-spec-vii.pdf",
+      "id": "1-1-8"
+    },
+    {
+      "id": "1-1-9",
+      "name": "克雷塔罗-IV",
+      "cityId": "1",
+      "title": "克雷塔罗PIQ工业园- SPEC IV",
+      "mapTitle": "克雷塔罗PIQ工业园 - Parque Industrial Querétaro PIQ (Qro, Qro)",
+      "description": "秉厦在克雷塔罗州的最新工业园项目，距离克雷塔罗州机场35分钟车程，可租售及定制建造厂房项目用地占20公顷左右，目前已进驻来自日、德、加、美等地企业14家。",
+      "notes": "",
+      "sliderImages": [
+        "/recruiting-agents/data/sliderImages/Copia de VYNMSA_PIQF42017_SPEC C_MODELO_VISTA_2.png",
+        "/recruiting-agents/data/sliderImages/Copia de VYNMSA_PIQF42017_SPEC C_MODELO_VISTA_4.png"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "配有班车，方便员工及访客进出工业园",
+            "距离克雷塔罗国际机场45分钟以内车程."
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道"
+          ]
+        }
+      ],
+      "image": "/uploads/images/1754964613399_hlszmfskvla.jpg",
+      "mapImage": "/uploads/images/1754964608073_i7vcwomzf78.png",
+      "brochure": "/uploads/pdf/naves-industriales-queretaro-piq-spec-iv.pdf"
+    },
+    {
+      "name": "物流自由贸易区工业园 - II期 - SPEC I",
+      "cityId": "2",
+      "title": "VYNMSA物流自由贸易区工业园 - II期",
+      "mapTitle": "VYNMSA物流自由贸易区工业园 - II期 - Logistik Industrial Park II",
+      "description": "地处墨西哥最大公园内，自然环境优越，此物流工业园分两期，总占地面积超过80公顷。该工业园II期有充足的租售厂房，可立即入驻；工业园I期有可定制建造厂房用地，可根据企业具体需求打造优质的空间。园区目前已有中、美、加等多国品牌客户进驻。",
+      "notes": "",
+      "sliderImages": [
+        "/uploads/images/1754964846520_0r70ywh690z.jpg",
+        "/uploads/images/1754964847663_oitjo0jamn.jpg",
+        "/uploads/images/1754964848895_2e1idqkjzl6.jpg"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "毗邻铁路运输线，可建专用线接轨站",
+            "靠近主要高速公路",
+            "建有袖珍公园，全天候闭路电视监控."
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道."
+          ]
+        }
+      ],
+      "image": "/uploads/images/1754964754930_m26b0euuag.jpg",
+      "mapImage": "/uploads/images/1754964760913_rlo4p9ksuyi.png",
+      "brochure": "/uploads/pdf/naves-industriales-sanluis-logistik-ii-spec-i.pdf",
+      "id": "1-2-5"
+    },
+    {
+      "name": "物流自由贸易区工业园 - II期 - SPEC IV",
+      "cityId": "2",
+      "title": "VYNMSA物流自由贸易区工业园 - II期",
+      "mapTitle": "VYNMSA物流自由贸易区工业园 - II期 - Logistik Industrial Park II",
+      "description": "地处墨西哥最大公园内，自然环境优越，此物流工业园分两期，总占地面积超过80公顷。该工业园II期有充足的租售厂房，可立即入驻；工业园I期有可定制建造厂房用地，可根据企业具体需求打造优质的空间。园区目前已有中、美、加等多国品牌客户进驻。",
+      "notes": "",
+      "sliderImages": [
+        "/uploads/images/1754964846520_0r70ywh690z.jpg",
+        "/uploads/images/1754964847663_oitjo0jamn.jpg",
+        "/uploads/images/1754964848895_2e1idqkjzl6.jpg"
+      ],
+      "items": [
+        {
+          "title": "主要优势：",
+          "list": [
+            "毗邻铁路运输线，可建专用线接轨站",
+            "靠近主要高速公路",
+            "建有袖珍公园，全天候闭路电视监控."
+          ]
+        },
+        {
+          "title": "工业园总体优势：",
+          "list": [
+            "所有工业园地处劳动力充足市场",
+            "园区内基础设施配套完备，通水（含排水系统）、通电、通网、通燃气",
+            "米宽水泥工业园道路",
+            "全年全天候闭路电视安全监控",
+            "紧邻墨国内重要国道."
+          ]
+        }
+      ],
+      "image": "/uploads/images/1754964754930_m26b0euuag.jpg",
+      "mapImage": "/uploads/images/1754964760913_rlo4p9ksuyi.png",
+      "brochure": "/uploads/pdf/naves-industriales-sanluis-logistik-vslip-spec-iv.pdf",
+      "id": "1-2-6"
+    }
+  ]
+}
